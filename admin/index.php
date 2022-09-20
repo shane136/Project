@@ -84,7 +84,7 @@ session_start();
 </div>
 <ul>
 
-<li><a href="admin\certificate.php" class="btn">
+<li><a href="..\admin\certificate.php" class="btn">
 <i class="fa fa-certificate"></i> Certificate</a></li>
 	
 

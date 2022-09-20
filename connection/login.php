@@ -5,6 +5,7 @@ session_start();
 	include("connection.php");
 	include("../functions.php");
 	include("../css.php");
+    include("../login.php");
 
 
 	if($_SERVER['REQUEST_METHOD'] == "POST")
@@ -31,7 +32,7 @@ session_start();
 					{
 
 						$_SESSION['user_id'] = $user_data['user_id'];
-						header('location: ../admin/index.php');
+						echo "<script> window.location.href='../admin/index.php';</script>";
 						die;
 					}
 				}
@@ -47,43 +48,3 @@ session_start();
 
 ?>
 
-	<div id="box">
-		
-		<form method="post">
-
-			<div style="font-size: 20px; margin: 10px;color: black;">LOGIN</div>
-            
-			<div style="display: flex; flex-direction:row; align-items: center; padding: 15px; justify-content:center;"> 
-				<input type="text" name="user_name" autofocus="" autocapitalize="none" autocomplete="username" required="" class="text" placeholder="username">
-			</div>
-            
-            <div style="display: flex; flex-direction:row; align-items: center; padding: 15px; justify-content:center; margin: auto;">
-				<input type="password" name="password" autocomplete="current-password" required="" id="text" class="text" placeholder="password">
-				<span class="p-viewer"> 
-					<i class="fa fa-eye" aria-hidden="true" onclick="managePassword()" id="iconPassword"></i> 
-				</span>
-			</div>
-			
-            <button type="submit" class="btn btn-primary" >Login</button> <br><br>
-		
-			<a href="../connection/signup.php">Click to Signup</a>
-		</form>
-	</div>
-</body>
-</html>
-
-<script> 
-
-	function managePassword(){
-
-		var password = document.getElementById("text");
-		
-		if(password.type === "password"){
-			password.type = 'text';
-			document.getElementById("iconPassword").className= "fa fa-eye-slash";
-		}else{
-			password.type = 'password';
-			document.getElementById("iconPassword").className= "fa fa-eye";
-		}
-	}
-</script>
