@@ -3,8 +3,8 @@
 session_start();
 
 	include("connection.php");
-	include("functions.php");
-	include("css.php");
+	include("../functions.php");
+	include("../css.php");
 
 
 	if($_SERVER['REQUEST_METHOD'] == "POST")
@@ -31,7 +31,7 @@ session_start();
 					{
 
 						$_SESSION['user_id'] = $user_data['user_id'];
-						header('location: ../Project/admin/index.php');
+						header('location: ../admin/index.php');
 						die;
 					}
 				}
@@ -66,7 +66,7 @@ session_start();
 			
             <button type="submit" class="btn btn-primary" >Login</button> <br><br>
 		
-			<a href="signup.php">Click to Signup</a>
+			<a href="../connection/signup.php">Click to Signup</a>
 		</form>
 	</div>
 </body>

@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-	include("../connection.php");
+	include("../connection/connection.php");
 	include("../functions.php");
 	include("../css.php");
 
@@ -82,14 +82,14 @@ session_start();
 </div>
 <ul>
 
-<li><a href="admin\certificate.php" class="btn">
+<li><a href="..\admin\certificate.php" class="btn">
 <i class="fa fa-certificate"></i> Certificate</a></li>
 	
 
 </ul>
 
 <div class="ms-2"> 
-<li><a href="\Project\login.php" class="btn" onclick="return confirm('Are you sure you want to log out?');">
+<li><a href="..\connection\login.php" class="btn" onclick="return confirm('Are you sure you want to log out?');">
 	<i class="fas fa-sign-out-alt"></i> Logout</a></li>
 </div>
 	</aside>
