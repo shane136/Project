@@ -47,7 +47,7 @@ session_start();
     <img
          class="rounded-pill img-fluid"
          width="65"
-		 src = "../image/admin.jpg" 
+		 src = "https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" 
          alt="profile">
     <div class="ms-2">
 		<span class="name">Shane Pags</span> <br>
@@ -107,7 +107,7 @@ session_start();
                     <!-- picture image-->         
                     <img class="rounded-pill img-fluid"
                      width="200"
-                     src="../image/admin.jpg" alt="">
+                     src="https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" alt="">
                     <!-- Profile picture help block-->
                     <div class="small font-italic text-muted mb-4"></div>
                     <!-- picture upload button-->

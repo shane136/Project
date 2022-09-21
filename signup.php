@@ -15,60 +15,59 @@
 			<legend><h3>Please fill out the provided form.</h3></legend>
                     <div class="row">
                         <div class="col-xs-6 col-md-6">
-                            <input type="text" name="firstname" value="" class="form-control input-lg" placeholder="First Name"  />         
+                            <input type="text" name="firstname" value="" class="form-control input-lg" required="" placeholder="First Name"  />         
 						</div>
                         <div class="col-xs-6 col-md-6">
-                            <input type="text" name="lastname" value="" class="form-control input-lg" placeholder="Last Name"  />                      
+                            <input type="text" name="lastname" value="" class="form-control input-lg" required="" placeholder="Last Name"  />                      
 						</div>
 						<div class="col-xs-6 col-md-6">
-                            <input type="text" name="lastname" value="" class="form-control input-lg" placeholder="Middle Name"  />                      
+                            <input type="text" name="lastname" value="" class="form-control input-lg" required=""  placeholder="Middle Name"  />                      
 						</div>
 						<div class="col-xs-6 col-md-6">
-                            <input type="text" name="religion" value="" class="form-control input-lg" placeholder="Religion"  />                      
+                            <input type="text" name="religion" value="" class="form-control input-lg" required="" placeholder="Religion"  />                      
 						</div>
                     </div>
 
-					<input type="text" name="bplace" value="" class="form-control input-lg" placeholder="Birthplace"  />
+					<input type="text" name="bplace" value="" class="form-control input-lg" required="" placeholder="Birthplace"  />
 
 					<div class="row">
                         <div class="col-xs-6 col-md-6">
-                            <input type="text" name="" value="" class="form-control input-lg" placeholder="Barangay"  />         
+                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Barangay"  />         
 						</div>
 
                         <div class="col-xs-6 col-md-6">
-                            <input type="text" name="" value="" class="form-control input-lg" placeholder="Zone"  />                      
+                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Zone"  />                      
 						</div>
 
 						<div class="col-xs-6 col-md-6">
-                            <input type="text" name="" value="" class="form-control input-lg" placeholder="Civil Status"  />                      
+                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Civil Status"  />                      
 						</div>
 
 						<div class="col-xs-6 col-md-6">
-                            <input type="text" name="" value="" class="form-control input-lg" placeholder="Occupation"  />                      
+                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Occupation"  />                      
 						</div>
 
 						<div class="col-xs-4"> 
-                            <input type="text" name="" value="" class="form-control input-lg" placeholder="Age"  />   
+                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Age"  />   
 						</div>
 
 						<div class="col-xs-4">
-                            <input type="text" name="" value="" class="form-control input-lg" placeholder="Blood Type"  />                      
+                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Blood Type"  />                      
 						</div>
 
 						<div class="col-xs-4">
-                            <input type="text" name="" value="" class="form-control input-lg" placeholder="Nationality"  />                      
+                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Nationality"  />                      
 						</div>
 									
 					</div>
 
 				<div class="form-group row">
 					<div class="col-xs-7"> 
-						<input name="" type="number" min="1" value="" class="form-control input-lg" placeholder="No. of Household Members"/>
+						<input name="" type="number" min="1" value="" class="form-control input-lg" required="" placeholder="No. of Household Members"/>
 					</div>
 
 					<div class="col-xs-5">
-					<select name="" class="form-control input-lg">
-								<option selected></option>
+					<select name="" class="form-control input-lg" required> 
 								<option disabled selected hidden>Sex</option>
 								<option>Female</option>
                                 <option>Male</option>
@@ -76,7 +75,7 @@
 					</div>
 				</div>
 					<div class="form-group">
-                            <select name="" class="form-control input-lg">
+                            <select name="" class="form-control input-lg" required>
                                 <option selected></option>
 								<option disabled selected hidden>Educational Attaintment</option>
 								<option>Not Applicable</option>
@@ -91,17 +90,17 @@
                                 <option>Doctorate Degree (PhD)</option>
                             </select>
                     </div>
-                    <input type="text" name="username" value="" class="form-control input-lg" placeholder="Username"  />
-					<input type="password" name="password" value="" autocomplete="current-password" class="form-control input-lg" placeholder="Password"  />
+                    <input type="text" name="username" value="" class="form-control input-lg" required="" placeholder="Username"  />
+					<input type="password" name="password" value="" autocomplete="current-password" class="form-control input-lg" required="" placeholder="Password"  />
                 
-					<input type="password" name="confirm_password" value="" autocomplete="current-password" id="text" class="form-control input-lg" placeholder="Confirm Password"  />   
+					<input type="password" name="confirm_password" value="" autocomplete="current-password" id="text" class="form-control input-lg" required="" placeholder="Confirm Password"  />   
                     <span class="p-viewer-cp"> 
                             <i class="fa fa-eye-slash" aria-hidden="true" onclick="managePassword()" id="iconPassword"></i> 
 				    </span>          
 					<label>Birth Date</label>                
 					<div class="row">
                         <div class="col-xs-4 col-md-4">
-                            <select name="month" class = "form-control input-lg">
+                            <select name="month" class = "form-control input-lg" required>
 								
 							    <option disabled selected hidden>Month</option>
 								<option value="01">Jan</option>
@@ -120,7 +119,7 @@
 						</div>
 
  						<div class="col-xs-4 col-md-4">
-    						<select name="day" class = "form-control input-lg">
+    						<select name="day" class = "form-control input-lg" required>
 								
 							    <option disabled selected hidden>Day</option>
 								<option value="1">1</option>
@@ -159,7 +158,7 @@
 						</div>
 
 						<div class="col-xs-4 col-md-4">
-   							 <select name="year" class = "form-control input-lg">
+   							 <select name="year" class = "form-control input-lg" required>
 
 								<option disabled selected hidden>Year</option>
 							 	<option value="1935">1935</option>
@@ -248,14 +247,17 @@
 
 <!-- upload file -->
 
-<label> Upload 2x2 Picture (png or jpg) </label>
+<label> Upload 2x2 Picture (.png, .jpeg, or .jpg) </label>
     <div id="yourBtn" onclick="getFile()">Choose a file</div>
-     <div style='height: 0px; overflow:hidden;'>
-         <input id="upfile" type="file" value="upload" onchange="sub(this)" /> 
+     <div style='height: 0px; overflow:auto;'>
+         <input required=""
+		 	id="upfile" 
+			type="file" 
+			value="upload" 
+			onchange="sub(this)"
+			accept=".jpg, .jpeg, .png" /> 
     </div><br>
   
-  
- 			
    		<span class="help-block">By clicking Register, you agree to our Terms and that you have read our Data Use Policy, including our Cookie Use.</span>
 				
 				<div style="padding:10px;">

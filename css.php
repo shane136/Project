@@ -17,7 +17,7 @@ body {
 }
 
 .card0 {
-    box-shadow: 0px 4px 8px 0px #757575;
+    box-shadow: 0px 4px 8px 0px #00b3b3;
     border-radius: 0px;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .border-line {
-    border-right: 1px solid #EEEEEE;
+    border-right: 1px solid #00cccc;
 }
 
 .line {
@@ -102,7 +102,7 @@ a {
 }
 
 .btn-blue {
-    background-color: #1A237E;
+    background-color: #00b3b3;
     width: 150px;
     color: #fff;
     border-radius: 2px;
@@ -113,30 +113,13 @@ a {
     cursor: pointer;
 }
 
+/* footer_ */
 .bg-blue {
     color: #fff;
-    background-color: #1A237E;
+    background-color:#008080;
 }
 
-@media screen and (max-width: 991px) {
-    .logo {
-        margin-left: 0px;
-    }
-
-    .image {
-        width: 300px;
-        height: 220px;
-    }
-
-    .border-line {
-        border-right: none;
-    }
-
-    .card2 {
-        border-top: 1px solid #EEEEEE !important;
-        margin: 0px 15px;
-    }
-}
+/* eyelashhh */
     .p-viewer{
 
         z-index: 9999;
@@ -179,15 +162,12 @@ a {
 
 /* signup */
 #wrap{
-background-image: linear-gradient(to bottom, #FFFFFF 0%, #D3D8E8 100%);
-background-repeat: no-repeat;
-background-attachment: fixed;
+    
+    height: 100%;
+    background-color: #B0BEC5;
+
 }
-legend{
-	color:#141823;
-	font-size:25px;
-	font-weight:bold;
-}
+
 .signup-btn {
   background: #79bc64;
   background-image: -webkit-linear-gradient(top, #79bc64, #578843);
@@ -198,36 +178,26 @@ legend{
   -webkit-border-radius: 4;
   -moz-border-radius: 4;
   border-radius: 4px;
-  text-shadow: 0px 1px 0px #898a88;
-  -webkit-box-shadow: 0px 0px 0px #a4e388;
-  -moz-box-shadow: 0px 0px 0px #a4e388;
-  box-shadow: 0px 0px 0px #a4e388;
   font-family: Arial;
-  color: #ffffff;
+  color:#B0BEC5;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
-  border: solid #3b6e22  1px;
   text-decoration: none;
 }
 
 .signup-btn:hover {
   background: #79bc64;
-  background-image: -webkit-linear-gradient(top, #79bc64, #5e7056);
-  background-image: -moz-linear-gradient(top, #79bc64, #5e7056);
-  background-image: -ms-linear-gradient(top, #79bc64, #5e7056);
-  background-image: -o-linear-gradient(top, #79bc64, #5e7056);
-  background-image: linear-gradient(to bottom, #79bc64, #5e7056);
   text-decoration: none;
 }
 .navbar-default .navbar-brand{
-		color:#fff;
+		color:#B0BEC5;
 		font-size:30px;
 		font-weight:bold;
 	}
 .form .form-control { margin-bottom: 10px; }
 @media (min-width:768px) {
 	#home{
-		margin-top:50px;
+		margin-top:100px;
 	}
 	#home .slogan{
 		color: #0e385f;
