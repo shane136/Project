@@ -6,7 +6,8 @@
 </head>
 
 <style type="text/css">
-	
+
+/* login */
 body {
     color: #000;
     overflow-x: hidden;
@@ -140,9 +141,17 @@ a {
 
         z-index: 9999;
 	    position: absolute;
-	    top: 36%;
+	    top: 42%;
 	    right: 30px;
     }
+
+    .p-viewer-cp{
+
+        z-index: 9999;
+        position: absolute;
+        top: 64%;
+        right: 30px;
+}
 
     .fa-eye{
 
@@ -154,6 +163,19 @@ a {
 		color: white;
 		font-size: medium;
 	}
+
+/* upload file butn */
+    #yourBtn {
+    position: relative;
+    top: 2px;
+    font-family: calibri;
+    width: 150px;
+    padding: 5px;
+    border: 1px dashed #BBB;
+    text-align: center;
+    background-color: #DDD;
+    cursor: pointer;
+}
 
 /* signup */
 #wrap{

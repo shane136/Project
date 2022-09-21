@@ -10,7 +10,7 @@
             <div class="col-lg-6">
                 <div class="card1 pb-5"> 
 
-                    <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
+                    <div class="row px-4 justify-content-center mt-4 mb-5 border-line">
                         <img src="../image/wolfie.png" class="image">
                     </div>
                 </div>
@@ -18,8 +18,8 @@
 
             <div class="col-lg-4">
                 <form method="post">
-                    <div class="row px-3 mb-4">
-                       
+                    <div class="row px-2 mb-5">
+                      
                     </div>
 
                     <div class="row px-3">
@@ -73,5 +73,6 @@
 		}
 	}
 </script>
+
 </body>
 </html>
