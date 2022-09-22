@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head>
-
-</head>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+         <title>LOGIN</title>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
+    </head>
 <body>
 <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
     <div class="card card0 border-0">
@@ -11,7 +15,7 @@
                 <div class="card1 pb-5"> 
 
                     <div class="row px-4 justify-content-center mt-4 mb-5 border-line">
-                        <img src="../image/wolfie.png" class="image">
+                        <img src="../assets/image/wolfie.png" class="image">
                     </div>
                 </div>
             </div>

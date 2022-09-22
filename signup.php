@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>SIGN UP</title>
+	
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
 </head>
 <body>
 
