@@ -30,7 +30,7 @@
        <div class="mdl-layout__header-row">
  
          <div class="right_area">
-             <a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');" class="logout_btn">Logout</a>
+         <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-danger" id="right-panel-link">Logout</a>
          </div>
  
        </div>
@@ -64,7 +64,126 @@
         <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
         
-            <h1>MY PROFILE</h1>
+          <div class="container-xl px-4 mt-4">
+  <h2> MY PROFILE </h2>
+    <hr class="mt-0 mb-4">
+    <div class="row">
+        <div class="col-xl-4">
+            <!-- Profile-->
+            <div class="card mb-4 mb-xl-0">
+                <div class="card-body text-center">
+                    <!-- picture image-->         
+                    <img class="rounded-pill img-fluid"
+                     width="200"
+                     src="https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" alt="">
+                    <!-- Profile picture help block-->
+                    <div class="small font-italic text-muted mb-4"></div>
+                    <!-- picture upload button-->
+                    <button class="btn btn-primary" type="button">Upload new image</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8">
+            <!-- Barangay details-->
+            <div class="card mb-4">
+                <div class="card-header">Information</div>
+                <div class="card-body">
+                    <form>
+                        <!-- Name -->
+                        <div class="mb-8">
+                            <label class="small mb-1" for="inputFname">First Name</label>
+                            <input class="form-control" id="inputFname" type="text" placeholder="" value="">
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="small mb-1" for="inputMname">Middle Name</label>
+                            <input class="form-control" id="inputMname" type="text" placeholder="" value="">
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="small mb-1" for="inputLname">Last Name</label>
+                            <input class="form-control" id="inputLname" type="text" placeholder="" value="">
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="small mb-1" for="inputBplace">Place of Birth</label>
+                            <input class="form-control" id="inputBplace" type="text" placeholder="" value="">
+                        </div>
+                        <!-- Form Row-->
+                        <div class="row gx-3 mb-3">
+                           
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputZone">Zone</label>
+                                <input class="form-control" id="inputZone" type="text" placeholder="" value="">
+                            </div>             
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputBrgyName">Barangay</label>
+                                <input class="form-control" id="inputBrgyName" type="text" placeholder="" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputStatus">Civil Status</label>
+                                <input class="form-control" id="inputStatus" type="text" placeholder="" value="">
+                            </div>                           
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputOccupation">Occupation</label>
+                                <input class="form-control" id="inputOccupation" type="text" placeholder="" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputAge">Age</label>
+                                <input class="form-control" id="inputAge" type="text" placeholder="" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputSex">Sex</label>
+                                <input class="form-control" id="inputSex" type="text" placeholder="" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputBtype">Blood Type</label>
+                                <input class="form-control" id="inputBtype" type="text" placeholder="" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputNationality">Nationality</label>
+                                <input class="form-control" id="inputNationality" type="text" placeholder="" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputHmember">No. of Household Member</label>
+                                <input class="form-control" id="inputHmember" type="text" placeholder="" value="">
+                            </div>
+                            <div class="col-md-6"> 
+                            <label class="small mb-1" for="inputEducation">Educational Attaintment</label>
+                            <select name="" class="form-control" required>
+                                <option selected></option>								        
+								                <option>Not Applicable</option>
+                                <option>Elementary Level</option>
+								                <option>Elementary Graduate</option>
+                                <option>Completer</option>
+								                <option>Senior High School</option>
+                                <option>College Level</option>
+                                <option>Vocational/TVET</option>
+                                <option>Undergraduate (Bachelor’s Degree)</option>
+                                <option>Postgraduate (Master’s Degree)</option>
+                                <option>Doctorate Degree (PhD)</option>
+                            </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputUsername">Username</label>
+                                <input class="form-control" id="inputUsername" type="text" placeholder="" value="">
+                            </div>                            
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputPass">Password</label>
+                                <input class="form-control" id="inputPass" type="text" placeholder="" value="">
+                            </div>
+
+                        </div>
+                        
+                        <!-- Save changes button-->
+                        <button class="btn btn-warning" type="button">Edit</button>
+                        <button class="btn btn-success" type="button">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
           </div>
         </div>

@@ -27,14 +27,13 @@
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
     <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
-       
        <div class="mdl-layout__header-row">
  
          <div class="right_area">
-             <a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');" class="logout_btn">Logout</a>
-         </div>
+            <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-danger" id="right-panel-link">Logout</a>
+        </div>
  
-         </div>
+       </div>
           
        </header>
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
@@ -63,80 +62,67 @@
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
-          <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+          <!-- <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid"> -->
         
           <div class="container-xl px-4 mt-4">
-  <h2> BARANGAY PROFILE</h2>
+  <h2> BARANGAY PROFILE </h2>
     <hr class="mt-0 mb-4">
     <div class="row">
         <div class="col-xl-4">
             <!-- Profile-->
             <div class="card mb-4 mb-xl-0">
-                <div class="card-header">Barangay Logo</div>
                 <div class="card-body text-center">
                     <!-- picture image-->         
                     <img class="rounded-pill img-fluid"
-                     width="300"
-                     src="https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" alt="">   
+                     width="600"
+                     src="https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" alt="">          
+                   
                 </div>
             </div>
         </div>
         <div class="col-xl-8">
             <!-- Barangay details-->
             <div class="card mb-4">
-                <div class="card-header">Barangay Details</div>
+                <div class="card-header">Details</div>
                 <div class="card-body">
                     <form>
                         <!-- Name -->
-                        <div class="mb-3">
-                            <label class="small mb-1" for="inputBrgy">Barangay</label>
-                            <input class="form-control" id="inputBrgy" type="text" placeholder="" value="">
+                        <div class="mb-8">
+                            <label class="small mb-1" for="inputBrgyName">Barangay</label>
+                            <input class="form-control" id="inputBrgyName" type="text" placeholder="" value="">
                         </div>
+
+                        <div class="mb-8">
+                            <label class="small mb-1" for="inputCity">City</label>
+                            <input class="form-control" id="inputCity" type="text" placeholder="" value="">
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="small mb-1" for="inputProvince">Province</label>
+                            <input class="form-control" id="inputProvince" type="text" placeholder="" value="">
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="small mb-1" for="inputRegion">Location</label>
+                            <input class="form-control" id="inputRegion" type="text" placeholder="" value="">
+                        </div>
+               
                         <!-- Form Row-->
-                        <div class="row gx-3 mb-3">
-                            <!-- City-->
+                        <div class="row gx-3">
+                           
                             <div class="col-md-6">
-                                <label class="small mb-1" for="inputCity">City</label>
-                                <input class="form-control" id="inputCity" type="text" placeholder="" value="">
-                            </div>
-                            <!-- Province -->
+                                <label class="small mb-1" for="inputZone">Zone</label>
+                                <input class="form-control" id="inputZone" type="text" placeholder="" value="">
+                            </div>             
                             <div class="col-md-6">
-                                <label class="small mb-1" for="inputProvince">Province</label>
-                                <input class="form-control" id="inputProvince" type="text" placeholder="" value="">
+                                <label class="small mb-1" for="inputBrgyName">Barangay</label>
+                                <input class="form-control" id="inputBrgyName" type="text" placeholder="" value="">
                             </div>
+                            
+
                         </div>
-                        <!-- Form Row-->
-                        <div class="row gx-3 mb-3">
-                            <!-- Region -->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputRegion">Region</label>
-                                <input class="form-control" id="inputRegion" type="text" placeholder="" value="">
-                            </div>
-                            <!-- Location-->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputLocation">Location</label>
-                                <input class="form-control" id="inputLocation" type="text" placeholder="" value="">
-                            </div>
-                        </div>
-                        <!-- Email add-->
-                        <div class="mb-3">
-                            <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="example123@gmail.com" value="">
-                        </div>
-                        <!-- Form Row-->
-                        <div class="row gx-3 mb-3">
-                            <!-- Phone # -->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputPhone">Phone number</label>
-                                <input class="form-control" id="inputPhone" type="phone" placeholder="" value="">
-                            </div>
-                            <!-- Tel # -->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputTel">Telephone number</label>
-                                <input class="form-control" id="inputTel" type="text" name="telephone" placeholder="" value="">
-                            </div>
-                        </div>
-                       
+                        
+                        
                     </form>
                 </div>
             </div>
@@ -144,10 +130,6 @@
     </div>
 </div>
 
-
-
-
-          
           </div>
         </div>
 

@@ -61,27 +61,16 @@
 
 }
 
-.logout_btn{
-
-    padding: 5px;
-    background: #e91c1c;
-    text-decoration: none;
-    float: right;
-    margin-left: 980px;
-    border-radius: 2px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-}
-
-.logout_btn:hover{
-
-    background: #d1c7e2;
-    text-decoration: none;
-}
-
 .mdl-layout__header-row{
 
     background: #00b3b3;
 
 }
+
+/* logut_btn */
+#right-panel-link {
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 980px;
+   
+  }
