@@ -110,28 +110,28 @@ session_start();
                     <form>
                         <!-- Name -->
                         <div class="mb-3">
-                            <label class="small mb-1" for="inputUsername">Barangay</label>
-                            <input class="form-control" id="inputUsername" type="text" placeholder="" value="">
+                            <label class="small mb-1" for="inputBrgy">Barangay</label>
+                            <input class="form-control" id="inputBrgy" type="text" placeholder="" value="">
                         </div>
                         <!-- Form Row-->
                         <div class="row gx-3 mb-3">
                             <!-- City-->
                             <div class="col-md-6">
-                                <label class="small mb-1" for="inputFirstName">City</label>
-                                <input class="form-control" id="inputFirstName" type="text" placeholder="" value="">
+                                <label class="small mb-1" for="inputCity">City</label>
+                                <input class="form-control" id="inputCity" type="text" placeholder="" value="">
                             </div>
                             <!-- Province -->
                             <div class="col-md-6">
-                                <label class="small mb-1" for="inputLastName">Province</label>
-                                <input class="form-control" id="inputLastName" type="text" placeholder="" value="">
+                                <label class="small mb-1" for="inputProvince">Province</label>
+                                <input class="form-control" id="inputProvince" type="text" placeholder="" value="">
                             </div>
                         </div>
                         <!-- Form Row-->
                         <div class="row gx-3 mb-3">
                             <!-- Region -->
                             <div class="col-md-6">
-                                <label class="small mb-1" for="inputOrgName">Region</label>
-                                <input class="form-control" id="inputOrgName" type="text" placeholder="" value="">
+                                <label class="small mb-1" for="inputRegion">Region</label>
+                                <input class="form-control" id="inputRegion" type="text" placeholder="" value="">
                             </div>
                             <!-- Location-->
                             <div class="col-md-6">
@@ -149,12 +149,12 @@ session_start();
                             <!-- Phone # -->
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputPhone">Phone number</label>
-                                <input class="form-control" id="inputPhone" type="tel" placeholder="" value="">
+                                <input class="form-control" id="inputPhone" type="phone" placeholder="" value="">
                             </div>
                             <!-- Tel # -->
                             <div class="col-md-6">
-                                <label class="small mb-1" for="inputBirthday">Telephone number</label>
-                                <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="" value="">
+                                <label class="small mb-1" for="inputTel">Telephone number</label>
+                                <input class="form-control" id="inputTel" type="text" name="telephone" placeholder="" value="">
                             </div>
                         </div>
                         <!-- Save changes button-->

@@ -1,62 +1,10 @@
-
-body{
-
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-}
-
-header{
-
-    position: fixed;
-    background: #22242A;
-    padding: 20px;
-    width: 100%;
-    height: 30px;
-}
-
-.left_area h3{
-
-    color: #fff;
-    margin: 0;
-    text-transform: uppercase ;
-    font-size: 22px;
-    font-weight: 900;
-}
-
-.left_area span{
-
-    color: #1DC4E7;
-
-}
-
-.logout_btn{
-
-    padding: 5px;
-    background: #19B3D3;
-    text-decoration: none;
-    float: right;
-    margin-top: -30px;
-    margin-right: 40px;
-    border-radius: 2px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-}
-
-.logout_btn:hover{
-
-    background: #0D9DBB;
-}
-
 .sidebar{
 
-    background: #2F323A;
     margin-top: 70px;
     padding-top: 30px;
     position: fixed;
     left: 0;
-    width: 250px;
+    width: 220px;
     height: 100%;
     transition: 0.5ms;
     transition-property: left;
@@ -90,7 +38,7 @@ header{
 
 .sidebar a:hover{
 
-    background: #19b3d3;
+    background: #2f5a63;
 }
 
 .sidebar i{
@@ -98,42 +46,42 @@ header{
     padding-right: 10px;
 }
 
-label #sidebar_btn{
+.left_area h4{
 
-    z-index: 1;
     color: #fff;
-    position: fixed;
-    cursor: pointer;
-    left: 300px;
-    font-size: 20px;
-    margin: 5px 0;
+    margin: 20px;
+    text-transform: uppercase ;
+    font-size: 22px;
+    font-weight: 900;
 }
 
-label #sidebar_btn:hover{
+.left_area span{
 
-    color: #19B3D3;
+    color: #1DC4E7;
+
 }
 
-#check:checked ~ .sidebar{
+.logout_btn{
 
-    left: -190px;
+    padding: 5px;
+    background: #e91c1c;
+    text-decoration: none;
+    float: right;
+    margin-left: 980px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
 }
 
-#check:checked ~ .sidebar a span{
+.logout_btn:hover{
 
-    display: none;
+    background: #d1c7e2;
+    text-decoration: none;
 }
 
-#check:checked ~ .sidebar a{
+.mdl-layout__header-row{
 
-    font-size: 20px;
-    margin-left: 170px;
-    width: 80px;
-}
-
-.content{
-
-    margin-left: 250px ;
-    background-color: aquamarine;
+    background: #00b3b3;
 
 }

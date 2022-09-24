@@ -3,40 +3,59 @@ session_start();
 
     include("../connection/connection.php");
 	include("../functions.php");
-  
 
 	$user_data = check_login($con);
 
 ?>
 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-         <title>USER INTERFACE</title>
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-         <link rel="stylesheet" href="../assets/css/user_style.css" type="text/css">
-    </head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>USER DASHBOARD</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/user_style.css">
 
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
 
-    <input type="checkbox" id="check">
+            <div class="right_area">
+                <a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');" class="logout_btn">Logout</a>
+            </div>
 
-    <header>
-        <label for="check">
-            <i class="fa-solid fa-bars" id="sidebar_btn"></i>
-        </label>
+        </div>
+         
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+       
+      <header class="demo-drawer-header">
         <div class="left_area">
-            <h3>USER<span>DASHBOARD</span></h3>
+            <h4><center>USER<span>DASHBOARD</span></center></h4>
         </div>
-
-        <div class="right_area">
-            <a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');" class="logout_btn">Logout</a>
-        </div>
-    </header>
-
-    <div class="sidebar">
+        </header>
+       
+        <div class="sidebar">
         <center>
             <img src="https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" 
                  class="profile_image" 
@@ -49,12 +68,17 @@ session_start();
         <a href="..\user\reqForms.php"><i class="fa-solid fa-arrow-right"></i><span>Request Forms</span></a>
     </div>
 
-        <div class="content">
+          
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
+          <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+        
+            <h1>USER INDEX</h1>
 
+          </div>
         </div>
 
 
-
-
-</body>
+  </body>
 </html>

@@ -200,15 +200,15 @@ a {
 
 /* end */
 
-	.grid-container {
-  		display: grid;
-  		grid-template-columns: 240px 1fr;
-  		grid-template-rows: 50px 1fr 50px;
-  		grid-template-areas:
-   		 "sidenav header"
-   		 "sidenav main"
-   		 "sidenav footer";
- 	 	height: 100vh;
+.grid-container {
+  	display: grid;
+  	grid-template-columns: 240px 1fr;
+  	grid-template-rows: 50px 1fr 50px;
+  	grid-template-areas:
+   	 "sidenav header"
+   	 "sidenav main"
+   	 "sidenav footer";
+ 	height: 100vh;
 }
 
 /* Give every child element its grid name */
@@ -251,7 +251,5 @@ a:hover{
 li{
 	list-style: none;
 }
-
-
 
 
