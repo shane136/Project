@@ -30,7 +30,7 @@
        <div class="mdl-layout__header-row">
  
          <div class="right_area">
-         <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-danger" id="right-panel-link">Logout</a>
+         <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-primary" id="right-panel-link">Logout</a>
          </div>
  
        </div>
@@ -64,9 +64,72 @@
         <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
         
-            <h1>REQUEST FORMS</h1>
+         
+    
+    <hr>
 
+    <div class="container bootstrap snippets bootdey">
+      <hr>
+	<div class="row">
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <img src="https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" 
+          class="avatar img-circle img-thumbnail" alt="avatar">
+        </div>
+      </div>
+      
+      
+      <div class="col-md-9 personal-info">
+        
+        <h5>Please fill out the required field.</h5>
+        
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Full Name</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text">
+            </div>
           </div>
+          <div class="form-group">
+          <label class="col-lg-3 control-label">Type of Certification</label>
+          <div class="col-lg-8">
+                            <select name="" class="form-control" required>
+                                <option selected></option>								        
+								                <option>Resident Certificate (Cedula)</option>
+                                <option>Lupon Clearance</option>
+                            </select>
+          </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Purpose</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="">
+            </div>
+          </div> 
+          
+          <!-- date_time -->
+          <div>
+          <p class="col-lg-3">Date & Time Requested 
+            <span id="date"></span></p>
+            <script>var x = new Date();
+            document.getElementById("date").innerHTML=x.toLocaleString();</script>    
+          </div>
+          
+          <button class="btn btn-primary" type="button">Request</button>     
+
+      </div>
+  </div>
+</div>
+<hr>
+
+
+
+
+        </div>
+
+
+      </div>
         </div>
 
   </body>

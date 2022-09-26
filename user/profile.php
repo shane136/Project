@@ -30,7 +30,7 @@
        <div class="mdl-layout__header-row">
  
          <div class="right_area">
-         <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-danger" id="right-panel-link">Logout</a>
+         <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-primary" id="right-panel-link">Logout</a>
          </div>
  
        </div>
@@ -65,7 +65,7 @@
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
         
           <div class="container-xl px-4 mt-4">
-  <h2> MY PROFILE </h2>
+  <h3> ACCOUNT DETAILS </h3>
     <hr class="mt-0 mb-4">
     <div class="row">
         <div class="col-xl-4">
@@ -84,12 +84,10 @@
             </div>
         </div>
         <div class="col-xl-8">
-            <!-- Barangay details-->
             <div class="card mb-4">
                 <div class="card-header">Information</div>
                 <div class="card-body">
-                    <form>
-                        <!-- Name -->
+                    <form>              
                         <div class="mb-8">
                             <label class="small mb-1" for="inputFname">First Name</label>
                             <input class="form-control" id="inputFname" type="text" placeholder="" value="">

@@ -110,6 +110,7 @@ session_start();
                                 <th><center>TYPE</center></th>
                                 <th><center>PURPOSE</center></th>
                                 <th><center>OR NUMBER</center></th>
+                                <th><center>DATE REQUESTED</center></th>
                                 <th style="width: 40px !important;">Action</th>
 
                             </tr>

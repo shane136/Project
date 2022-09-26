@@ -30,7 +30,7 @@
        <div class="mdl-layout__header-row">
  
          <div class="right_area">
-         <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-danger" id="right-panel-link">Logout</a>
+         <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-primary" id="right-panel-link">Logout</a>
          </div>
  
        </div>

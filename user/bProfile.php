@@ -30,7 +30,7 @@
        <div class="mdl-layout__header-row">
  
          <div class="right_area">
-            <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-danger" id="right-panel-link">Logout</a>
+            <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-primary" id="right-panel-link">Logout</a>
         </div>
  
        </div>
@@ -65,7 +65,7 @@
           <!-- <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid"> -->
         
           <div class="container-xl px-4 mt-4">
-  <h2> BARANGAY PROFILE </h2>
+  <h3>BARANGAY PROFILE </h3> 
     <hr class="mt-0 mb-4">
     <div class="row">
         <div class="col-xl-4">
@@ -101,28 +101,38 @@
                             <label class="small mb-1" for="inputProvince">Province</label>
                             <input class="form-control" id="inputProvince" type="text" placeholder="" value="">
                         </div>
-
-                        <div class="mb-8">
-                            <label class="small mb-1" for="inputRegion">Location</label>
-                            <input class="form-control" id="inputRegion" type="text" placeholder="" value="">
-                        </div>
                
                         <!-- Form Row-->
                         <div class="row gx-3">
                            
                             <div class="col-md-6">
-                                <label class="small mb-1" for="inputZone">Zone</label>
-                                <input class="form-control" id="inputZone" type="text" placeholder="" value="">
+                                <label class="small mb-1" for="inputRegion">Region</label>
+                                <input class="form-control" id="inputRegion" type="text" placeholder="" value="">
                             </div>             
                             <div class="col-md-6">
-                                <label class="small mb-1" for="inputBrgyName">Barangay</label>
-                                <input class="form-control" id="inputBrgyName" type="text" placeholder="" value="">
+                                <label class="small mb-1" for="inputLocation">Location</label>
+                                <input class="form-control" id="inputLocation" type="text" placeholder="" value="">
                             </div>
-                            
 
                         </div>
                         
-                        
+                        <div class="mb-8">
+                                <label class="small mb-1" for="inputEmailAdd">Email Address</label>
+                                <input class="form-control" id="inputemailAdd" type="text" placeholder="" value="">
+                            </div>
+
+                        <div class="row gx-3">
+                           
+                           <div class="col-md-6">
+                               <label class="small mb-1" for="inputPnumber">Phone Number</label>
+                               <input class="form-control" id="inputRegion" type="text" placeholder="" value="">
+                           </div>             
+                           <div class="col-md-6">
+                               <label class="small mb-1" for="inputTelnum">Telephone Number</label>
+                               <input class="form-control" id="inputTelnum" type="text" placeholder="" value="">
+                           </div>
+
+                       </div>
                     </form>
                 </div>
             </div>

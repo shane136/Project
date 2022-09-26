@@ -250,27 +250,25 @@
 
 <!-- upload file -->
 
-<label> Upload 2x2 Picture (.png, .jpeg, or .jpg) </label>
-    <div id="yourBtn" onclick="getFile()">Choose a file</div>
-     <div style='height: 0px; overflow:auto;'>
-         <input required=""
-		 	id="upfile" 
-			type="file" 
-			value="upload" 
-			onchange="sub(this)"
-			accept=".jpg, .jpeg, .png" /> 
-    </div><br>
-  
-   		<span class="help-block">By clicking Register, you agree to our Terms and that you have read our Data Use Policy, including our Cookie Use.</span>
-				
-				<div style="padding:10px;">
-					<button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Register</button>	
-					<a href="login.php" class="btn btn-lg btn-primary btn-block " type="submit">Login</a>	  
-                </div>
-    </form>          
+<label>Upload 2x2 Photo (.png, .jpg, & .jpeg)</label><br>
+	<div class="col-md-6">
+        <input 
+		required=""
+		type="file" 
+		class="form-control"
+		accept=".jpg, .jpeg, .png"/><br>   
     </div>
-</div>            
+     		
+			
+<div style="padding:10px;">
+	<button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Register</button>	
+	<a href="login.php" class="btn btn-lg btn-primary btn-block " type="submit">Login</a>	  
 </div>
+
+				</form>          
+			</div>
+		</div>            
+	</div>
 </div>
 
 <script> 
@@ -289,19 +287,7 @@
 	}
 </script>
 
-<script> 
-function getFile() {
-  document.getElementById("upfile").click();
-}
 
-function sub(obj) {
-  var file = obj.value;
-  var fileName = file.split("\\");
-  document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
-  document.myForm.submit();
-  event.preventDefault();
-}
-</script>
 
 </body>
 </html>
