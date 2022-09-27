@@ -2,7 +2,6 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -78,8 +77,9 @@
                      src="https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" alt="">
                     <!-- Profile picture help block-->
                     <div class="small font-italic text-muted mb-4"></div>
-                    <!-- picture upload button-->
-                    <button class="btn btn-primary" type="button">Upload new image</button>
+                    <!-- picture upload button-->                 
+                        <input type="file" accept=".png, .jpg, jpeg"> 
+                       
                 </div>
             </div>
         </div>
@@ -150,11 +150,11 @@
                             <label class="small mb-1" for="inputEducation">Educational Attaintment</label>
                             <select name="" class="form-control" required>
                                 <option selected></option>								        
-								                <option>Not Applicable</option>
+								<option>Not Applicable</option>
                                 <option>Elementary Level</option>
-								                <option>Elementary Graduate</option>
+								<option>Elementary Graduate</option>
                                 <option>Completer</option>
-								                <option>Senior High School</option>
+								<option>Senior High School</option>
                                 <option>College Level</option>
                                 <option>Vocational/TVET</option>
                                 <option>Undergraduate (Bachelor’s Degree)</option>

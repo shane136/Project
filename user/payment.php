@@ -2,7 +2,7 @@
 session_start();
 
     include("../connection/connection.php");
-	  include("../functions.php");
+	include("../functions.php");
 
 	$user_data = check_login($con);
 
@@ -12,6 +12,12 @@ session_start();
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<!-- payment -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 
 <!DOCTYPE html>
@@ -33,6 +39,7 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/user_style.css">
 
+    
   </head>
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
@@ -73,8 +80,67 @@ session_start();
         <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
         
-            <h1>USER INDEX</h1>
+<!-- payment    -->
+          
+<div class="container">
+    
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-8 col-lg-6 pb-5">
 
+
+                    <!--Form with header-->
+
+                    <form action="mail.php" method="post">
+                        <div class="card border-primary rounded-0">
+                            <div class="card-header p-0">
+                                <div class="bg-info text-white text-center py-2">
+                                    <h3></i>Payment Details</h3>
+                                    <p class="m-0">Select your payment method.</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+
+                                <!--Body-->
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Payment Type</div>
+                                        </div>
+                                        <select name="" class="form-control" required>
+                                            <option selected></option>								        
+								                            <option>GCash</option>
+                                            <option>Cash</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"></i>Amount</div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="" required>
+                                        
+                                    </div>
+                                </div>
+                          
+                                <div class="text-center">
+                                   <input type="submit" value="Pay" class="btn btn-info btn-block rounded-0 py-2">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!--Form with header-->
+
+
+                </div>
+	</div>
+</div>
+
+
+
+          
+<!-- end -->
           </div>
         </div>
 

@@ -39,6 +39,7 @@
 .sidebar a:hover{
 
     background: #2f5a63;
+    text-decoration: none;
 }
 
 .sidebar i{
@@ -133,4 +134,3 @@ textarea{
     background: #03A9F4;
     color: #fff;
 }
-

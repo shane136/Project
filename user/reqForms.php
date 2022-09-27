@@ -2,7 +2,6 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,12 +29,12 @@
        <div class="mdl-layout__header-row">
  
          <div class="right_area">
-         <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-primary" id="right-panel-link">Logout</a>
-         </div>
+            <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-primary" id="right-panel-link">Logout</a>
+        </div>
  
        </div>
           
-    </header>
+       </header>
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
        
       <header class="demo-drawer-header">
@@ -64,9 +63,6 @@
         <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
         
-         
-    
-    <hr>
 
     <div class="container bootstrap snippets bootdey">
       <hr>
@@ -80,7 +76,7 @@
       </div>
       
       
-      <div class="col-md-9 personal-info">
+      <div class="col-md-9">
         
         <h5>Please fill out the required field.</h5>
         
@@ -88,7 +84,7 @@
           <div class="form-group">
             <label class="col-lg-3 control-label">Full Name</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text">
+              <input class="form-control" type="text" required>
             </div>
           </div>
           <div class="form-group">
@@ -104,7 +100,7 @@
           <div class="form-group">
             <label class="col-lg-3 control-label">Purpose</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" value="">
+              <input class="form-control" type="text" required>
             </div>
           </div> 
           
@@ -116,21 +112,51 @@
             document.getElementById("date").innerHTML=x.toLocaleString();</script>    
           </div>
           
-          <button class="btn btn-primary" type="button">Request</button>     
-
+          <button class="btn btn-primary" type="submit">Request</button>   
+      
       </div>
   </div>
 </div>
 <hr>
 
 
+<!-- status of request-->
 
+              <div class="card-body">
+                <div class="table-responsive-sm">
+                    <table class="table table-bordered" id="dataTable" width="50%" cellspacing="0">
+                        <thead>
+                            <tr>
+
+                                <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
+                                <th><center>Type of Certification</center></th>
+                                <th><center>Purpose</center></th>
+                                <th><center>Date and Time Requested</center></th>
+                                <th><center>Status</center></th>
+                                <th style="width: 40px !important;">Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	
+    
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+                              
+                         
 
         </div>
 
 
       </div>
         </div>
+
+
+        
 
   </body>
 </html>

@@ -94,12 +94,13 @@
                             </select>
                     </div>
                     <input type="text" name="username" value="" class="form-control input-lg" required="" placeholder="Username"  />
-					<input type="password" name="password" value="" autocomplete="current-password" class="form-control input-lg" required="" placeholder="Password"  />
-                
-					<input type="password" name="confirm_password" value="" autocomplete="current-password" id="text" class="form-control input-lg" required="" placeholder="Confirm Password"  />   
-                    <span class="p-viewer-cp"> 
-                            <i class="fa fa-eye-slash" aria-hidden="true" onclick="managePassword()" id="iconPassword"></i> 
-				    </span>          
+					<input type="password" name="password" value="" autocomplete="current-password" id="text" class="form-control input-lg" required="" placeholder="Password"  />
+					
+					<span class="viewer"> 
+					<i class="fa fa-eye-slash" aria-hidden="true" onclick="managePassword()" id="iconPassword"></i> 
+					</span>
+					
+                   
 					<label>Birth Date</label>                
 					<div class="row">
                         <div class="col-xs-4 col-md-4">
@@ -270,24 +271,6 @@
 		</div>            
 	</div>
 </div>
-
-<script> 
-
-	function managePassword(){
-
-		var password = document.getElementById("text");
-		
-		if(password.type === "password"){
-			password.type = 'text';
-			document.getElementById("iconPassword").className= "fa fa-eye";
-		}else{
-			password.type = 'password';
-			document.getElementById("iconPassword").className= "fa fa-eye-slash";
-		}
-	}
-</script>
-
-
 
 </body>
 </html>
