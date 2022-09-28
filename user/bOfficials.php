@@ -21,6 +21,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="../assets/css/user_style.css">
 
   </head>
@@ -64,7 +71,114 @@
         <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
         
-            <h1>BARANGAY OFFICIALS</h1>
+
+          <!-- start -->
+<h3>BARANGAY OFFICIALS</h3>
+<div class="py-5" style="background-color:#E0E0E0; width:100%;" >
+    <div class="container">     
+            <div class="container">
+                <div class="carousel slide" data-ride="carousel" id="carousel1">
+                    <div class="carousel-inner" role="listbox">
+
+                   
+    <div class="carousel-item active">
+          <div class="row"> 
+              <div class="card user-card">
+                <div class="card-header">
+                    <h5>CAPTAIN</h5>
+                </div>
+                <div class="card-block">
+                    <div class="user-image">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-radius" alt="User-Profile-Image">
+                    </div>
+                    <h1 class="user-name">Alessa Robert</h1>
+                  
+                    <hr>                                    
+                   
+                    <!-- content -->
+                    <p class="user-name">TERM:</p>
+
+                </div>
+            </div>
+
+        <!-- next     -->
+            <div class="card user-card">
+                <div class="card-header">
+                    <h5>COUNCILOR</h5>
+                </div>
+                <div class="card-block">
+                    <div class="user-image">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-radius" alt="User-Profile-Image">
+                    </div>                   
+                    <h1 class="user-name">Alessa Robert</h1>           
+                    <hr>                   
+                  
+                    <!-- content -->
+                    <p class="user-name">TERM:</p>
+
+                </div>
+            </div>
+        </div> 
+    </div>    
+    
+    
+    <div class="carousel-item">
+          <div class="row"> 
+              <div class="card user-card">
+                <div class="card-header">
+                    <h5>COUNCILOR</h5>
+                </div>
+                <div class="card-block">
+                    <div class="user-image">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-radius" alt="User-Profile-Image">
+                    </div>
+                    <h1 class="user-name">Alessa Robert</h1>                  
+                    <hr>
+                                        
+                    <!-- content -->
+                    <p class="user-name">TERM:</p>
+
+                </div>
+            </div>
+
+        <!-- next     -->
+            <div class="card user-card">
+                <div class="card-header">
+                    <h5>SK CHAIRMAN</h5>
+                </div>
+                <div class="card-block">
+                    <div class="user-image">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-radius" alt="User-Profile-Image">
+                    </div>
+                    <h6 class="user-name">Alessa Robert</h6>                    
+                    <hr>
+                                       
+                    <!-- content -->
+                    <p class="user-name">TERM:</p>
+
+                </div>
+            </div>
+        </div> 
+    </div>   
+</div> 
+
+                               
+                    <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev"> 
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+                    <span class="sr-only">Previous</span> </a> 
+                    <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next"> 
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span> </a>
+
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+         
+
+          <!-- end -->
 
           </div>
         </div>

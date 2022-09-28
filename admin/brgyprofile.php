@@ -111,19 +111,19 @@ session_start();
                         <!-- Name -->
                         <div class="mb-3">
                             <label class="small mb-1" for="inputBrgy">Barangay</label>
-                            <input class="form-control" id="inputBrgy" type="text" placeholder="" value="">
+                            <input class="form-control" id="inputBrgy" type="text" required>
                         </div>
                         <!-- Form Row-->
                         <div class="row gx-3 mb-3">
                             <!-- City-->
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputCity">City</label>
-                                <input class="form-control" id="inputCity" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputCity" type="text" required>
                             </div>
                             <!-- Province -->
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputProvince">Province</label>
-                                <input class="form-control" id="inputProvince" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputProvince" type="text" required>
                             </div>
                         </div>
                         <!-- Form Row-->
@@ -131,34 +131,34 @@ session_start();
                             <!-- Region -->
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputRegion">Region</label>
-                                <input class="form-control" id="inputRegion" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputRegion" type="text" required>
                             </div>
                             <!-- Location-->
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputLocation">Location</label>
-                                <input class="form-control" id="inputLocation" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputLocation" type="text" required>
                             </div>
                         </div>
                         <!-- Email add-->
                         <div class="mb-3">
                             <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="example123@gmail.com" value="">
+                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="example123@gmail.com" required>
                         </div>
                         <!-- Form Row-->
                         <div class="row gx-3 mb-3">
                             <!-- Phone # -->
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputPhone">Phone number</label>
-                                <input class="form-control" id="inputPhone" type="phone" placeholder="" value="">
+                                <input class="form-control" id="inputPhone" type="phone" required>
                             </div>
                             <!-- Tel # -->
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputTel">Telephone number</label>
-                                <input class="form-control" id="inputTel" type="text" name="telephone" placeholder="" value="">
+                                <input class="form-control" id="inputTel" type="text" name="telephone" required>
                             </div>
                         </div>
                         <!-- Save changes button-->
-                        <button class="btn btn-primary" type="button">Save changes</button>
+                        <button class="btn btn-primary" type="submit">Save changes</button>
                     </form>
                 </div>
             </div>

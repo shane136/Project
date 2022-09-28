@@ -134,3 +134,33 @@ textarea{
     background: #03A9F4;
     color: #fff;
 }
+
+/* carousel */
+.card-block{
+
+    width: 510px;
+}
+
+.user-image{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.user-name{
+
+    text-align: center;
+}
+
+.carousel-control-prev-icon{
+    
+    background-color: #2f5a63;
+    
+}
+
+.carousel-control-next-icon{
+
+    background-color: #2f5a63;
+}
