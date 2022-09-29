@@ -69,20 +69,18 @@
     <div class="row">
         <div class="col-xl-4">
             <!-- Profile-->
-            <div class="card mb-4 mb-xl-0">
-                <div class="card-body text-center">
-                    <!-- picture image-->         
-                    <img class="rounded-pill img-fluid"
-                     width="200"
-                     src="https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" alt="">
-                    <!-- Profile picture help block-->
-                    <div class="small font-italic text-muted mb-4"></div>
-                    <!-- picture upload button-->                 
-                        <input type="file" accept=".png, .jpg, jpeg"> 
-                       
+           
+                <div class="card mb-4 mb-xxl-0">                       
+                    <div class="card-body text-center">                 
+                        <img id="output" width="250"/>
+                    </div>
                 </div>
-            </div>
+                    <input type="file"  accept=".png, .jpg, .jpeg" name="image" id="file"  onchange="loadFile(event)">
+                   
+                <script src="../assets/js/script.js"> </script>
+              
         </div>
+
         <div class="col-xl-8">
             <div class="card mb-4">
                 <div class="card-header">Information</div>

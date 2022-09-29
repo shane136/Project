@@ -133,14 +133,28 @@
                                 <th><center>Purpose</center></th>
                                 <th><center>Date and Time Requested</center></th>
                                 <th><center>Status</center></th>
-                                <th style="width: 40px !important;">Action</th>
-
+                                <th style="width: 12% !important;"> <center>Option</center></th>
+                                   
                             </tr>
                         </thead>
                         <tbody>
                         	
-    
+                      
+                      <tr>
 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <!-- goto paymentDetails -->
+                        <td><button class="btn btn-primary btn-sm" href="#">Pay</button> 
+                        <button class="btn btn-danger btn-sm" href="#" onclick="return confirm('Are you sure you want to delete?');">Delete</button></td>
+
+                      </tr>
+                       
+                      
+                    
                         </tbody>
                     </table>
                 </div>

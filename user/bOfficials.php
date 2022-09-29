@@ -150,7 +150,7 @@
                     <div class="user-image">
                         <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-radius" alt="User-Profile-Image">
                     </div>
-                    <h6 class="user-name">Alessa Robert</h6>                    
+                    <h1 class="user-name">Alessa Robert</h1>                    
                     <hr>
                                        
                     <!-- content -->
