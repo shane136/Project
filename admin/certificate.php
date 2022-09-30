@@ -21,6 +21,8 @@ session_start();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   
 
@@ -82,22 +84,16 @@ session_start();
 </div>
 	</aside>
 
-  <main class="main">
-<div class="card shadow mb-0">
+<main class="main">
+  <div class="card shadow mb-0">
     <div class="container-xl px-4 mt-4">
         <h2> CERTIFICATE REQUESTS </h2>
     <hr class="mt-0 mb-4">
-                            <div class="box">
-                                <div class="box-header">
-                                  <div style="padding:10px;">
-                                  
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="" ><i class="fa fa-user-plus" aria-hidden="true"></i> Add Certificate</button>  
-                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="" ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>      
-                                   
-                                </div>
-
+        
+    <div class="box">
+        <div class="box-header">                            
               <div class="card-body">
-                <div class="table-responsive-sm">
+                <div class="cert">
                     <table class="table table-bordered" id="dataTable" width="50%" cellspacing="0">
                         <thead>
                             <tr>
@@ -111,13 +107,28 @@ session_start();
                                 <th><center>PURPOSE</center></th>
                                 <th><center>OR NUMBER</center></th>
                                 <th><center>DATE REQUESTED</center></th>
-                                <th style="width: 40px !important;">Action</th>
+                                <th style="width: 21% !important;"><center>Action</center></th>
 
                             </tr>
                         </thead>
-                        <tbody>
-                        	
-    <!-- <td align="center"><a class="btn btn-danger" onclick="" href="#">Delete</a></td> -->
+                        <tbody>                       	
+
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
 
                         </tbody>
                     </table>
@@ -129,7 +140,7 @@ session_start();
     </div>
 </div>
 </main>
- 	 <footer class="footer"></footer>
+<footer class="footer"></footer>
 </div>
 
 </html>

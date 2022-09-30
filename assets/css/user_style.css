@@ -168,11 +168,11 @@ textarea{
 .table-responsive-sm {
     overflow-y: auto;
     height: 250px;
-  }
+}
 
-  .table-responsive-sm th {
+.table-responsive-sm th {
     text-align: left;
     top: 0;
     position: sticky;
     background-color: #b2e7e7;
-  }
+}

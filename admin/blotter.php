@@ -21,6 +21,8 @@ session_start();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   
 
@@ -91,8 +93,8 @@ session_start();
                                 <div class="box-header">
                                   <div style="padding:10px;">
                                   
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="" ><i class="fa fa-user-plus" aria-hidden="true"></i> Add Blotter</button>  
-                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="" ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>      
+                                  <a href="#addBlotterModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-file"></i><span> Add New</span></a>                          
+                                  <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>
                                    
                                 </div>
 
@@ -110,13 +112,27 @@ session_start();
                                 <th><center>ACTION TAKEN</center></th>
                                 <th><center>STATUS</center></th>
                                 <th><center>LOCATION OF INCIDENT</center></th>
-                                <th style="width: 40px !important;">Action</th>
+                                <th style="width: 15% !important;"><center>Action</center></th>
 
                             </tr>
                         </thead>
                         <tbody>
                         	
-    <!-- <td align="center"><a class="btn btn-danger" onclick="" href="#">Delete</a></td> -->
+                        <tr>
+
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
 
                         </tbody>
                     </table>
@@ -127,8 +143,99 @@ session_start();
                             </div>
     </div>
 </div>
+
+<!-- addResidentModal -->
+<div id="addBlotterModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">						
+					<h4 class="modal-title">Add New</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">					
+					<div class="form-group">
+						<label>Complainant</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Complainee</label>
+						<input type="text" class="form-control" accept= ".png, .jpg, .jpeg" required>
+					</div>
+          <div class="form-group">
+						<label>Complain</label>
+						<input type="text" class="form-control" required>
+					</div>
+          <div class="form-group">
+						<label>Action Taken</label>
+						<input type="text" class="form-control" required>
+					</div>
+          <div class="form-group">
+						<label>Status</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Location of Incident</label>
+						<textarea class="form-control" required></textarea>
+					</div>				
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-success" value="Add">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- editBlotterModal -->
+<div id="editBlotterModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">						
+					<h4 class="modal-title">Edit Details</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">					
+					<div class="form-group">
+						<label>Complainant</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Complainee</label>
+						<input type="text" class="form-control" accept= ".png, .jpg, .jpeg" required>
+					</div>
+          <div class="form-group">
+						<label>Complain</label>
+						<input type="text" class="form-control" required>
+					</div>
+          <div class="form-group">
+						<label>Action Taken</label>
+						<input type="text" class="form-control" required>
+					</div>
+          <div class="form-group">
+						<label>Status</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Location of Incident</label>
+						<textarea class="form-control" required></textarea>
+					</div>				
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-success" value="Add">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
 </main>
- 	 <footer class="footer"></footer>
+<footer class="footer"></footer>
 </div>
 
 </html>

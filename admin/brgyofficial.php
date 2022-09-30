@@ -22,6 +22,10 @@ session_start();
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ 
+
 </head>
   
 
@@ -83,7 +87,9 @@ session_start();
 </div>
 	</aside>
 
-<main class="main">
+
+
+  <main class="main">
    <div class="card shadow mb-0">
     <div class="container-xl px-4 mt-4">
         <h2> LIST OF BARANGAY OFFICIALS </h2>
@@ -91,35 +97,134 @@ session_start();
                             <div class="box">
                                 <div class="box-header">
                                   <div style="padding:10px;">
-                                  
-                                  <button type="button" data-toggle="modal" data-target="#" class="btn btn-success"><i class="fa fa-user-plus" aria-hidden="true"></i> Add New</button>
-                                   
+                                                    
+                                  <a href="#addOfficialModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus-circle"></i><span> Add New</span></a>
+                                  <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>
                                 </div>
-            <div class="card-body">
+            
+                                  <div class="card-body">
                 <div class="table-responsive-sm">
                     <table class="table table-bordered" id="dataTable" width="50%" cellspacing="0">
                         <thead>
                             <tr>
+
+                                <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
                                 <th><center>PHOTO</center></th>
                                 <th><center>NAME</center></th>
                                 <th><center>POSITION</center></th>
                                 <th><center>TERM</center></th>
-                                <th><center>STATUS</center></th>
-                                <th><center>Action</center></th>
-                                
+                                <th><center>ADDRESS</center></th>
+                                <th style="width: 15% !important;"><center>Option</center></th>
+                                   
                             </tr>
                         </thead>
                         <tbody>
                         	
-    <!-- <td align="center"><a class="btn btn-danger" onclick="" href="#">Delete</a></td> -->
+                      
+                      <tr>
 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>     
+                        <td></td>                 
+                        <td><a href="#editOfficialModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+							          <a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                        </td>
+                       
+                      </tr>
+                                            
+                    
                         </tbody>
                     </table>
                 </div>
             </div>
+
         </div>
+
+<!-- addOfficialModal -->
+
+<div id="addOfficialModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">						
+					<h4 class="modal-title">Add Official</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">					
+					<div class="form-group">
+						<label>Name</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Position</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Address</label>
+						<textarea class="form-control" required></textarea>
+					</div>
+          <div class="form-group">
+						<label>Term</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Status</label>
+						<input type="text" class="form-control" required>
+					</div>					
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-success" value="Add">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- editOfficialModal -->
+
+<div id="editOfficialModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+      <div class="modal-header">						
+					<h4 class="modal-title">Edit Official</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">					
+					<div class="form-group">
+						<label>Name</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Position</label>
+						<input type="text" class="form-control" required>
+					</div>
+          <div class="form-group">
+						<label>Term</label>
+						<input type="text" class="form-control" required>
+					</div>	
+          <div class="form-group">
+						<label>Address</label>
+						<textarea class="form-control" required></textarea>
+					</div>			
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-info" value="Save">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
     </main>
- 	 <footer class="footer"></footer>
+
+    <footer class="footer"></footer>
 </div>
 
 </html>
