@@ -40,7 +40,7 @@ session_start();
         <div class="mdl-layout__header-row">
 
             <div class="right_area">
-            <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-primary" id="right-panel-link">Logout</a>
+            <a href="..\connection\login.php" type="button" onclick="return confirm('Are you sure you want to log out?');"  class="btn btn-primary" id="right-panel-link"><i class="fa fa-sign-out"></i> Logout</a>
             </div>
 
         </div>

@@ -11,7 +11,7 @@ session_start();
 <!DOCTYPE html>
 <html class = "h-100"lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ADMIN | FORM REQUESTS</title>
 
 
@@ -23,6 +23,10 @@ session_start();
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/dt-1.10.11,r-2.0.2/datatables.min.css">
+
+
+
 </head>
   
 
@@ -89,12 +93,19 @@ session_start();
     <div class="container-xl px-4 mt-4">
         <h2> CERTIFICATE REQUESTS </h2>
     <hr class="mt-0 mb-4">
-        
-    <div class="box">
-        <div class="box-header">                            
-              <div class="card-body">
-                <div class="cert">
-                    <table class="table table-bordered" id="dataTable" width="50%" cellspacing="0">
+                           
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#example2-tab1" aria-controls="example2-tab1" role="tab" data-toggle="tab">Requests</a></li>
+        <li role="presentation"><a href="#example2-tab2" aria-controls="example2-tab2" role="tab" data-toggle="tab">Approved</a></li>
+        <li role="presentation"><a href="#example2-tab3" aria-controls="example2-tab3" role="tab" data-toggle="tab">Disapproved</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+      <!-- Requests -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="example2-tab1">
+        <table class="table table-bordered" id="example2-tab1-dt" width="50%" cellspacing="0">
                         <thead>
                             <tr>
 
@@ -107,7 +118,7 @@ session_start();
                                 <th><center>PURPOSE</center></th>
                                 <th><center>OR NUMBER</center></th>
                                 <th><center>DATE REQUESTED</center></th>
-                                <th style="width: 21% !important;"><center>Action</center></th>
+                                <th style="width: 19% !important;"><center>Action</center></th>
 
                             </tr>
                         </thead>
@@ -128,19 +139,120 @@ session_start();
                         <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
 
                       </tr>
+
+                        <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
                       
 
                         </tbody>
-                    </table>
-                </div>
-            </div>
+                    </table>	
+        </div>
 
-                              </div>
-                            </div>
+        <!-- Approved -->
+        <div role="tabpanel" class="tab-pane fade in" id="example2-tab2">
+           <table class="table table-bordered" id="example2-tab2-dt" width="50%" cellspacing="0">
+                        <thead>
+                            <tr>
+
+                                <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
+                                <th><center>CERTIFICATE NO.</center></th>
+                                <th><center>RESIDENT NAME</center></th>
+                                <th><center>SEX</center></th>
+                                <th><center>AGE</center></th>
+                                <th><center>TYPE</center></th>
+                                <th><center>PURPOSE</center></th>
+                                <th><center>OR NUMBER</center></th>
+                                <th><center>DATE REQUESTED</center></th>
+                                <th style="width: 17% !important;"><center>Action</center></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>                       	
+
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>    
+                        <td><button class="btn btn-success btn-sm"><i class="fa fa-pencil-square-o"></i> Generate</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</button></td>                   
+                       
+                      </tr>
+                      
+
+                        </tbody>
+                    </table>	
+        </div>
+
+        <!-- Disapproved -->
+        <div role="tabpanel" class="tab-pane fade in" id="example2-tab3">
+           <table class="table table-bordered" id="example2-tab3-dt" width="50%" cellspacing="0">
+                        <thead>
+                            <tr>
+
+                                <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
+                                <th><center>CERTIFICATE NO.</center></th>
+                                <th><center>RESIDENT NAME</center></th>
+                                <th><center>SEX</center></th>
+                                <th><center>AGE</center></th>
+                                <th><center>TYPE</center></th>
+                                <th><center>PURPOSE</center></th>
+                                <th><center>OR NUMBER</center></th>
+                                <th><center>DATE REQUESTED</center></th>
+                                <th style="width: 8% !important;"><center>Action</center></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>                       	
+
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</button></td>
+                      </tr>
+                      
+
+                        </tbody>
+                    </table>	
+        </div>
+
+
+           </div>
+        </div>
+
     </div>
 </div>
+    
+
 </main>
-<footer class="footer"></footer>
+      <footer class="footer"></footer>
 </div>
 
 </html>
