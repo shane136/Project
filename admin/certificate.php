@@ -1,13 +1,3 @@
-<?php 
-session_start();
-
-	include("../connection/connection.php");
-	include("../functions.php");
-
-	$user_data = check_login($con);
-
-?>
-
 <!DOCTYPE html>
 <html class = "h-100"lang="en" dir="ltr">
   <head>
@@ -21,10 +11,16 @@ session_start();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
+  <link rel="stylesheet" href="../assets/css/print.css" type="text/css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/dt-1.10.11,r-2.0.2/datatables.min.css">
 
+   <!-- html2pdf CDN-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+  
+   
+  
 
 
 </head>
@@ -176,7 +172,7 @@ session_start();
                                 <th><center>PURPOSE</center></th>
                                 <th><center>OR NUMBER</center></th>
                                 <th><center>DATE REQUESTED</center></th>
-                                <th style="width: 17% !important;"><center>Action</center></th>
+                                <th style="width: 15% !important;"><center>Action</center></th>
 
                             </tr>
                         </thead>
@@ -193,14 +189,17 @@ session_start();
                         <td></td>
                         <td></td>
                         <td></td>    
-                        <td><button class="btn btn-success btn-sm"><i class="fa fa-pencil-square-o"></i> Generate</button> 
-                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</button></td>                   
+                        <td><button type="button" value="Print" onclick="PrintDoc()" class="btn btn-success btn-sm"><i class="fa fa-print"></i> Print</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</button></td>                                 
                        
                       </tr>
                       
 
                         </tbody>
-                    </table>	
+                    </table>
+
+
+
         </div>
 
         <!-- Disapproved -->
@@ -250,8 +249,101 @@ session_start();
     </div>
 </div>
     
+       
+        <script src="../assets/js/script.js"> </script>
 
+
+<!-- CERTIFICATE CONTENT -->
+<div class="hideContent" id="printarea">
+
+<div class="header"> 
+    <p>Republic of the Philippines <br>
+            Iligan City<p> 
+    <p>BARANGAY WOLVES <br>
+Office of the Barangay Council</p>
+</div>
+<hr>
+
+
+            <h1 class="content">CERTIFICATION</h1>
+                       
+    <p>TO WHOM IT MAY CONCERN:</p>
+    
+    <p class="body">
+
+        This is to certify that <u> NAME OF RESIDENT </u> of legal age, married/single, Filipino, is a bonafide resident
+      of <u> ADDRESS OF RESIDENT, </u> Barangay Wolves, Iligan City, and that he/she has no derogatory/criminal records filed
+      in this Barangay.
+
+    </p>
+
+    <p class="body"> 
+
+        This Certification is issued upon his/her request for: <br>
+
+  
+        <div class="box">
+        <ul class="a">
+        
+        <li>
+             <input type="checkbox">
+             <label class="container">Employment
+           </label>
+        </li>
+         
+        <li>
+             <input type="checkbox">
+             <label class="container">Overseas Employment
+           </label>
+        </li>
+
+        <li>
+             <input type="checkbox">
+             <label class="container">Loan
+           </label>
+        </li>
+
+        <li>
+             <input type="checkbox">
+             <label class="container">Postal ID
+           </label>
+        </li>
+
+        <li>
+             <input type="checkbox">
+             <label class="container">Scholarship
+           </label>
+        </li>
+
+        <li>
+             <input type="checkbox">
+             <label class="container">
+           </label>
+        </li>
+       
+         
+        </ul>
+        </div>
+
+  <p class="body">
+
+      Issued this <u> DATE </u> day of <u> MONTH </u> <u> YEAR. </u>
+
+  </p>
+
+     
+    </div>
+  </div>
+
+
+
+
+    </p>
+
+          
 </main>
+
+
       <footer class="footer"></footer>
 </div>
 

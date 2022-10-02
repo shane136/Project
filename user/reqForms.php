@@ -153,6 +153,57 @@
 
                       </tr>
                        
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <!-- goto paymentDetails -->
+                        <td><button class="btn btn-primary btn-sm" href="#">Pay</button> 
+                        <button class="btn btn-danger btn-sm" href="#" onclick="return confirm('Are you sure you want to delete?');">Delete</button></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <!-- goto paymentDetails -->
+                        <td><button class="btn btn-primary btn-sm" href="#">Pay</button> 
+                        <button class="btn btn-danger btn-sm" href="#" onclick="return confirm('Are you sure you want to delete?');">Delete</button></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <!-- goto paymentDetails -->
+                        <td><button class="btn btn-primary btn-sm" href="#">Pay</button> 
+                        <button class="btn btn-danger btn-sm" href="#" onclick="return confirm('Are you sure you want to delete?');">Delete</button></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <!-- goto paymentDetails -->
+                        <td><button class="btn btn-primary btn-sm" href="#">Pay</button> 
+                        <button class="btn btn-danger btn-sm" href="#" onclick="return confirm('Are you sure you want to delete?');">Delete</button></td>
+
+                      </tr>
                       
                     
                         </tbody>

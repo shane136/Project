@@ -1,0 +1,53 @@
+.hideContent{
+
+    display: none;
+}
+
+.header{
+
+    text-align: center;
+    line-height: 1;
+}
+
+.content{
+
+    text-align: center;
+}
+
+.body{
+
+    text-indent: 50px;
+    line-height: 1.8;
+}
+
+.box{
+
+    text-indent: 80px;
+}
+
+
+
+ul.a {
+    column-count: 2;
+    column-gap: 2rem;
+    list-style: none;
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+
+  
+
+
+  
+  
+  
+  
+
+  
