@@ -18,10 +18,6 @@
 
    <!-- html2pdf CDN-->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
-  
-   
-  
-
 
 </head>
   
@@ -172,6 +168,7 @@
                                 <th><center>PURPOSE</center></th>
                                 <th><center>OR NUMBER</center></th>
                                 <th><center>DATE REQUESTED</center></th>
+                                <th><center>PAYMENT STATUS</center></th>
                                 <th style="width: 15% !important;"><center>Action</center></th>
 
                             </tr>
@@ -189,6 +186,7 @@
                         <td></td>
                         <td></td>
                         <td></td>    
+                        <td></td>
                         <td><button type="button" value="Print" onclick="PrintDoc()" class="btn btn-success btn-sm"><i class="fa fa-print"></i> Print</button> 
                         <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</button></td>                                 
                        
@@ -255,35 +253,42 @@
 
 <!-- CERTIFICATE CONTENT -->
 <div class="hideContent" id="printarea">
-
+<div class="container1">
+  <img class="logo" src="../assets/image/logo.png"> 
 <div class="header"> 
-    <p>Republic of the Philippines <br>
+ <p><span>Republic of the Philippines <br>
             Iligan City<p> 
     <p>BARANGAY WOLVES <br>
-Office of the Barangay Council</p>
+Office of the Barangay Council</span></p>
 </div>
+</div>
+
+
 <hr>
 
-
             <h1 class="content">CERTIFICATION</h1>
+
+<div class="photo">
+
+</div>
+
+<br>
                        
-    <p>TO WHOM IT MAY CONCERN:</p>
+  <p>TO WHOM IT MAY CONCERN:</p><br><br>
     
     <p class="body">
 
         This is to certify that <u> NAME OF RESIDENT </u> of legal age, married/single, Filipino, is a bonafide resident
-      of <u> ADDRESS OF RESIDENT, </u> Barangay Wolves, Iligan City, and that he/she has no derogatory/criminal records filed
-      in this Barangay.
+      of <u> ADDRESS OF RESIDENT </u>, Barangay Wolves, Iligan City, and that he/she has no derogatory/criminal records filed
+      in this Barangay. <br>
 
-    </p>
 
-    <p class="body"> 
-
-        This Certification is issued upon his/her request for: <br>
+      <p class="body">  This Certification is issued upon his/her request for: </p> 
+      
 
   
         <div class="box">
-        <ul class="a">
+          <ul class="a">
         
         <li>
              <input type="checkbox">
@@ -317,30 +322,26 @@ Office of the Barangay Council</p>
 
         <li>
              <input type="checkbox">
-             <label class="container">
+             <label class="container">Others: <u>provide specific</u>
            </label>
         </li>
-       
-         
-        </ul>
-        </div>
-
-  <p class="body">
-
-      Issued this <u> DATE </u> day of <u> MONTH </u> <u> YEAR. </u>
-
-  </p>
-
-     
-    </div>
-  </div>
-
-
-
-
-    </p>
-
+          </ul><br>
           
+    </p>
+       
+</div>
+
+  <p>Issued this <u> DATE </u> day of <u> MONTH </u> <u> YEAR </u>.</p> <br><br>
+
+<div class="name"> 
+  <img class="sign" src="../assets/image/signature.png">
+  <p class="a"><u>ABCDEFGH I. JKLMNOP</u></p>
+  <p class="b">Barangay Chairman</p>
+</div>
+
+<br class="bottom">
+<h4>NOT VALID WITHOUT SEAL</h4>
+
 </main>
 
 
