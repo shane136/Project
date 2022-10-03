@@ -54,10 +54,10 @@ session_start();
   <li><a href="..\admin\home.php" class="btn">
     <i class="fa fa-home"></i> Home</a></li>
 
-  <li><a href="..\admin\brgyprofile.php" class="btn">
+  <li><a href="..\admin\BrgyProfile.php" class="btn">
     <i class="fa fa-info-circle"></i> Barangay Profile</a></li>
 
-  <li><a href="..\admin\brgyofficial.php" class="btn">
+  <li><a href="..\admin\BrgyOfficial.php" class="btn">
     <i class="fa fa-file"></i> Barangay Officials</a></li>
 
   <li><a href="..\admin\resident.php" class="btn">

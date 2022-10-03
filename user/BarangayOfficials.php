@@ -60,9 +60,9 @@
             <h4>Shane</h4>
         </center>
         <a href="..\user\profile.php"><i class="fa-regular fa-user"></i><span>Profile</span></a>
-        <a href="..\user\bProfile.php"><i class="fa-solid fa-circle-info"></i><span>Barangay Profile</span></a>
-        <a href="..\user\bOfficials.php"><i class="fa-solid fa-file"></i><span>Barangay Officials</span></a>
-        <a href="..\user\reqForms.php"><i class="fa-solid fa-arrow-right"></i><span>Request Forms</span></a>
+        <a href="..\user\BarangayProfile.php"><i class="fa-solid fa-circle-info"></i><span>Barangay Profile</span></a>
+        <a href="..\user\BarangayOfficials.php"><i class="fa-solid fa-file"></i><span>Barangay Officials</span></a>
+        <a href="..\user\ReqForms.php"><i class="fa-solid fa-arrow-right"></i><span>Request Forms</span></a>
     </div>
 
           
