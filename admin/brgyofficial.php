@@ -173,7 +173,11 @@ session_start();
 					<div class="form-group">
 						<label>Status</label>
 						<input type="text" class="form-control" required>
-					</div>					
+					</div>		
+          <div class="form-group">
+						<label>Photo (.jpg, .jpeg & .png)</label>
+						<input type="file" class="form-control" accept= ".png, .jpg, .jpeg" required>
+					</div>			
 				</div>
 				<div class="modal-footer">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">

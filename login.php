@@ -35,7 +35,7 @@
                         <input type="password" name="password" autocomplete="current-password" id="text" required="" class="text" placeholder="Enter your Password">
                         <span class="p-viewer"> 
                             <i class="fa fa-eye-slash" aria-hidden="true" onclick="managePassword()" id="iconPassword"></i> 
-				       </span>
+				       </span>                 
                     </div>
                     <div class="row px-3 mb-4">
                         
@@ -62,21 +62,12 @@
 </div>
 
 
-<script> 
 
-	function managePassword(){
-
-		var password = document.getElementById("text");
-		
-		if(password.type === "password"){
-			password.type = 'text';
-			document.getElementById("iconPassword").className= "fa fa-eye";
-		}else{
-			password.type = 'password';
-			document.getElementById("iconPassword").className= "fa fa-eye-slash";
-		}
-	}
+<script>
+    <?php require_once("../assets/js/script.js");?>
 </script>
+
+
 
 </body>
 </html>

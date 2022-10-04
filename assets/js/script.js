@@ -15,3 +15,17 @@ function PrintDoc() {
 	popupWin.document.write('</html>');
 	popupWin.document.close();
 }
+
+//fa fa-eye
+function managePassword(){
+
+	var password = document.getElementById("text");
+	
+	if(password.type === "password"){
+		password.type = 'text';
+		document.getElementById("iconPassword").className= "fa fa-eye";
+	}else{
+		password.type = 'password';
+		document.getElementById("iconPassword").className= "fa fa-eye-slash";
+	}
+}
