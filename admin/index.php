@@ -112,7 +112,7 @@ session_start();
           '<b>' + greet + '</b> and Welcome to Admin Page!';
 </script>
 
-    
+
    </main>
 
 

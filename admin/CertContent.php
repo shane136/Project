@@ -94,7 +94,7 @@ Office of the Barangay Council</span></p>
   <p>Issued this <u> DATE </u> day of <u> MONTH </u> <u> YEAR </u>.</p> <br><br>
 
 <div class="name"> 
-  <img class="sign" src="../assets/image/signature.png">
+  <img class="sign" src="../assets/image/sig_633ce00e015e8.png">
   <p class="a"><u>ABCDEFGH I. JKLMNOP</u></p>
   <p class="b">Barangay Chairman</p>
 </div>
@@ -109,5 +109,7 @@ Office of the Barangay Council</span></p>
 <script>
     <?php require_once("../assets/js/script.js");?>
 </script>
+
+
 
 </html>
