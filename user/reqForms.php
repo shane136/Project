@@ -148,7 +148,7 @@
                         <td></td>
                         <td></td>
                         <!-- goto paymentDetails -->
-                        <td><a href="../user/payment.php"> <button class="btn btn-primary btn-sm">Pay</button></a>
+                        <td><a href="../user/payment.php"><button class="btn btn-primary btn-sm">Pay</button></a>
                         <button class="btn btn-danger btn-sm" href="#" onclick="return confirm('Are you sure you want to delete?');">Delete</button></td>
 
                       </tr>
