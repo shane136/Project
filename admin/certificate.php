@@ -11,14 +11,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
-  <!-- <link rel="stylesheet" href="../assets/css/print.css" type="text/css"> -->
+ 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/dt-1.10.11,r-2.0.2/datatables.min.css">
 
-   <!-- html2pdf CDN-->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script> -->
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="../assets/js/script.js"></script> -->
 </head>
   
 
@@ -97,7 +99,7 @@
       <!-- Requests -->
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="example2-tab1">
-        <table class="table table-bordered" id="example2-tab1-dt" width="50%" cellspacing="0">
+        <table class="table table-bordered" id="" width="50%" cellspacing="0">
                         <thead>
                             <tr>
 
@@ -148,14 +150,211 @@
 
                       </tr>
                       
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+                      <tr>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                       
+                        <td><button class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i> Approve</button> 
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-thumbs-o-down"></i> Disapprove</button></td>
+
+                      </tr>
+                      
+
 
                         </tbody>
                     </table>	
+
+
+                    <div class="pagination-container"><ul class="pagination"></ul></div>
         </div>
 
         <!-- Approved -->
         <div role="tabpanel" class="tab-pane fade in" id="example2-tab2">
-           <table class="table table-bordered" id="example2-tab2-dt" width="50%" cellspacing="0">
+          
+        <table class="table table-bordered" id="" width="50%" cellspacing="0">
                         <thead>
                             <tr>
 
@@ -195,14 +394,13 @@
 
                         </tbody>
                     </table>
-
-
-
+                    <div class="pagination-container"><ul class="pagination"></ul></div>
         </div>
 
         <!-- Disapproved -->
         <div role="tabpanel" class="tab-pane fade in" id="example2-tab3">
-           <table class="table table-bordered" id="example2-tab3-dt" width="50%" cellspacing="0">
+           
+        <table class="table table-bordered" id="" width="50%" cellspacing="0">
                         <thead>
                             <tr>
 
@@ -238,6 +436,7 @@
 
                         </tbody>
                     </table>	
+
         </div>
 
 <?php 

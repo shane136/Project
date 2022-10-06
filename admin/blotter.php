@@ -21,6 +21,7 @@ session_start();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
+  <script type="text/javascript" src="../assets/js/table.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -120,7 +121,167 @@ session_start();
                         	
                         <tr>
 
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
+
+						<tr>
+
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
+
+						<tr>
+
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
+
+						<tr>
+
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
+
+						<tr>
+
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
+
+						<tr>
+
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
+
+						<tr>
+
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
+
+						<tr>
+
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
+
+						<tr>
+
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
+
+						<tr>
+
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>     
+                            <td></td>      
+                            <td></td>  
+                            <td></td>         
+                            <td><a href="#editBlotterModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+                            <a href="#deleteBlotterModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+                            </td>
+
+                        </tr>
+						
+						<tr>
+
+                            <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -136,6 +297,7 @@ session_start();
 
                         </tbody>
                     </table>
+					<div class="pagination-container"><ul class="pagination"></ul></div>
                 </div>
             </div>
 
@@ -186,7 +348,10 @@ session_start();
 			</form>
 		</div>
 	</div>
+
 </div>
+
+
 
 <!-- editBlotterModal -->
 <div id="editBlotterModal" class="modal fade">
