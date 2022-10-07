@@ -118,7 +118,7 @@ session_start();
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"></i>Amount</div>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="" required>
+                                        <input type="number" min="1" class="form-control" placeholder="" required>
                                         
                                     </div>
                                 </div>
@@ -130,7 +130,10 @@ session_start();
 
                         </div>
                     </form>
-                    <!--Form with header-->
+                   
+                    <div>
+                        <p><strong>NOTE:</strong> You must pay &#8369 30.00 for all type of clearance. THANK YOU!</p>
+                    </div>
 
 
                 </div>
