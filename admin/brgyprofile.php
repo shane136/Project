@@ -20,6 +20,7 @@ session_start();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
+  <script type="text/javascript" src="../assets/js/script.js"></script>
 </head>
   
 
@@ -88,18 +89,20 @@ session_start();
     <div class="row">
         <div class="col-xl-4">
             <!-- Profile-->
-            <div class="card mb-4 mb-xl-0">
-                <div class="card-header">Barangay Logo</div>
-                <div class="card-body text-center">
+            <div class="card mb-4 mb-xxl-0">
+                <div class="card-header">Barangay Logo</div>                                     
+                  <div class="card-body text-center">
                     <!-- picture image-->         
-                    <img class="rounded-pill img-fluid"
-                     width="200"
-                     src="https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" alt="">
+                    <img id="output"
+                     width="200"/>
                     <!-- Profile picture help block-->
                     <div class="small font-italic text-muted mb-4"></div>
                     <!-- picture upload button-->
-                    <button class="btn btn-primary" type="button">Upload new image</button>
-                </div>
+                    <div class="upload-btn-wrapper">
+                      <button class="btn btn-primary" type="button">Upload Image</button>
+                      <input type="file" name="image" id="file" accept=".png, .jpg, .jpeg" name="image" onchange="loadFile(event)" />
+                    </div>
+                 </div>
             </div>
         </div>
         <div class="col-xl-8">
