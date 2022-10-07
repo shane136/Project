@@ -96,7 +96,7 @@ session_start();
                                   <div>                                              
                                         <a href="#addResidentModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-user-plus"></i><span> Add Resident</span></a>                          
                                         <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>																
-										<input class="searchBar" type="search" placeholder="Search..." title="Type name">									
+										<input class="searchBar" type="search" placeholder="Search..." title="Type here">									
 								  </div>
 
               <div class="card-body">
@@ -135,7 +135,6 @@ session_start();
 
                         </tbody>
                     </table>
-					<div class="pagination-container"><ul class="pagination"></ul></div>
                 </div>
             </div>
 

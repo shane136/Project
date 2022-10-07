@@ -94,10 +94,10 @@ session_start();
                                 <div class="box-header">
                                   <div style="padding:10px;">
                                   
-                                  <a href="#addBlotterModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-file"></i><span> Add New</span></a>                          
-                                  <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>
+                                    <a href="#addBlotterModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus-circle"></i><span> Add New</span></a>                          
+                                    <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>
                                    
-                                </div>
+                                  </div>
 
               <div class="card-body">
                 <div class="table-responsive-sm">

@@ -132,6 +132,7 @@
                                 <th><center>Type of Certification</center></th>
                                 <th><center>Purpose</center></th>
                                 <th><center>Date and Time Requested</center></th>
+                                <th><center>Pick-up Schedule</center></th>
                                 <th><center>Status</center></th>
                                 <th style="width: 12% !important;"> <center>Option</center></th>
                                    
@@ -142,6 +143,7 @@
                       
                       <tr>
 
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>

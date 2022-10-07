@@ -11,6 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
+  <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
  
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -91,6 +92,12 @@
     <div class="container-xl px-4 mt-4">
         <h2> CERTIFICATE REQUESTS </h2>
     <hr class="mt-0 mb-4">
+
+        <div>                                              
+          <a href="#addCertificateModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus-circle"></i><span> Add Certificate</span></a>                          
+          <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>																
+				  <input class="searchBar" type="search" placeholder="Search" title="Type here">									
+				</div><br>
                            
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
@@ -102,8 +109,9 @@
     <!-- Tab panes -->
       <!-- Requests -->
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade in active" id="example2-tab1">
-        <table class="table table-bordered" id="" width="50%" cellspacing="0">
+      <div role="tabpanel" class="tab-pane fade in active" id="example2-tab1">
+        <div class="table-responsive-sm">
+          <table class="table table-bordered" id="" width="50%" cellspacing="0">
                         <thead>
                             <tr>
 
@@ -116,7 +124,7 @@
                                 <th><center>PURPOSE</center></th>
                                 <th><center>OR NUMBER</center></th>
                                 <th><center>DATE REQUESTED</center></th>
-                                <th style="width: 19% !important;"><center>Action</center></th>
+                                <th style="width: 20% !important;"><center>Action</center></th>
 
                             </tr>
                         </thead>
@@ -350,27 +358,25 @@
 
                         </tbody>
                     </table>	
-
-
-                    <div class="pagination-container"><ul class="pagination"></ul></div>
+                  
         </div>
+      </div>
 
         <!-- Approved -->
         <div role="tabpanel" class="tab-pane fade in" id="example2-tab2">
-          
-        <table class="table table-bordered" id="" width="50%" cellspacing="0">
+          <div class="table-responsive-sm">
+            <table class="table table-bordered" id="" width="50%" cellspacing="0">
                         <thead>
                             <tr>
 
                                 <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
                                 <th><center>CERTIFICATE NO.</center></th>
-                                <th><center>RESIDENT NAME</center></th>
-                                <th><center>SEX</center></th>
-                                <th><center>AGE</center></th>
+                                <th><center>RESIDENT NAME</center></th>                               
                                 <th><center>TYPE</center></th>
                                 <th><center>PURPOSE</center></th>
                                 <th><center>OR NUMBER</center></th>
                                 <th><center>DATE REQUESTED</center></th>
+                                <th><center>PICK UP DATE</center></th>
                                 <th><center>PAYMENT STATUS</center></th>
                                 <th style="width: 15% !important;"><center>Action</center></th>
 
@@ -379,9 +385,7 @@
                         <tbody>                       	
 
                       <tr>
-
-                        <td></td>
-                        <td></td>
+                   
                         <td></td>
                         <td></td>
                         <td></td>
@@ -390,21 +394,23 @@
                         <td></td>
                         <td></td>    
                         <td></td>
+                        <td></td>
                         <td><button type="button" value="Print" onclick="PrintDoc()" class="btn btn-success btn-sm"><i class="fa fa-print"></i> Print</button> 
                         <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</button></td>                                 
                        
-                      </tr>
-                      
+                      </tr>                                     
 
                         </tbody>
                     </table>
                     
         </div>
+          </div>
+      
 
         <!-- Disapproved -->
         <div role="tabpanel" class="tab-pane fade in" id="example2-tab3">
-           
-        <table class="table table-bordered" id="" width="50%" cellspacing="0">
+          <div class="table-responsive-sm">
+            <table class="table table-bordered" id="" width="50%" cellspacing="0">
                         <thead>
                             <tr>
 
@@ -441,6 +447,7 @@
                         </tbody>
                     </table>	
 
+      </div>
         </div>
 
 <?php 
@@ -454,7 +461,51 @@
     </div>
 </div>
     
-
+<!-- addCertificateModal -->
+<div id="addCertificateModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+				<div class="modal-header">						
+					<h4 class="modal-title">Add New</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">					
+					<div class="form-group">
+						<label>Resident Name</label>
+						<input type="text" class="form-control" required>
+					</div>
+          <div class="form-group">
+						<label>Sex</label>
+						<input type="text" class="form-control" required>
+					</div>
+          <div class="form-group">
+						<label>Age</label>
+						<input type="text" class="form-control" required>
+					</div>
+          <div class="form-group">
+						<label>Type</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Purpose</label>
+						<input type="text" class="form-control" required>
+					</div>	
+          <div class="form-group">
+            <label>Date & Time Requested:</label>
+            <span id="date"></span>
+            <script>var x = new Date();
+            document.getElementById("date").innerHTML=x.toLocaleString();</script>    
+          </div>			
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-success" value="Add">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 
 </main>
 
