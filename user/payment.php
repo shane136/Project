@@ -132,7 +132,7 @@ session_start();
                     </form>
                    
                     <div>
-                        <p><strong>NOTE:</strong> You must pay &#8369 30.00 for all type of clearance. THANK YOU!</p>
+                        <p><strong>NOTE:</strong> You must pay &#8369 30.00 for all type of clearance. THANK YOU!!</p>
                     </div>
 
 
