@@ -96,7 +96,7 @@ session_start();
                                 <th><center>ACTION TAKEN</center></th>
                                 <th><center>STATUS</center></th>
                                 <th><center>LOCATION OF INCIDENT</center></th>
-                                <th style="width: 15% !important;"><center>Action</center></th>
+                                <th style="width: 16% !important;"><center>Action</center></th>
 
                             </tr>
                         </thead>
