@@ -24,6 +24,7 @@ session_start();
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
   <script type="text/javascript" src="../assets/js/table.js"></script>
+  <script src="../assets/js/search.js"></script>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -79,7 +80,7 @@ session_start();
                                   <div>                                              
                                         <a href="#addResidentModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-user-plus"></i><span> Add Resident</span></a>                          
                                         <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>																
-										<input class="searchBar" type="search" placeholder="Search..." id="searchData" title="Type here">									
+										<input class="searchBar" type="search" placeholder="Search..." id="searchData" onkeyup="searchRow()" title="Type here">									
 								  </div>
 
               <div class="card-body">
@@ -185,63 +186,57 @@ session_start();
 
 <!-- editResidentModal -->
 
-<div id="editResidentModal" class="modal fade">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<form>
-      <div class="modal-header">						
-					<h4 class="modal-title">Edit Credentials</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				</div>
-				<div class="modal-body">					
-					<div class="form-group">
-						<label>Zone</label>
-						<input type="text" class="form-control" required>
+	<div id="editResidentModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+		<div class="modal-header">						
+						<h4 class="modal-title">Edit Credentials</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
-					<div class="form-group">
-						<label>Photo (.jpg, .jpeg & .png)</label>
-						<input type="file" class="form-control" accept= ".png, .jpg, .jpeg" required>
+					<div class="modal-body">					
+						<div class="form-group">
+							<label>Zone</label>
+							<input type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Photo (.jpg, .jpeg & .png)</label>
+							<input type="file" class="form-control" accept= ".png, .jpg, .jpeg" required>
+						</div>
+			<div class="form-group">
+							<label>Name</label>
+							<input type="text" class="form-control" required>
+						</div>
+			<div class="form-group">
+							<label>Age</label>
+							<input type="text" class="form-control" required>
+						</div>
+			<div class="form-group">
+							<label>Sex</label>
+							<input type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Complete Address</label>
+							<textarea class="form-control" required></textarea>
+						</div>				
 					</div>
-          <div class="form-group">
-						<label>Name</label>
-						<input type="text" class="form-control" required>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<input type="submit" class="btn btn-info" value="Save">
 					</div>
-          <div class="form-group">
-						<label>Age</label>
-						<input type="text" class="form-control" required>
-					</div>
-          <div class="form-group">
-						<label>Sex</label>
-						<input type="text" class="form-control" required>
-					</div>
-					<div class="form-group">
-						<label>Complete Address</label>
-						<textarea class="form-control" required></textarea>
-					</div>				
-				</div>
-				<div class="modal-footer">
-					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-					<input type="submit" class="btn btn-info" value="Save">
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
 	</div>
-</div>
 
 
 </main>
 
-<footer class="footer"></footer>
+<footer class="footer">
+
+</footer>
  	 
 </div>
 
 </html>
 
-<script>
-  $('#searchData').on('keyup', function() {
-    var value = $(this).val().toLowerCase();
-    $("#tableBody tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-</script>
