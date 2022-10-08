@@ -20,6 +20,7 @@ session_start();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
+  <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
 </head>
   
 
@@ -28,7 +29,7 @@ session_start();
 	
 	</header>
  	
-	<aside class="sidenav">
+<aside class="sidenav" id="side">
 
 <div class="d-flex justify-content-center align-items-center px-3 py-4">
     <img
@@ -42,44 +43,26 @@ session_start();
     </div>
 </div>
 
-<div class="ms-2"> 
-  <span class="name"> DASHBOARD</span>
-</div>
-<ul>
+<div class="ms-2"> <span class="name"> DASHBOARD</span></div>
 
-<li><a href="..\admin\home.php" class="btn">
-    <i class="fa fa-home"></i> Home</a></li>
+  <a href="..\admin\home.php"><i class="fa fa-home"></i> Home</a>
 
-  <li><a href="..\admin\BrgyProfile.php" class="btn">
-    <i class="fa fa-info-circle"></i> Barangay Profile</a></li>
+  <a href="..\admin\BrgyProfile.php"><i class="fa fa-info-circle"></i> Barangay Profile</a>
 
-  <li><a href="..\admin\BrgyOfficial.php" class="btn">
-    <i class="fa fa-file"></i> Barangay Officials</a></li>
+  <a href="..\admin\BrgyOfficial.php"><i class="fa fa-file"></i> Barangay Officials</a>
 
-  <li><a href="..\admin\resident.php" class="btn">
-    <i class="fa fa-user"></i> Resident Record</a></li>
+  <a href="..\admin\resident.php"><i class="fa fa-user"></i> Resident Record</a>
 
-  <li><a href="..\admin\blotter.php" class="btn">
-    <i class="fa fa-database"></i> Blotter Record</a></li>
+  <a href="..\admin\blotter.php"><i class="fa fa-database"></i> Blotter Record</a>
 
-</ul>
+<div class="ms-2"><span class="name"> FORMS</span></div>
 
-<div class="ms-2">
-  <span class="name"> FORMS</span>
-</div>
-<ul>
-
-<li><a href="..\admin\certificate.php" class="btn">
-<i class="fa fa-certificate"></i> Certificate</a></li>
+<a href="..\admin\certificate.php"><i class="fa fa-certificate"></i> Certificate</a>
 	
+<a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');">
+  <i class="fas fa-sign-out-alt"></i> Logout</a>
 
-</ul>
-
-<div class="ms-2"> 
-<li><a href="..\connection\login.php" class="btn" onclick="return confirm('Are you sure you want to log out?');">
-	<i class="fas fa-sign-out-alt"></i> Logout</a></li>
-</div>
-	</aside>
+</aside>
 
  	 <main class="main">
     <section class="content-header">

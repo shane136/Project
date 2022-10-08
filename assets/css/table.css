@@ -18,3 +18,18 @@ input.searchBar {
   background-color: #cdfcff;
 }
 
+/* admin_sidenav */
+#side a{
+
+  color: black;
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+#side i{
+  padding-right: 5px;
+}

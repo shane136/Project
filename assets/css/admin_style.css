@@ -229,15 +229,6 @@ a {
   	cursor: pointer;
 }
 
-a:hover{
-	background-color: white;
-
-}
-
-li{
-	list-style: none;
-}
-
 /* signature */
 canvas#signature {
     border: 3px solid #000000;
@@ -258,4 +249,6 @@ canvas#signature {
     overflow: hidden;
     display: inline-block;
 }
+
+
 
