@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/user_style.css">
+    <script src="../assets/js/script.js"> </script>
 
   </head>
   <body>
@@ -65,18 +66,20 @@
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
         
           <div class="container-xl px-4 mt-4">
-  <h3> ACCOUNT DETAILS </h3>
+  <h3> UPDATE ACCOUNT </h3>
     <hr class="mt-0 mb-4">
     <div class="row">
         <div class="col-xl-4">
-            <!-- Display Picture from SignUp-->
+            <!-- Profile-->
            
                 <div class="card mb-4 mb-xxl-0">                       
                     <div class="card-body text-center">                 
-                        
+                        <img id="output" width="250"/>
                     </div>
                 </div>
-                              
+                    <input type="file"  accept=".png, .jpg, .jpeg" name="image" id="file"  onchange="loadFile(event)">
+                   
+                <script src="../assets/js/script.js"> </script>
               
         </div>
 
@@ -129,8 +132,12 @@
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputSex">Sex</label>
-                                <input class="form-control" id="inputSex" type="text" placeholder="" value="">
-                            </div>
+                                <select name="" class="form-control input-lg" required> 
+								    <option disabled selected hidden></option>
+								    <option>Female</option>
+                                    <option>Male</option>
+					            </select>
+                            </div>                          
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBtype">Blood Type</label>
                                 <input class="form-control" id="inputBtype" type="text" placeholder="" value="">
@@ -170,8 +177,8 @@
 
                         </div>
                         
-                        <!-- Update button-->
-                        <a href="../user/UpdateProfile.php" class="btn btn-warning"> Update</a>
+                        <!-- Save button-->
+                        <a href="#" class="btn btn-primary"> Save Changes</a>
                     </form>
                 </div>
             </div>

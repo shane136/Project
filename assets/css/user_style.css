@@ -138,12 +138,10 @@ textarea{
 
 /* carousel */
 .card-block{
-
     width: 510px;
 }
 
 .user-image{
-
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -151,18 +149,15 @@ textarea{
 }
 
 .user-name{
-
     text-align: center;
 }
 
-.carousel-control-prev-icon{
-    
+.carousel-control-prev-icon{   
     background-color: #2f5a63;
     
 }
 
 .carousel-control-next-icon{
-
     background-color: #2f5a63;
 }
 
