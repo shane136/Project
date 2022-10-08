@@ -1,8 +1,3 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/user_style.css">
 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </head>
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
@@ -171,9 +168,8 @@
 
                         </div>
                         
-                        <!-- Save changes button-->
-                        <button class="btn btn-warning" type="button">Edit</button>
-                        <button class="btn btn-success" type="button">Save changes</button>
+                        <!-- Update button-->
+                        <a href="#updateProfile" class="btn btn-warning" data-toggle="modal">Update</a>
                     </form>
                 </div>
             </div>
@@ -185,4 +181,53 @@
         </div>
 
   </body>
+
+<!-- updateProfileModal -->
+
+<div id="updateProfile" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form>
+      <div class="modal-header">						
+					<h4 class="modal-title">Edit Credentials</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">					
+					<div class="form-group">
+						<label>Zone</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Photo (.jpg, .jpeg & .png)</label>
+						<input type="file" class="form-control" accept= ".png, .jpg, .jpeg" required>
+					</div>
+          <div class="form-group">
+						<label>Name</label>
+						<input type="text" class="form-control" required>
+					</div>
+          <div class="form-group">
+						<label>Age</label>
+						<input type="text" class="form-control" required>
+					</div>
+          <div class="form-group">
+						<label>Sex</label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Complete Address</label>
+						<textarea class="form-control" required></textarea>
+					</div>				
+				</div>
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+					<input type="submit" class="btn btn-info" value="Save">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+
 </html>

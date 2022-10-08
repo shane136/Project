@@ -35,6 +35,8 @@
 .sidebar a:hover{
     background: #2f5a63;
     text-decoration: none;
+    color: #fff;
+
 }
 
 .sidebar i{
@@ -189,3 +191,4 @@ textarea{
     overflow: hidden;
     display: inline-block;
   }
+  
