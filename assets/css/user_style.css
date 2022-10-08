@@ -1,5 +1,4 @@
 .sidebar{
-
     margin-top: 70px;
     padding-top: 30px;
     position: fixed;
@@ -11,7 +10,6 @@
 }
 
 .sidebar .profile_image{
-
     width: 100px;
     height: 100px;
     border-radius: 100px;
@@ -19,14 +17,12 @@
 }
 
 .sidebar h4{
-
     color: #ccc;
     margin-top: 0;
     margin-bottom: 20px;
 }
 
 .sidebar a{
-
     color: #fff;
     display: block;
     width: 100%;
@@ -37,18 +33,15 @@
 }
 
 .sidebar a:hover{
-
     background: #2f5a63;
     text-decoration: none;
 }
 
 .sidebar i{
-
     padding-right: 10px;
 }
 
 .left_area h4{
-
     color: #fff;
     margin: 20px;
     text-transform: uppercase ;
@@ -57,13 +50,11 @@
 }
 
 .left_area span{
-
     color: #1DC4E7;
 
 }
 
 .mdl-layout__header-row{
-
     background: #00b3b3;
 
 }
@@ -76,15 +67,17 @@
    
   }
 
-  body{
+body{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
 }
+
 .formBox{
 	margin-top: 90px;
 	padding: 50px;
 }
+
 .formBox  h1{
 	margin: 0;
 	padding: 0;
@@ -93,11 +86,13 @@
 	text-transform: uppercase;
 	font-size: 48px;
 }
+
 .inputBox{
 	position: relative;
 	box-sizing: border-box;
 	margin-bottom: 50px;
 }
+
 .inputBox .inputText{
 	position: absolute;
     font-size: 24px;
@@ -105,6 +100,7 @@
     transition: .5s;
     opacity: .5;
 }
+
 .inputBox .input{
 	position: relative;
 	width: 100%;
@@ -116,6 +112,7 @@
     border-bottom: 1px solid rgba(0,0,0,.5);
 
 }
+
 .focus .inputText{
 	transform: translateY(-30px);
 	font-size: 18px;
@@ -123,9 +120,11 @@
 	color: #00bcd4;
 
 }
+
 textarea{
 	height: 100px !important;
 }
+
 .button{
 	width: 100%;
     height: 50px;
@@ -185,7 +184,7 @@ textarea{
     opacity: 0;
   }
 
-  .upload-btn-wrapper {
+.upload-btn-wrapper {
     position: relative;
     overflow: hidden;
     display: inline-block;

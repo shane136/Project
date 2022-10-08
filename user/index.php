@@ -54,7 +54,7 @@ session_start();
         </div>
         </header>
        
-        <div class="sidebar">
+    <div class="sidebar">
         <center>
             <img src="https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" 
                  class="profile_image" 

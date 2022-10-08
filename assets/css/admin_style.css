@@ -112,27 +112,24 @@ a {
 }
 
 /* eyelashhh */
-    .p-viewer{
+.p-viewer{
+    z-index: 9999;
+	position: absolute;
+	top: 42%;
+	right: 30px;
+}
 
-        z-index: 9999;
-	    position: absolute;
-	    top: 42%;
-	    right: 30px;
-    }
+.fa-eye{
+    color: maroon;
+}
 
-    .fa-eye{
-
-        color: maroon;
-    }
-
-	.name{
-
-		color: white;
-		font-size: medium;
-	}
+.name{
+	color: white;
+	font-size: medium;
+}
 
 /* upload file butn */
-    #yourBtn {
+#yourBtn {
     position: relative;
     top: 2px;
     font-family: calibri;
@@ -145,39 +142,37 @@ a {
 }
 
 /* signup */
-#wrap{
-    
+#wrap{  
     height: 100%;
     background-color: #B0BEC5;
-
 }
 
 .signup-btn {
-  background: #79bc64;
-  background-image: -webkit-linear-gradient(top, #79bc64, #578843);
-  background-image: -moz-linear-gradient(top, #79bc64, #578843);
-  background-image: -ms-linear-gradient(top, #79bc64, #578843);
-  background-image: -o-linear-gradient(top, #79bc64, #578843);
-  background-image: linear-gradient(to bottom, #79bc64, #578843);
-  -webkit-border-radius: 4;
-  -moz-border-radius: 4;
-  border-radius: 4px;
-  font-family: Arial;
-  color:#B0BEC5;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+    background: #79bc64;
+    background-image: -webkit-linear-gradient(top, #79bc64, #578843);
+    background-image: -moz-linear-gradient(top, #79bc64, #578843);
+    background-image: -ms-linear-gradient(top, #79bc64, #578843);
+    background-image: -o-linear-gradient(top, #79bc64, #578843);
+    background-image: linear-gradient(to bottom, #79bc64, #578843);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: Arial;
+    color:#B0BEC5;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
 }
 
 .signup-btn:hover {
-  background: #79bc64;
-  text-decoration: none;
+    background: #79bc64;
+    text-decoration: none;
 }
 .navbar-default .navbar-brand{
-		color:#B0BEC5;
-		font-size:30px;
-		font-weight:bold;
-	}
+    color:#B0BEC5;
+    font-size:30px;
+    font-weight:bold;
+}
 .form .form-control { margin-bottom: 10px; }
 @media (min-width:768px) {
 	#home{
@@ -205,28 +200,27 @@ a {
 
 /* Give every child element its grid name */
 .header {
-  grid-area: header;
-  background-color: #89D5D2;
+    grid-area: header;
+    background-color: #89D5D2;
 }
 
 .sidenav {
-  grid-area: sidenav;
-  background-color: #008080;
+    grid-area: sidenav;
+    background-color: #008080;
 }
 
 .main {
-  grid-area: main;
-  background-color: #BBF1F1;
+    grid-area: main;
+    background-color: #BBF1F1;
 }
 
 .footer {
-  grid-area: footer;
-  background-color: #89D5D2;
+    grid-area: footer;
+    background-color: #89D5D2;
 }
 
-.dashboard{
-	
-  	color: white;
+.dashboard{	
+    color: white;
   	padding: auto;
   	text-align: center;
   	text-decoration: none;
@@ -249,18 +243,19 @@ canvas#signature {
     border: 3px solid #000000;
     height: 200;
     width: 300;
-  }
+}
   
-  .upload-btn-wrapper input[type=file] {
+.upload-btn-wrapper input[type=file] {
     font-size: 100px;
     position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
-  }
+}
 
-  .upload-btn-wrapper {
+.upload-btn-wrapper {
     position: relative;
     overflow: hidden;
     display: inline-block;
-  }
+}
+
