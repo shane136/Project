@@ -25,7 +25,7 @@ session_start();
 </head>
   
 
-<div class="grid-container">
+<div class="grid-container w-full">
   <header class="header">
 	
 	</header>
@@ -56,13 +56,26 @@ session_start();
 
   <a href="..\admin\blotter.php"><i class="fa fa-database"></i> Blotter Record</a>
 
-<div class="ms-2"><span class="name"> FORMS</span></div>
+</ul class="">
 
-<a href="..\admin\certificate.php"><i class="fa fa-certificate"></i> Certificate</a>
-	
-<a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');">
-  <i class="fas fa-sign-out-alt"></i> Logout</a>
+  <div class="ms-2 w-full border border-dark">
+    <span class="name w-100"> FORMS</span>
+  </div>
+<ul>
 
+  <li class=""> 
+    <a href="..\admin\certificate.php" class="btn">
+      <i class="fa fa-certificate">
+      </i>
+       Certificate
+    </a>
+  </li>
+</ul>
+
+<div class="ms-2 w-100"> 
+<li><a href="..\connection\login.php" class="btn" onclick="return confirm('Are you sure you want to log out?');">
+	<i class="fas fa-sign-out-alt"></i> Logout</a></li>
+</div>
 </aside>
 
 <main class="main">

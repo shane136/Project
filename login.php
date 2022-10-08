@@ -37,10 +37,18 @@
                             <i class="fa fa-eye-slash" aria-hidden="true" onclick="managePassword()" id="iconPassword"></i> 
 				       </span>                 
                     </div>
-                    <div class="row px-3 mb-4">
+                    <?php 
+                        if(isset($_SESSION['invalidCredentials'])) { 
+                    ?> 
+                    <div class="row  ml-1 mr-1 mt-2 px-3 alert alert-danger text-center">
                         
+                        <?php echo $_SESSION['invalidCredentials'];?>
                     </div>
-                    <div class="row mb-3 px-3">
+                    <?php
+                            unset($_SESSION['invalidCredentials']);
+                        }
+                    ?>
+                    <div class="row mb-3 px-3 mt-3">
                          <button type="submit" class="btn btn-primary">Login</button>
                     </div>
                     <div class="row mb-4 px-3">

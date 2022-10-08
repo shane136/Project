@@ -1,3 +1,21 @@
+<?php
+session_start();
+    $firstName = $_SESSION['residentData']['fname'];
+    $lastName = $_SESSION['residentData']['lname'];
+    $middleName = $_SESSION['residentData']['mname'];
+    $bdate = $_SESSION['residentData']['bdate'];
+    $bplace = $_SESSION['residentData']['bplace'];
+    $age = $_SESSION['residentData']['age'];
+    $zone = $_SESSION['residentData']['zone'];
+    $numHouseHold = $_SESSION['residentData']['num_household'];
+    $occupation = $_SESSION['residentData']['occupation'];
+    $civilStatus = $_SESSION['residentData']['civil_status'];
+    $educationalAttainment = $_SESSION['residentData']['educational_attainment'];
+    $religion = $_SESSION['residentData']['religion'];
+    $bloodType = $_SESSION['residentData']['blood_type'];
+    $nationality = $_SESSION['residentData']['nationality'];
+?>
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -88,72 +106,68 @@
                 <div class="card-header">Information</div>
                 <div class="card-body">
                     <form>              
-                        <div class="mb-8">
+                    <div class="mb-8">
                             <label class="small mb-1" for="inputFname">First Name</label>
-                            <input class="form-control" id="inputFname" type="text" placeholder="" value="">
+                            <input class="form-control" id="inputFname"  type="text" placeholder="" value="<?php echo $firstName;?>">
                         </div>
 
                         <div class="mb-8">
                             <label class="small mb-1" for="inputMname">Middle Name</label>
-                            <input class="form-control" id="inputMname" type="text" placeholder="" value="">
+                            <input class="form-control" id="inputMname" type="text" placeholder="" value="<?php echo $lastName;?>">
                         </div>
 
                         <div class="mb-8">
                             <label class="small mb-1" for="inputLname">Last Name</label>
-                            <input class="form-control" id="inputLname" type="text" placeholder="" value="">
+                            <input class="form-control" id="inputLname" type="text" placeholder="" value="<?php echo $middleName;?>">
                         </div>
 
                         <div class="mb-8">
                             <label class="small mb-1" for="inputBplace">Place of Birth</label>
-                            <input class="form-control" id="inputBplace" type="text" placeholder="" value="">
+                            <input class="form-control" id="inputBplace" type="text" placeholder="" value="<?php echo $bplace;?>">
                         </div>
                         <!-- Form Row-->
                         <div class="row gx-3 mb-3">
                            
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputZone">Zone</label>
-                                <input class="form-control" id="inputZone" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputZone" type="text" placeholder="" value="<?php echo $zone;?>">
                             </div>             
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBrgyName">Barangay</label>
-                                <input class="form-control" id="inputBrgyName" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputBrgyName" type="text" placeholder="" value="TAMBACAN">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputStatus">Civil Status</label>
-                                <input class="form-control" id="inputStatus" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputStatus" type="text" placeholder="" value="<?php echo $civilStatus?>">
                             </div>                           
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputOccupation">Occupation</label>
-                                <input class="form-control" id="inputOccupation" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputOccupation" type="text" placeholder="" value="<?php echo $occupation?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputAge">Age</label>
-                                <input class="form-control" id="inputAge" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputAge" type="text" placeholder="" value="<?php echo $age?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputSex">Sex</label>
-                                <select name="" class="form-control input-lg" required> 
-								    <option disabled selected hidden></option>
-								    <option>Female</option>
-                                    <option>Male</option>
-					            </select>
-                            </div>                          
+                                <input class="form-control" id="inputSex" type="text" placeholder="" value="<?php echo "Male";?>">
+                            </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBtype">Blood Type</label>
-                                <input class="form-control" id="inputBtype" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputBtype" type="text" placeholder="" value="<?php echo $bloodType?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputNationality">Nationality</label>
-                                <input class="form-control" id="inputNationality" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputNationality" type="text" placeholder="" value="<?php echo $nationality?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputHmember">No. of Household Member</label>
-                                <input class="form-control" id="inputHmember" type="text" placeholder="" value="">
+                                <input class="form-control" id="inputHmember" type="text" placeholder="" value="<?php echo $numHouseHold?>">
                             </div>
                             <div class="col-md-6"> 
                             <label class="small mb-1" for="inputEducation">Educational Attaintment</label>
                             <select name="" class="form-control" required>
-                                <option selected></option>								        
+                                <option selected><?php echo $educationalAttainment?></option>								        
 								<option>Not Applicable</option>
                                 <option>Elementary Level</option>
 								<option>Elementary Graduate</option>
@@ -178,7 +192,7 @@
                         </div>
                         
                         <!-- Save button-->
-                        <a href="#" class="btn btn-primary"> Save Changes</a>
+                        <a href="" Type="submit" class="btn btn-primary"> Save Changes</a>
                     </form>
                 </div>
             </div>
