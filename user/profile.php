@@ -15,6 +15,7 @@ session_start();
     $bloodType = $_SESSION['residentData']['blood_type'];
     $nationality = $_SESSION['residentData']['nationality'];
 ?>
+?>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -79,7 +80,16 @@ session_start();
         <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
           <div class="container-xl px-4 mt-4">
-  <h3> ACCOUNT DETAILS </h3>
+            <h3> ACCOUNT DETAILS </h3>
+        <?php if(isset($_SESSION['updateSuccess'])){
+            ?>
+            <div class="alert alert-success w-100 " >
+                <?php echo $_SESSION['updateSuccess'];?>
+            </div>
+        <?php
+            unset($_SESSION['updateSuccess']); 
+            }
+        ?>
     <hr class="mt-0 mb-4">
     <div class="row">
         <div class="col-xl-4">
@@ -104,12 +114,12 @@ session_start();
 
                         <div class="mb-8">
                             <label class="small mb-1" for="inputMname">Middle Name</label>
-                            <input class="form-control" id="inputMname" disabled type="text" placeholder="" value="<?php echo $lastName;?>">
+                            <input class="form-control" id="inputMname" disabled type="text" placeholder="" value="<?php echo $middleName;?>">
                         </div>
 
                         <div class="mb-8">
                             <label class="small mb-1" for="inputLname">Last Name</label>
-                            <input class="form-control" id="inputLname" disabled type="text" placeholder="" value="<?php echo $middleName;?>">
+                            <input class="form-control" id="inputLname" disabled type="text" placeholder="" value="<?php echo $lastName;?>">
                         </div>
 
                         <div class="mb-8">

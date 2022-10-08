@@ -105,68 +105,68 @@ session_start();
             <div class="card mb-4">
                 <div class="card-header">Information</div>
                 <div class="card-body">
-                    <form>              
+                    <form action ="\Project\connection\updateProfile.php" method="POST">              
                     <div class="mb-8">
                             <label class="small mb-1" for="inputFname">First Name</label>
-                            <input class="form-control" id="inputFname"  type="text" placeholder="" value="<?php echo $firstName;?>">
+                            <input class="form-control" id="inputFname" name="fName"  type="text" placeholder="" value="<?php echo $firstName;?>">
                         </div>
 
                         <div class="mb-8">
                             <label class="small mb-1" for="inputMname">Middle Name</label>
-                            <input class="form-control" id="inputMname" type="text" placeholder="" value="<?php echo $lastName;?>">
+                            <input class="form-control" id="inputMname" name="mName"  placeholder="" value="<?php echo $middleName;?>">
                         </div>
 
                         <div class="mb-8">
                             <label class="small mb-1" for="inputLname">Last Name</label>
-                            <input class="form-control" id="inputLname" type="text" placeholder="" value="<?php echo $middleName;?>">
+                            <input class="form-control" id="inputLname" name="lName" type="text" placeholder="" value="<?php echo $lastName;?>">
                         </div>
 
                         <div class="mb-8">
                             <label class="small mb-1" for="inputBplace">Place of Birth</label>
-                            <input class="form-control" id="inputBplace" type="text" placeholder="" value="<?php echo $bplace;?>">
+                            <input class="form-control" id="inputBplace" name="bPlace" type="text" placeholder="" value="<?php echo $bplace;?>">
                         </div>
                         <!-- Form Row-->
                         <div class="row gx-3 mb-3">
                            
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputZone">Zone</label>
-                                <input class="form-control" id="inputZone" type="text" placeholder="" value="<?php echo $zone;?>">
+                                <input class="form-control" id="inputZone" name="zone" type="text" placeholder="" value="<?php echo $zone;?>">
                             </div>             
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBrgyName">Barangay</label>
-                                <input class="form-control" id="inputBrgyName" type="text" placeholder="" value="TAMBACAN">
+                                <input class="form-control" id="inputBrgyName" name="barangay" type="text" placeholder="" value="TAMBACAN">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputStatus">Civil Status</label>
-                                <input class="form-control" id="inputStatus" type="text" placeholder="" value="<?php echo $civilStatus?>">
+                                <input class="form-control" id="inputStatus" name="civilStatus" type="text" placeholder="" value="<?php echo $civilStatus?>">
                             </div>                           
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputOccupation">Occupation</label>
-                                <input class="form-control" id="inputOccupation" type="text" placeholder="" value="<?php echo $occupation?>">
+                                <input class="form-control" id="inputOccupation" name="occupation" type="text" placeholder="" value="<?php echo $occupation?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputAge">Age</label>
-                                <input class="form-control" id="inputAge" type="text" placeholder="" value="<?php echo $age?>">
+                                <input class="form-control" id="inputAge" type="text" name="age" placeholder="" value="<?php echo $age?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputSex">Sex</label>
-                                <input class="form-control" id="inputSex" type="text" placeholder="" value="<?php echo "Male";?>">
+                                <input class="form-control" id="inputSex" type="text" name="gender" placeholder="" value="<?php echo "Male";?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBtype">Blood Type</label>
-                                <input class="form-control" id="inputBtype" type="text" placeholder="" value="<?php echo $bloodType?>">
+                                <input class="form-control" id="inputBtype" type="text" name="bloodType" placeholder="" value="<?php echo $bloodType?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputNationality">Nationality</label>
-                                <input class="form-control" id="inputNationality" type="text" placeholder="" value="<?php echo $nationality?>">
+                                <input class="form-control" id="inputNationality" type="text" name="nationality" placeholder="" value="<?php echo $nationality?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputHmember">No. of Household Member</label>
-                                <input class="form-control" id="inputHmember" type="text" placeholder="" value="<?php echo $numHouseHold?>">
+                                <input class="form-control" id="inputHmember" type="text" name="numHouseHold" placeholder="" value="<?php echo $numHouseHold?>">
                             </div>
                             <div class="col-md-6"> 
                             <label class="small mb-1" for="inputEducation">Educational Attaintment</label>
-                            <select name="" class="form-control" required>
+                            <select name="educationalAttainment" class="form-control" required>
                                 <option selected><?php echo $educationalAttainment?></option>								        
 								<option>Not Applicable</option>
                                 <option>Elementary Level</option>
@@ -188,11 +188,10 @@ session_start();
                                 <label class="small mb-1" for="inputPass">Password</label>
                                 <input class="form-control" id="inputPass" type="text" placeholder="" value="">
                             </div>
-
                         </div>
                         
                         <!-- Save button-->
-                        <a href="" Type="submit" class="btn btn-primary"> Save Changes</a>
+                        <button type="submit" class="btn btn-primary"> Save Changes</button>
                     </form>
                 </div>
             </div>
