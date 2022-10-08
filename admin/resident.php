@@ -79,7 +79,7 @@ session_start();
                                   <div>                                              
                                         <a href="#addResidentModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-user-plus"></i><span> Add Resident</span></a>                          
                                         <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>																
-										<input class="searchBar" type="search" placeholder="Search..." title="Type here">									
+										<input class="searchBar" type="search" placeholder="Search..." id="searchData" title="Type here">									
 								  </div>
 
               <div class="card-body">
@@ -99,21 +99,33 @@ session_start();
 
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tableBody">
                         	
                         <tr>
-
-                                <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>     
-                                <td></td>      
-                                <td></td>           
-                                <td><a href="#editResidentModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
-                                <a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
-                                </td>
-
+							<td>Nash<input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+							<td>Test</td>
+							<td>asdasdasd</td>
+							<td>zxcasdasd</td>
+							<td>asdasdsa</td>     
+							<td>asdasdasd</td>      
+							<td><asdsadsa/td>           
+							<td>
+								<a href="#editResidentModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+								<a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+							</td>
+                        </tr>
+						<tr>
+							<td>Shane<input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+							<td>Test</td>
+							<td>asdasdasd</td>
+							<td>zxcasdasd</td>
+							<td>asdasdsa</td>     
+							<td>asdasdasd</td>      
+							<td><asdsadsa/td>           
+							<td>
+								<a href="#editResidentModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
+								<a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
+							</td>
                         </tr>
 
                         </tbody>
@@ -224,3 +236,12 @@ session_start();
 </div>
 
 </html>
+
+<script>
+  $('#searchData').on('keyup', function() {
+    var value = $(this).val().toLowerCase();
+    $("#tableBody tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+</script>
