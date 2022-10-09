@@ -211,7 +211,7 @@
 								<option disabled selected hidden></option>
 								<option>Female</option>
                 				<option>Male</option>
-						</select>
+							</select>
 						</div>
 						<div class="form-group">
 							<label>Complete Address</label>
