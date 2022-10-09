@@ -148,17 +148,21 @@
 						<label>Photo (.jpg, .jpeg & .png)</label>
 						<input type="file" class="form-control" accept= ".png, .jpg, .jpeg" required>
 					</div>
-          <div class="form-group">
+          			<div class="form-group">
 						<label>Name</label>
 						<input type="text" class="form-control" required>
 					</div>
-          <div class="form-group">
+          			<div class="form-group">
 						<label>Age</label>
 						<input type="text" class="form-control" required>
 					</div>
-          <div class="form-group">
+          			<div class="form-group">
 						<label>Sex</label>
-						<input type="text" class="form-control" required>
+						<select name="" class="form-control" required> 
+								<option disabled selected hidden></option>
+								<option>Female</option>
+                				<option>Male</option>
+						</select>
 					</div>
 					<div class="form-group">
 						<label>Complete Address</label>
@@ -203,7 +207,11 @@
 						</div>
 			<div class="form-group">
 							<label>Sex</label>
-							<input type="text" class="form-control" required>
+							<select name="" class="form-control" required> 
+								<option disabled selected hidden></option>
+								<option>Female</option>
+                				<option>Male</option>
+						</select>
 						</div>
 						<div class="form-group">
 							<label>Complete Address</label>

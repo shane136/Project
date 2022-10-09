@@ -459,7 +459,11 @@
 					</div>
           <div class="form-group">
 						<label>Sex</label>
-						<input type="text" class="form-control" required>
+						<select name="" class="form-control" required> 
+								<option disabled selected hidden></option>
+								<option>Female</option>
+                <option>Male</option>
+					</select>
 					</div>
           <div class="form-group">
 						<label>Age</label>
