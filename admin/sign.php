@@ -7,15 +7,8 @@
    <title>The Signature</title>
    <link rel="stylesheet" href="../libs/css/bootstrap.v3.3.6.css">
    <script type="text/javascript" src="../assets/js/script.js"></script>
-   
-<style>
-     body{
-     padding: 15px;
-     }
-     #note{position:absolute;left:50px;top:35px;padding:0px;margin:0px;cursor:default;}
-</style>
-
 </head>
+
 <body>
 <h1>SIGN HERE</h1>
 <form method="post" action="process.php" enctype="multipart/form-data">

@@ -1,13 +1,3 @@
-<?php 
-session_start();
-
-	include("../connection/connection.php");
-	include("../functions.php");
-	
-	$user_data = check_login($con);
-
-?>
-
 <!DOCTYPE html>
 <html class = "h-100"lang="en" dir="ltr">
   <head>
@@ -30,7 +20,7 @@ session_start();
 	
 	</header>
  	
-<aside class="sidenav" id="side">
+  <aside class="sidenav" id="side">
 
 <div class="d-flex justify-content-center align-items-center px-3 py-4">
     <img
@@ -56,27 +46,15 @@ session_start();
 
   <a href="..\admin\blotter.php"><i class="fa fa-database"></i> Blotter Record</a>
 
-</ul class="">
+<div class="ms-2"><span class="name"> FORMS</span></div>
 
-  <div class="ms-2 w-full border border-dark">
-    <span class="name w-100"> FORMS</span>
-  </div>
-<ul>
+<a href="..\admin\certificate.php"><i class="fa fa-certificate"></i> Certificate</a>
+	
+<a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');">
+  <i class="fas fa-sign-out-alt"></i> Logout</a>
 
-  <li class=""> 
-    <a href="..\admin\certificate.php" class="btn">
-      <i class="fa fa-certificate">
-      </i>
-       Certificate
-    </a>
-  </li>
-</ul>
-
-<div class="ms-2 w-100"> 
-<li><a href="..\connection\login.php" class="btn" onclick="return confirm('Are you sure you want to log out?');">
-	<i class="fas fa-sign-out-alt"></i> Logout</a></li>
-</div>
 </aside>
+
 
 <main class="main">
 <div class="container-xl px-4 mt-4">

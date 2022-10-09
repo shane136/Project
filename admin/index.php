@@ -1,13 +1,3 @@
-<?php 
-session_start();
-
-  include("../connection/connection.php");
-	include("../functions.php");
-
-	$user_data = check_login($con);
-
-?>
-
 <!DOCTYPE html>
 <html class = "h-100"lang="en" dir="ltr">
   <head>
