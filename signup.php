@@ -55,8 +55,18 @@
 						</div>
 
 						<div class="col-xs-4">
-                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Blood Type"  />                      
-						</div>
+							<select name="" class="form-control input-lg" required> 
+								<option disabled selected hidden>Blood Type</option>
+								<option>AB+</option>
+                                <option>AB-</option>
+								<option>A+</option>
+								<option>A-</option>
+								<option>B+</option>
+								<option>B-</option>
+								<option>O+</option>
+								<option>O-</option>
+							</select>
+					</div>
 
 						<div class="col-xs-4">
                             <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Nationality"  />                      
