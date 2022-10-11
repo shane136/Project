@@ -8,54 +8,63 @@
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
+	<script type="text/javascript" src="../assets/js/validation.js"> </script>
+
 </head>
 <body>
 
 <div class="container" id="wrap">
 	  <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <form action="r" method="post" accept-charset="utf-8" class="form" role="form">   
+            <form name="RegForm" method="post" class="form" role="form" onsubmit="return validateForm()">   
 			<legend><h3>Please fill out the provided form.</h3></legend>
                     <div class="row">
                         <div class="col-xs-6 col-md-6">
-                            <input type="text" name="firstname" value="" class="form-control input-lg" required="" placeholder="First Name"  />         
+                            <input type="text" name="fname" value="" class="form-control input-lg" placeholder="First Name"  />         
 						</div>
                         <div class="col-xs-6 col-md-6">
-                            <input type="text" name="lastname" value="" class="form-control input-lg" required="" placeholder="Last Name"  />                      
+                            <input type="text" name="mname" value="" class="form-control input-lg" placeholder="Middle Name"  />                      
 						</div>
 						<div class="col-xs-6 col-md-6">
-                            <input type="text" name="lastname" value="" class="form-control input-lg" required=""  placeholder="Middle Name"  />                      
+                            <input type="text" name="lname" value="" class="form-control input-lg" placeholder="Last Name"  />                      
 						</div>
 						<div class="col-xs-6 col-md-6">
-                            <input type="text" name="religion" value="" class="form-control input-lg" required="" placeholder="Religion"  />                      
+                            <input type="text" name="religion" value="" class="form-control input-lg" placeholder="Religion"  />                      
 						</div>
                     </div>
 
-					<input type="text" name="bplace" value="" class="form-control input-lg" required="" placeholder="Birthplace"  />
+					<input type="text" name="bplace" value="" class="form-control input-lg" placeholder="Birthplace"  />
 
 					<div class="row">
                         <div class="col-xs-6 col-md-6">
-                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Barangay"  />         
+                            <input type="text" name="brgy" value="" class="form-control input-lg" placeholder="Barangay"  />         
 						</div>
 
                         <div class="col-xs-6 col-md-6">
-                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Zone"  />                      
+                            <input type="text" name="zone" value="" class="form-control input-lg" placeholder="Zone"  />                      
 						</div>
 
 						<div class="col-xs-6 col-md-6">
-                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Civil Status"  />                      
+						<select name="cstatus" class="form-control input-lg"> 
+								<option disabled selected hidden>Civil Status</option>
+								<option>Single</option>
+                                <option>Married</option>
+								<option>Widowed</option>
+								<option>Separated</option>
+								<option>Divorced</option>
+							</select>                    
 						</div>
 
 						<div class="col-xs-6 col-md-6">
-                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Occupation"  />                      
+                            <input type="text" name="occupation" value="" class="form-control input-lg" placeholder="Occupation"  />                      
 						</div>
 
 						<div class="col-xs-4"> 
-                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Age"  />   
+                            <input type="text" name="age" value="" class="form-control input-lg" placeholder="Age"  />   
 						</div>
 
 						<div class="col-xs-4">
-							<select name="" class="form-control input-lg" required> 
+							<select name="btype" class="form-control input-lg"> 
 								<option disabled selected hidden>Blood Type</option>
 								<option>AB+</option>
                                 <option>AB-</option>
@@ -69,18 +78,18 @@
 					</div>
 
 						<div class="col-xs-4">
-                            <input type="text" name="" value="" class="form-control input-lg" required="" placeholder="Nationality"  />                      
+                            <input type="text" name="nationality" value="" class="form-control input-lg" placeholder="Nationality"  />                      
 						</div>
 									
 					</div>
 
 				<div class="form-group row">
 					<div class="col-xs-7"> 
-						<input name="" type="number" min="1" value="" class="form-control input-lg" required="" placeholder="No. of Household Members"/>
+						<input name="" type="num_household" min="1" value="" class="form-control input-lg" placeholder="No. of Household Members"/>
 					</div>
 
 					<div class="col-xs-5">
-					<select name="" class="form-control input-lg" required> 
+					<select name="sex" class="form-control input-lg"> 
 								<option disabled selected hidden>Sex</option>
 								<option>Female</option>
                                 <option>Male</option>
@@ -88,9 +97,9 @@
 					</div>
 				</div>
 					<div class="form-group">
-                            <select name="" class="form-control input-lg" required>
+                            <select name="education" class="form-control input-lg">
                                 <option selected></option>
-								<option disabled selected hidden>Educational Attaintment</option>
+								<option disabled selected hidden>Educational Attainment</option>
 								<option>Not Applicable</option>
                                 <option>Elementary Level</option>
 								<option>Elementary Graduate</option>
@@ -103,8 +112,8 @@
                                 <option>Doctorate Degree (PhD)</option>
                             </select>
                     </div>
-                    <input type="text" name="username" value="" class="form-control input-lg" required="" placeholder="Username"  />
-					<input type="password" name="password" value="" autocomplete="current-password" id="text" class="form-control input-lg" required="" placeholder="Password"  />
+                    <input type="text" name="username" value="" class="form-control input-lg" placeholder="Username"  />
+					<input type="password" name="password" value="" autocomplete="current-password" id="text" class="form-control input-lg" placeholder="Password"  />
 					
 					<span class="viewer"> 
 					<i class="fa fa-eye-slash" aria-hidden="true" onclick="managePassword()" id="iconPassword"></i> 
@@ -114,7 +123,7 @@
 					<label>Birth Date</label>                
 					<div class="row">
                         <div class="col-xs-4 col-md-4">
-                            <select name="month" class = "form-control input-lg" required>
+                            <select name="month" class = "form-control input-lg">
 								
 							    <option disabled selected hidden>Month</option>
 								<option value="01">Jan</option>
@@ -133,7 +142,7 @@
 						</div>
 
  						<div class="col-xs-4 col-md-4">
-    						<select name="day" class = "form-control input-lg" required>
+    						<select name="day" class = "form-control input-lg">
 								
 							    <option disabled selected hidden>Day</option>
 								<option value="1">1</option>
@@ -172,7 +181,7 @@
 						</div>
 
 						<div class="col-xs-4 col-md-4">
-   							 <select name="year" class = "form-control input-lg" required>
+   							 <select name="year" class = "form-control input-lg">
 
 								<option disabled selected hidden>Year</option>
 							 	<option value="1935">1935</option>
@@ -263,8 +272,7 @@
 
 <label>Upload 2x2 Photo (.png, .jpg, & .jpeg)</label><br>
 	<div class="col-md-6">
-        <input 
-		required=""
+        <input 		
 		type="file" 
 		class="form-control"
 		accept=".jpg, .jpeg, .png"/><br>   
@@ -283,4 +291,6 @@
 </div>
 
 </body>
+
+
 </html>
