@@ -45,7 +45,7 @@
 						</div>
 
 						<div class="col-xs-6 col-md-6">
-						<select name="cstatus" class="form-control input-lg"> 
+							<select name="cstatus" class="form-control input-lg"> 
 								<option disabled selected hidden>Civil Status</option>
 								<option>Single</option>
                                 <option>Married</option>
@@ -89,11 +89,11 @@
 					</div>
 
 					<div class="col-xs-5">
-					<select name="sex" class="form-control input-lg"> 
+						<select name="sex" class="form-control input-lg"> 
 								<option disabled selected hidden>Sex</option>
 								<option>Female</option>
                                 <option>Male</option>
-					</select>
+						</select>
 					</div>
 				</div>
 					<div class="form-group">

@@ -138,23 +138,48 @@ session_start();
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputStatus">Civil Status</label>
-                                <input class="form-control" id="inputStatus" name="civilStatus" type="text" placeholder="" value="<?php echo $civilStatus?>">
+                                    <select name="civilStatus" class="form-control input-lg"> 
+								        <option selected><?php echo $civilStatus?></option>
+								        <option>Single</option>
+                                        <option>Married</option>
+								        <option>Widowed</option>
+								        <option>Separated</option>
+								        <option>Divorced</option>
+							        </select>        
                             </div>                           
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputOccupation">Occupation</label>
                                 <input class="form-control" id="inputOccupation" name="occupation" type="text" placeholder="" value="<?php echo $occupation?>">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
+                                <label class="small mb-1" for="inputbdate">Date of Birth</label>
+                                <input type="date" class="form-control" id="inputbdate" name="bdate" placeholder="" value="<?php echo $bdate?>">
+                            </div>
+                            <div class="col-md-4">
                                 <label class="small mb-1" for="inputAge">Age</label>
                                 <input class="form-control" id="inputAge" type="text" name="age" placeholder="" value="<?php echo $age?>">
                             </div>
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputSex">Sex</label>
-                                <input class="form-control" id="inputSex" type="text" name="gender" placeholder="" value="<?php echo "Male";?>">
+                            <div class="col-md-4">
+                                <label class="small mb-1" for="inputGender">Sex</label>                               
+                                    <select name="gender" class="form-control input-lg"> 
+								        <option disabled selected hidden><?php echo $gender?></option>
+								        <option>Female</option>
+                                        <option>Male</option>
+						            </select>
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBtype">Blood Type</label>
-                                <input class="form-control" id="inputBtype" type="text" name="bloodType" placeholder="" value="<?php echo $bloodType?>">
+                                    <select name="bloodType" class="form-control input-lg"> 
+								        <option disabled selected hidden><?php echo $bloodType?></option>
+								        <option>AB+</option>
+                                        <option>AB-</option>
+								        <option>A+</option>
+								        <option>A-</option>
+								        <option>B+</option>
+								        <option>B-</option>
+								        <option>O+</option>
+								        <option>O-</option>
+							        </select>
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputNationality">Nationality</label>
@@ -165,9 +190,9 @@ session_start();
                                 <input class="form-control" id="inputHmember" type="text" name="numHouseHold" placeholder="" value="<?php echo $numHouseHold?>">
                             </div>
                             <div class="col-md-6"> 
-                            <label class="small mb-1" for="inputEducation">Educational Attaintment</label>
+                            <label class="small mb-1" for="inputEducation">Educational Attainment</label>
                             <select name="educationalAttainment" class="form-control" required>
-                                <option selected><?php echo $educationalAttainment?></option>								        
+                                <option disabled selected hidden><?php echo $educationalAttainment?></option>								        
 								<option>Not Applicable</option>
                                 <option>Elementary Level</option>
 								<option>Elementary Graduate</option>

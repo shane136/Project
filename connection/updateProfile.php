@@ -12,7 +12,7 @@
         $civilStatus = $_POST['civilStatus'];
         $occupation = $_POST['occupation'];
         $age = $_POST['age'];
-        $gender = $_POST['gender'];
+        $sex = $_POST['sex'];
         $bloodType = $_POST['bloodType'];
         $nationality = $_POST['nationality'];
         $numHouseHold = $_POST['numHouseHold'];
@@ -29,7 +29,7 @@
                         civil_status = '$civilStatus',
                         educational_attainment = '$educationalAttainment',
                         blood_type = '$bloodType',
-                        nationality = '$nationality'
+                        nationality = '$nationality'                     
                     WHERE id = '$residentID'
                   ";
     $result = mysqli_query($con,$updateData);
