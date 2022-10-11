@@ -20,7 +20,6 @@ input.searchBar {
 
 /* admin_sidenav */
 #side a{
-
   color: black;
   display: block;
   width: 100%;
@@ -28,6 +27,11 @@ input.searchBar {
   text-decoration: none;
   padding-left: 40px;
   box-sizing: border-box;
+}
+
+#side a:hover{
+  background: #cdfcff;
+  text-decoration: none;
 }
 
 #side i{
