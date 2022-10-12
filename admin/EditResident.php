@@ -72,7 +72,7 @@
 					</div>
 					<div class="col-md-4">
 						<label>No. of Household Member</label>
-						<input type="number" class="form-control" required>
+						<input type="number" min="1" class="form-control" required>
 					</div>
           			<div class="col-md-4">
 						<label>Sex</label>

@@ -85,7 +85,7 @@
 
 				<div class="form-group row">
 					<div class="col-xs-7"> 
-						<input name="" type="num_household" min="1" value="" class="form-control input-lg" placeholder="No. of Household Members"/>
+						<input name="" type="number" min="1" value="" class="form-control input-lg" placeholder="No. of Household Members"/>
 					</div>
 
 					<div class="col-xs-5">

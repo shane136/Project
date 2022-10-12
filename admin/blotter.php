@@ -279,7 +279,7 @@
     </div>
 </div>
 
-<!-- addResidentModal -->
+<!-- addBlotterModal -->
 <div id="addBlotterModal" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -363,7 +363,7 @@
 				</div>
 				<div class="modal-footer">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-					<input type="submit" class="btn btn-success" value="Add">
+					<input type="submit" class="btn btn-success" value="Save Changes">
 				</div>
 			</form>
 		</div>
