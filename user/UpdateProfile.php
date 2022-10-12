@@ -139,7 +139,7 @@ session_start();
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputStatus">Civil Status</label>
                                     <select name="civilStatus" class="form-control input-lg"> 
-								        <option selected><?php echo $civilStatus?></option>
+								        <option disabled selected hidden><?php echo $civilStatus?></option>
 								        <option>Single</option>
                                         <option>Married</option>
 								        <option>Widowed</option>
