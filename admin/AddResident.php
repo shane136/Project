@@ -1,10 +1,10 @@
-<script type="text/javascript" src="../assets/js/validation.js"></script>
+
 
 <!-- addResidentModal -->
 <div id="addResidentModal" class="modal fade bd-example-modal-lg">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
-			<form name="RegForm" method="post" action="" name="Vform" role="form" onsubmit="return validateForm()">   
+			<!-- <form name="RegForm" role="form">    -->
 				<div class="modal-header">						
 					<h4 class="modal-title">Add New</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -14,7 +14,7 @@
 					<!-- dre boss-->
 					<div class="col-md-4" id="fname_div">
 						<label>First Name</label>
-						<input type="text" class="form-control" name="fname">
+						<input type="text" class="form-control" id="fname" name="fname">
 						<div id="fname_error"></div>
 					</div>
 					<!-- dre boss-->
@@ -122,10 +122,11 @@
 				</div>
 				</div>
 				<div class="modal-footer">
-					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-					<input type="submit" class="btn btn-success" value="Add">
+					<!-- <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel"> -->
+
+					<button type="" class="btn btn-success" onclick="validateForm()">Add</button>
 				</div>
-			</form>
+			<!-- </form> -->
 		</div>
 	</div>
 </div>

@@ -145,17 +145,13 @@ session_start();
                                 <label class="small mb-1" for="inputOccupation">Occupation</label>
                                 <input class="form-control" id="inputOccupation" disabled type="text" placeholder="" value="<?php echo $occupation?>">
                             </div>
-                            <div class="col-md-4">
-                                <label class="small mb-1" for="inputbdate">Date of Birth</label>
-                                <input class="form-control" id="inputbdate" disabled type="text" placeholder="" value="<?php echo $bdate?>">
-                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <label class="small mb-1" for="inputAge">Age</label>
                                 <input class="form-control" id="inputAge" disabled type="text" placeholder="" value="<?php echo $age?>">
                             </div>
-                            <div class="col-md-4">
-                                <label class="small mb-1" for="inputGender">Sex</label>
-                                <input class="form-control" id="inputGender" disabled type="text" placeholder="" value="MALE">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputSex">Sex</label>
+                                <input class="form-control" id="inputSex" disabled type="text" placeholder="" value="<?php echo "Male";?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBtype">Blood Type</label>
@@ -170,8 +166,20 @@ session_start();
                                 <input class="form-control" id="inputHmember" disabled type="text" placeholder="" value="<?php echo $numHouseHold?>">
                             </div>
                             <div class="col-md-6"> 
-                                <label class="small mb-1" for="inputEducation">Educational Attainment</label>
-                                <input class="form-control" id="inputEducation" disabled type="text" value="<?php echo $educationalAttainment?>">         
+                            <label class="small mb-1" for="inputEducation">Educational Attaintment</label>
+                            <select name="" class="form-control" required>
+                                <option selected><?php echo $educationalAttainment?></option>								        
+								<option>Not Applicable</option>
+                                <option>Elementary Level</option>
+								<option>Elementary Graduate</option>
+                                <option>Completer</option>
+								<option>Senior High School</option>
+                                <option>College Level</option>
+                                <option>Vocational/TVET</option>
+                                <option>Undergraduate (Bachelor’s Degree)</option>
+                                <option>Postgraduate (Master’s Degree)</option>
+                                <option>Doctorate Degree (PhD)</option>
+                            </select>
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputUsername">Username</label>
