@@ -187,7 +187,7 @@ session_start();
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputHmember">No. of Household Member</label>
-                                <input class="form-control" id="inputHmember" type="text" name="numHouseHold" placeholder="" value="<?php echo $numHouseHold?>">
+                                <input class="form-control" id="inputHmember" type="number" min="1" name="numHouseHold" placeholder="" value="<?php echo $numHouseHold?>">
                             </div>
                             <div class="col-md-6"> 
                             <label class="small mb-1" for="inputEducation">Educational Attainment</label>
