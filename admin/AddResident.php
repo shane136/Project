@@ -11,18 +11,19 @@
 				</div>
 				<div class="modal-body">
 				<div class="row gx-3 mb-3">	
-					<!-- dre boss-->
-					<div class="col-md-4" id="fname_div">
+					<div class="col-md-4">
 						<label>First Name</label>
 						<input type="text" class="form-control" id="fname" name="fname" onkeyup="checkValidation()">
 						<div id="fname_error">
 							<p id="firstName" class="text text-danger" style="display:none;">First Name Is Required</p> 
 						</div>
 					</div>
-					<!-- dre boss-->
           			<div class="col-md-4">
 						<label>Middle Name</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="mname" name="mname" onkeyup="checkValidation()">
+						<div id="mname_error">
+							<p id="midName" class="text text-danger" style="display:none;">Middle Name Is Required</p>
+						</div>
 					</div>
           			<div class="col-md-4">
 						<label>Last Name</label>
