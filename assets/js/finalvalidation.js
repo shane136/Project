@@ -36,7 +36,7 @@ function checkValidation(){
 
     //addEventListener input, gina check nya if nagsulat ka or typing dra nga field or naka focus dra nga field
     nameInput.addEventListener('input', function(){
-        if(nameInput.value.match(specialChar)){
+        if(nameInput.value.match(specialChar) && nameInput.value.length > 0){
             var child = document.getElementById('firstName');
             nameInput.value = nameInput.value.toUpperCase();
             child.style.display = "none";
@@ -49,7 +49,7 @@ function checkValidation(){
         }
     });
     mNameInput.addEventListener('input', function(){
-        if(mNameInput.value.length > 0){
+        if(mNameInput.value.length > 0 && nameInput.value.length > 0){
             var child = document.getElementById('midName');
             mNameInput.value = mNameInput.value.toUpperCase();
             child.style.display = "none";
