@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
   <script type="text/javascript" src="../assets/js/table.js"></script>
-  <script type="text/javascript" src="../assets/js/validate.js"></script>
+  <script type="text/javascript" src="../assets/js/finalvalidation.js"></script>
   <script src="../assets/js/search.js"></script>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

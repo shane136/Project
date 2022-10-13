@@ -15,7 +15,9 @@
 					<div class="col-md-4" id="fname_div">
 						<label>First Name</label>
 						<input type="text" class="form-control" id="fname" name="fname">
-						<div id="fname_error"></div>
+						<div id="fname_error">
+							<p id="firstName" class="text text-danger" style="display:none;">First Name Is Required</p> 
+						</div>
 					</div>
 					<!-- dre boss-->
           			<div class="col-md-4">
