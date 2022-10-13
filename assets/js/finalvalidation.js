@@ -31,10 +31,12 @@ function validateForm(){
 function checkValidation(){
     var nameInput = document.getElementById("fname")
     var mNameInput = document.getElementById("mname");
+    
+    var specialChar = /^[ A-Za-z-]*$/;
 
     //addEventListener input, gina check nya if nagsulat ka or typing dra nga field or naka focus dra nga field
     nameInput.addEventListener('input', function(){
-        if(nameInput.value.length > 0){
+        if(nameInput.value.match(specialChar)){
             var child = document.getElementById('firstName');
             nameInput.value = nameInput.value.toUpperCase();
             child.style.display = "none";
@@ -59,6 +61,8 @@ function checkValidation(){
             mname.style.border = "1px solid red";
         }
     });
+
+    
 }
 
 
