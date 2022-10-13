@@ -1,29 +1,29 @@
-var fname = document.forms['Vform']['fname'];
+// var fname = document.forms['Vform']['fname'];
 
-var fname_error = document.getElementById('fname_error');
+// var fname_error = document.getElementById('fname_error');
 
-fname.addEventListerner('blur', nameVerify, true);
+// fname.addEventListerner('blur', nameVerify, true);
 
-function validateForm(){
+// function validateForm(){
 
 
-    if(fname.value == ""){
+//     if(fname.value == ""){
 
-        fname.style.border = "1 px solid red";
-        document.getElementById(fname_div).style.color = "red";
-        fname_error.textContent = "First Name is required.";
-        fname.focus();
-        return false;
-    }
-}
+//         fname.style.border = "1 px solid red";
+//         document.getElementById(fname_div).style.color = "red";
+//         fname_error.textContent = "First Name is required.";
+//         fname.focus();
+//         return false;
+//     }
+// }
 
-function nameVerify(){
+// function nameVerify(){
 
-    if(fname.value != ""){
+//     if(fname.value != ""){
 
-        fname.style.border = "1px solid #5e6e66";
-        document.getElementById('fname_div').style.color = "#5e6e66";
-        fname_error.innerHTML = "";
-        return true;
-    }
-}
+//         fname.style.border = "1px solid #5e6e66";
+//         document.getElementById('fname_div').style.color = "#5e6e66";
+//         fname_error.innerHTML = "";
+//         return true;
+//     }
+// }
