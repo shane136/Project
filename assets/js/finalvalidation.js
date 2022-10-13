@@ -14,7 +14,7 @@ function validateForm(){
 function checkValidation(){
     var nameInput = document.getElementById("fname");
     if(nameInput.value.length > 0){
-        
+        var child = document.getElementById('firstName');
         child.style.display = "none";
     }
     else{
