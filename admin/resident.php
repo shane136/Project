@@ -94,26 +94,26 @@
                         <tbody id="tableBody">
                         	
                         <tr>
-							<td>Nash<input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+							<td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
 							<td>Test</td>
 							<td>asdasdasd</td>
 							<td>zxcasdasd</td>
 							<td>asdasdsa</td>     
 							<td>asdasdasd</td>      
-							<td><asdsadsa/td>           
+							<td>asdsadsa</td>           
 							<td>
 								<a href="#editResidentModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
 								<a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
 							</td>
                         </tr>
 						<tr>
-							<td>Shane<input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
-							<td>Test</td>
+							<td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+							<td>Sabak dadi bi</td>
 							<td>asdasdasd</td>
 							<td>zxcasdasd</td>
 							<td>asdasdsa</td>     
 							<td>asdasdasd</td>      
-							<td><asdsadsa/td>           
+							<td>asdsadsa</td>           
 							<td>
 								<a href="#editResidentModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
 								<a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>

@@ -14,20 +14,23 @@
 					<div class="col-md-4">
 						<label>First Name</label>
 						<input type="text" class="form-control" id="fname" name="fname" onkeyup="checkValidation()">
-						<div id="fname_error">
+						<div>
 							<p id="firstName" class="text text-danger" style="display:none;">First Name Is Required</p> 
 						</div>
 					</div>
           			<div class="col-md-4">
 						<label>Middle Name</label>
 						<input type="text" class="form-control" id="mname" name="mname" onkeyup="checkValidation()">
-						<div id="mname_error">
+						<div>
 							<p id="midName" class="text text-danger" style="display:none;">Middle Name Is Required</p>
 						</div>
 					</div>
           			<div class="col-md-4">
 						<label>Last Name</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="lname" name="lname" onkeyup="checkValidation()">
+						<div>
+							<p id="lastName" class="text text-danger" style="display: none;">Last Name Is Required</p>
+						</div>
 					</div>
 					<div class="col-md-6">
 						<label>Place of Birth</label>
