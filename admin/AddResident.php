@@ -34,15 +34,24 @@
 					</div>
 					<div class="col-md-6">
 						<label>Place of Birth</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="place" name="place" onkeyup="checkValidation()">
+						<div>
+							<p id="placeOfBirth" class="text text-danger" style="display: none;">Required*</p>
+						</div>
 					</div>
 					<div class="col-md-6">
 						<label>Barangay</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="brgy" name="brgy" onkeyup="checkValidation()">
+						<div>
+							<p id="barangay" class="text text-danger" style="display: none;">Required*</p>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<label>Zone</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="zone" name="zone" onkeyup="checkValidation()">
+						<div>
+							<p id="zoneName" class="text text-danger" style="display: none;">Required*</p>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<label>Civil Status</label>
