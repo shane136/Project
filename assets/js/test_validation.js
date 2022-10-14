@@ -68,15 +68,15 @@ function validateForm(){
         child.style.display = "none";
     }
 
-    // if(cstatus.selectedIndex == -1){
-    //     var child = document.getElementById('cStatus');
-    //     child.style.display = "inline";
-    //     cstatus.style.border = "1px solid red";
-    // }
-    // else{
-    //     var child = document.getElementById('cStatus');
-    //     child.style.border = "none";
-    // }
+    if(cstatus.value == ""){
+        var child = document.getElementById('cStatus');
+        child.style.display = "inline";
+        cstatus.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('cStatus');
+        child.style.border = "none";
+    }
 }
 
 function checkValidation(){
@@ -86,7 +86,7 @@ function checkValidation(){
     var pNameInput = document.getElementById("place");
     var bNameInput = document.getElementById("brgy");
     var zNameInput = document.getElementById("zone");
-    // var csNameInput = document.getElementById("cstatus");
+    var csNameInput = document.getElementById("cstatus");
     
     var specialChar = /^[ A-Za-z-]*$/;
     var alphaNumeric = /^[A-Za-z0-9][A-Za-z0-9][A-Za-z0-9 ]*$/;
@@ -214,8 +214,19 @@ function checkValidation(){
         }
     });
 
+    csNameInput.addEventListener('change', function(){
+        if(csNameInput.value.length > 0){
+            var child = document.getElementById('cStatus');
+            child.style.display = "none";
+            cstatus.style.border = "1px solid green";
+        }
+        else{
+            var child = document.getElementById('cStatus');
+            child.style.display = "inline";
+            cstatus.style.border = "1px solid red";
+        }
 
-
+    });
 }
 
 

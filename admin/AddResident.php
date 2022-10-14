@@ -55,13 +55,13 @@
 					</div>
 					<div class="col-md-4">
 						<label>Civil Status</label>
-						<select name="cstatus" id="cstatus" class="form-control" onkeyup="checkValidation()"> 
-							<option disabled selected hidden></option>
-							<option>Single</option>
-                            <option>Married</option>
-							<option>Widowed</option>
-							<option>Separated</option>
-							<option>Divorced</option>
+						<select name="cstatus" id="cstatus" class="form-control" onchange="checkValidation()"> 
+							<option disabled selected hidden value=""></option>
+							<option value="Single">Single</option>
+                            <option value="Married">Married</option>
+							<option value="Widowed">Widowed</option>
+							<option value="Separated">Separated</option>
+							<option value="Divorced">Divorced</option>
 						</select>    
 						<div>
 							<p id="cStatus" class="text text-danger" style="display: none;">Please select an option</p>
