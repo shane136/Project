@@ -1,5 +1,3 @@
-
-
 <!-- addResidentModal -->
 <div id="addResidentModal" class="modal fade bd-example-modal-lg">
 	<div class="modal-dialog modal-lg">
@@ -55,7 +53,7 @@
 					</div>
 					<div class="col-md-4">
 						<label>Civil Status</label>
-						<select name="cstatus" id="cstatus" class="form-control" onchange="checkValidation()"> 
+						<select name="cstatus" id="cstatus" class="form-control" onclick="checkDrpdwn()"> 
 							<option disabled selected hidden value=""></option>
 							<option value="Single">Single</option>
                             <option value="Married">Married</option>
@@ -69,33 +67,43 @@
 					</div>
 					<div class="col-md-4">
 						<label>Occupation</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="occupation" name="occupation" onkeyup="checkValidation()">
+						<div>
+							<p id="occupationName" class="text text-danger" style="display: none;">Required*</p>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<label>Age</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="age" name="age" onkeyup="checkValidation()">
+						<div>
+							<p id="ageName" class="text text-danger" style="display: none;">Required*</p>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<label>Blood Type</label>
-						<select name="" class="form-control input-lg"> 
-							<option disabled selected hidden></option>
-							<option>AB+</option>
-                            <option>AB-</option>
-							<option>A+</option>
-							<option>A-</option>
-							<option>B+</option>
-							<option>B-</option>
-							<option>O+</option>
-							<option>O-</option>
+						<select name="btype" id="btype" class="form-control input-lg" onclick="checkDrpdwn()"> 
+							<option disabled selected hidden value=""></option>
+							<option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+							<option value="A+">A+</option>
+							<option value="A-">A-</option>
+							<option value="B+">B+</option>
+							<option value="B-">B-</option>
+							<option value="O+">O+</option>
+							<option value="O-">O-</option>
 						</select>
+						<p id="btypeName" class="text text-danger" style="display: none;">Please select an option</p>
 					</div>
 					<div class="col-md-4">
 						<label>Nationality</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="nationality" name="nationality" onkeyup="checkValidation()">
+						<div>
+							<p id="nationalityName" class="text text-danger" style="display: none;">Required*</p>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<label>No. of Household Member</label>
-						<input type="number" min="1" class="form-control">
+						<input type="number" min="1" class="form-control" required>
 					</div>
           			<div class="col-md-4">
 						<label>Sex</label>

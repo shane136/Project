@@ -7,6 +7,10 @@ function validateForm(){
     var brgy = document.getElementById("brgy");
     var zone = document.getElementById("zone");
     var cstatus = document.getElementById("cstatus");
+    var occupation = document.getElementById("occupation");
+    var age = document.getElementById("age");
+    var btype = document.getElementById("btype");
+    var nationality = document.getElementById("nationality");
 
     if(fname.value == ""){
         var child = document.getElementById('firstName');
@@ -77,6 +81,46 @@ function validateForm(){
         var child = document.getElementById('cStatus');
         child.style.border = "none";
     }
+
+    if(occupation.value == ""){
+        var child = document.getElementById('occupationName');
+        child.style.display = "inline";
+        occupation.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('occupationName');
+        child.style.display = "none";
+    }
+
+    if(age.value == ""){
+        var child = document.getElementById('ageName');
+        child.style.display = "inline";
+        age.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('ageName');
+        child.style.display = "none";
+    }
+
+    if(btype.value == ""){
+        var child = document.getElementById('btypeName');
+        child.style.display = "inline";
+        btype.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('btypeName');
+        child.style.border = "none";
+    }
+
+    if(nationality.value == ""){
+        var child = document.getElementById('nationalityName');
+        child.style.display = "inline";
+        nationality.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('nationalityName');
+        child.style.display = "none";
+    }
 }
 
 function checkValidation(){
@@ -86,11 +130,13 @@ function checkValidation(){
     var pNameInput = document.getElementById("place");
     var bNameInput = document.getElementById("brgy");
     var zNameInput = document.getElementById("zone");
-    var csNameInput = document.getElementById("cstatus");
+    var occptnNameInput = document.getElementById("occupation");
+    var ageNameInput = document.getElementById("age");
     
     var specialChar = /^[ A-Za-z-]*$/;
-    var alphaNumeric = /^[A-Za-z0-9][A-Za-z0-9][A-Za-z0-9 ]*$/;
-  
+    var alphaNumeric = /^[A-Za-z0-9 ]*$/;
+    var checkAge = /^[1-9][0-9]?$|^100$/;
+   
 
     //addEventListener input, gina check nya if nagsulat ka or typing dra nga field or naka focus dra nga field
     nameInput.addEventListener('input', function(){
@@ -213,20 +259,88 @@ function checkValidation(){
             child.innerText = "Required*";
         }
     });
+   
 
-    csNameInput.addEventListener('change', function(){
-        if(csNameInput.value.length > 0){
-            var child = document.getElementById('cStatus');
-            child.style.display = "none";
-            cstatus.style.border = "1px solid green";
-        }
-        else{
-            var child = document.getElementById('cStatus');
-            child.style.display = "inline";
-            cstatus.style.border = "1px solid red";
-        }
+  
+        occptnNameInput.addEventListener('input', function(){
+            if(occptnNameInput.value.length > 0){
+                if(occptnNameInput.value.match(alphaNumeric)){
+                    var child = document.getElementById('occupationName');
+                    child.style.display = "none";
+                    occupation.style.border = "1px solid green";
+                    occptnNameInput.value = occptnNameInput.value.toUpperCase();
+                }
+                else{
+                    var child = document.getElementById('occupationName');
+                    child.style.display = "inline";
+                    occupation.style.border = "1px solid red";
+                    child.innerText = "Alphabet letters and numbers are only Allowed!";
+                }
+            }
+            else{
+                var child = document.getElementById('occupationName');
+                child.style.display = "inline";
+                occupation.style.border = "1px solid red";
+                child.innerText = "Required*";
+            }
+        });
 
-    });
+        ageNameInput.addEventListener('input', function(){
+            if(ageNameInput.value.length > 0){
+                if(ageNameInput.value.match(checkAge)){
+                    var child = document.getElementById('ageName');
+                    child.style.display = "none";
+                    age.style.border = "1px solid green";
+                    ageNameInput.value = ageNameInput.value.toUpperCase();
+                }
+                else{
+                    var child = document.getElementById('ageName');
+                    child.style.display = "inline";
+                    age.style.border = "1px solid red";
+                    child.innerText = "Invalid Age!";
+                }
+            }
+            else{
+                var child = document.getElementById('ageName');
+                child.style.display = "inline";
+                age.style.border = "1px solid red";
+                child.innerText = "Required*";
+            }
+        });
+    
+
+
 }
 
+function checkDrpdwn(){
 
+    var csNameInput = document.getElementById("cstatus");
+    var typeNameInput = document.getElementById("btype");
+
+
+//select_civil_status 
+ if(csNameInput.value.length > 0){
+    var child = document.getElementById('cStatus');
+    child.style.display = "none";
+    cstatus.style.border = "1px solid green";
+    }
+else{
+    var child = document.getElementById('cStatus');
+    child.style.display = "inline";
+    cstatus.style.border = "1px solid red";  
+} 
+
+//select_blood_type
+if(typeNameInput.value.length > 0){
+    var child = document.getElementById('btypeName');
+    child.style.display = "none";
+    btype.style.border = "1px solid green";
+    }
+else{
+    var child = document.getElementById('btypeName');
+    child.style.display = "inline";
+    btype.style.border = "1px solid red";  
+} 
+
+
+}
