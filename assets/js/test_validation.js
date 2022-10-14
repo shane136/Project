@@ -6,6 +6,7 @@ function validateForm(){
     var place = document.getElementById("place");
     var brgy = document.getElementById("brgy");
     var zone = document.getElementById("zone");
+    var cstatus = document.getElementById("cstatus");
 
     if(fname.value == ""){
         var child = document.getElementById('firstName');
@@ -66,6 +67,16 @@ function validateForm(){
         var child = document.getElementById('zoneName');
         child.style.display = "none";
     }
+
+    // if(cstatus.selectedIndex == -1){
+    //     var child = document.getElementById('cStatus');
+    //     child.style.display = "inline";
+    //     cstatus.style.border = "1px solid red";
+    // }
+    // else{
+    //     var child = document.getElementById('cStatus');
+    //     child.style.border = "none";
+    // }
 }
 
 function checkValidation(){
@@ -75,9 +86,10 @@ function checkValidation(){
     var pNameInput = document.getElementById("place");
     var bNameInput = document.getElementById("brgy");
     var zNameInput = document.getElementById("zone");
+    // var csNameInput = document.getElementById("cstatus");
     
     var specialChar = /^[ A-Za-z-]*$/;
-    var alphaNumeric = /[A-Za-z0-9][A-Za-z0-9][A-Za-z0-9 ]$/;
+    var alphaNumeric = /^[A-Za-z0-9][A-Za-z0-9][A-Za-z0-9 ]*$/;
   
 
     //addEventListener input, gina check nya if nagsulat ka or typing dra nga field or naka focus dra nga field
@@ -201,6 +213,7 @@ function checkValidation(){
             child.innerText = "Required*";
         }
     });
+
 
 
 }

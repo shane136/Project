@@ -55,7 +55,7 @@
 					</div>
 					<div class="col-md-4">
 						<label>Civil Status</label>
-						<select name="" class="form-control"> 
+						<select name="cstatus" id="cstatus" class="form-control" onkeyup="checkValidation()"> 
 							<option disabled selected hidden></option>
 							<option>Single</option>
                             <option>Married</option>
@@ -63,6 +63,9 @@
 							<option>Separated</option>
 							<option>Divorced</option>
 						</select>    
+						<div>
+							<p id="cStatus" class="text text-danger" style="display: none;">Please select an option</p>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<label>Occupation</label>
