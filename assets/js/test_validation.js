@@ -54,7 +54,7 @@ function validateForm(){
     }
     else{
         var child = document.getElementById('barangay');
-        brgy.style.display = "none";
+        child.style.display = "none";
     }
 
     if(zone.value == ""){
@@ -64,7 +64,7 @@ function validateForm(){
     }
     else{
         var child = document.getElementById('zoneName');
-        zone.style.display = "none";
+        child.style.display = "none";
     }
 }
 
@@ -77,7 +77,8 @@ function checkValidation(){
     var zNameInput = document.getElementById("zone");
     
     var specialChar = /^[ A-Za-z-]*$/;
-    var alphaNumeric = /^[A-Za-z0-9]*$/;
+    var alphaNumeric = /[A-Za-z0-9][A-Za-z0-9][A-Za-z0-9 ]$/;
+  
 
     //addEventListener input, gina check nya if nagsulat ka or typing dra nga field or naka focus dra nga field
     nameInput.addEventListener('input', function(){
@@ -159,7 +160,7 @@ function checkValidation(){
         else{
             var child = document.getElementById('placeOfBirth');
             child.style.display = "inline";
-            place.value.border = "1px solid red";
+            place.style.border = "1px solid red";
         }
 
     });
@@ -174,11 +175,11 @@ function checkValidation(){
         else{
             var child = document.getElementById('barangay');
             child.style.display = "inline";
-            brgy.value.border = "1px solid red";
+            brgy.style.border = "1px solid red";
         }
     });
 
-    zNameInput.addEventListener = ('input', function(){
+    zNameInput.addEventListener ('input', function(){
         if(zNameInput.value.length > 0){
             if(zNameInput.value.match(alphaNumeric)){
                 var child = document.getElementById('zoneName');
@@ -194,7 +195,7 @@ function checkValidation(){
             }
         }
         else{
-            var child = get.getElementById('zoneName');
+            var child = document.getElementById('zoneName');
             child.style.display = "inline";
             zone.style.border = "1px solid red";
             child.innerText = "Required*";
