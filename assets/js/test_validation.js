@@ -283,52 +283,51 @@ function checkValidation(){
     });
    
 
-  
-        occptnNameInput.addEventListener('input', function(){
-            if(occptnNameInput.value.length > 0){
-                if(occptnNameInput.value.match(alphaNumeric)){
-                    var child = document.getElementById('occupationName');
-                    child.style.display = "none";
-                    occupation.style.border = "1px solid green";
-                    occptnNameInput.value = occptnNameInput.value.toUpperCase();
-                }
-                else{
-                    var child = document.getElementById('occupationName');
-                    child.style.display = "inline";
-                    occupation.style.border = "1px solid red";
-                    child.innerText = "Alphabet letters and numbers are only Allowed!";
-                }
+    occptnNameInput.addEventListener('input', function(){
+        if(occptnNameInput.value.length > 0){
+            if(occptnNameInput.value.match(alphaNumeric)){
+                var child = document.getElementById('occupationName');
+                child.style.display = "none";
+                occupation.style.border = "1px solid green";
+                occptnNameInput.value = occptnNameInput.value.toUpperCase();
             }
             else{
                 var child = document.getElementById('occupationName');
                 child.style.display = "inline";
                 occupation.style.border = "1px solid red";
-                child.innerText = "Required*";
+                child.innerText = "Alphabet letters and numbers are only Allowed!";
             }
-        });
+        }
+        else{
+            var child = document.getElementById('occupationName');
+            child.style.display = "inline";
+            occupation.style.border = "1px solid red";
+            child.innerText = "Required*";
+        }
+    });
 
-        ageNameInput.addEventListener('input', function(){
-            if(ageNameInput.value.length > 0){
-                if(ageNameInput.value.match(checkAge)){
-                    var child = document.getElementById('ageName');
-                    child.style.display = "none";
-                    age.style.border = "1px solid green";
-                    ageNameInput.value = ageNameInput.value.toUpperCase();
-                }
-                else{
-                    var child = document.getElementById('ageName');
-                    child.style.display = "inline";
-                    age.style.border = "1px solid red";
-                    child.innerText = "Invalid Age!";
-                }
+    ageNameInput.addEventListener('input', function(){
+        if(ageNameInput.value.length > 0){
+            if(ageNameInput.value.match(checkAge)){
+                var child = document.getElementById('ageName');
+                child.style.display = "none";
+                age.style.border = "1px solid green";
+                ageNameInput.value = ageNameInput.value.toUpperCase();
             }
             else{
                 var child = document.getElementById('ageName');
                 child.style.display = "inline";
                 age.style.border = "1px solid red";
-                child.innerText = "Required*";
+                child.innerText = "Invalid Age!";
             }
-        });
+        }
+        else{
+            var child = document.getElementById('ageName');
+            child.style.display = "inline";
+            age.style.border = "1px solid red";
+            child.innerText = "Required*";
+        }
+    });
     
 
 

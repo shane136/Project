@@ -176,6 +176,7 @@ function checkValidation(){
     var zNameInput = document.getElementById("zone");
     var occptnNameInput = document.getElementById("occupation");
     var ageNameInput = document.getElementById("age");
+    var bdateNameInput = document.getElementById("bdate");
     
     var specialChar = /^[ A-Za-z-]*$/;
     var alphaNumeric = /^[A-Za-z0-9 ]*$/;
@@ -304,51 +305,64 @@ function checkValidation(){
         }
     });
     
-        occptnNameInput.addEventListener('input', function(){
-            if(occptnNameInput.value.length > 0){
-                if(occptnNameInput.value.match(alphaNumeric)){
-                    var child = document.getElementById('occupationName');
-                    child.style.display = "none";
-                    occupation.style.border = "1px solid green";
-                    occptnNameInput.value = occptnNameInput.value.toUpperCase();
-                }
-                else{
-                    var child = document.getElementById('occupationName');
-                    child.style.display = "inline";
-                    occupation.style.border = "1px solid red";
-                    child.innerText = "Alphabet letters and numbers are only Allowed!";
-                }
+    occptnNameInput.addEventListener('input', function(){
+        if(occptnNameInput.value.length > 0){
+            if(occptnNameInput.value.match(alphaNumeric)){
+                var child = document.getElementById('occupationName');
+                child.style.display = "none";
+                occupation.style.border = "1px solid green";
+                occptnNameInput.value = occptnNameInput.value.toUpperCase();
             }
             else{
                 var child = document.getElementById('occupationName');
                 child.style.display = "inline";
                 occupation.style.border = "1px solid red";
-                child.innerText = "Required*";
+                child.innerText = "Alphabet letters and numbers are only Allowed!";
             }
-        });
+        }
+        else{
+            var child = document.getElementById('occupationName');
+            child.style.display = "inline";
+            occupation.style.border = "1px solid red";
+            child.innerText = "Required*";
+        }
+    });
 
-        ageNameInput.addEventListener('input', function(){
-            if(ageNameInput.value.length > 0){
-                if(ageNameInput.value.match(checkAge)){
-                    var child = document.getElementById('ageName');
-                    child.style.display = "none";
-                    age.style.border = "1px solid green";
-                    ageNameInput.value = ageNameInput.value.toUpperCase();
-                }
-                else{
-                    var child = document.getElementById('ageName');
-                    child.style.display = "inline";
-                    age.style.border = "1px solid red";
-                    child.innerText = "Invalid Age!";
-                }
+    ageNameInput.addEventListener('input', function(){
+        if(ageNameInput.value.length > 0){
+            if(ageNameInput.value.match(checkAge)){
+                var child = document.getElementById('ageName');
+                child.style.display = "none";
+                age.style.border = "1px solid green";
+                ageNameInput.value = ageNameInput.value.toUpperCase();
             }
             else{
                 var child = document.getElementById('ageName');
                 child.style.display = "inline";
                 age.style.border = "1px solid red";
-                child.innerText = "Required*";
+                child.innerText = "Invalid Age!";
             }
-        });
+        }
+        else{
+            var child = document.getElementById('ageName');
+            child.style.display = "inline";
+            age.style.border = "1px solid red";
+            child.innerText = "Required*";
+        }
+    });
+
+    bdateNameInput.addEventListener('input', function(){
+        if(bdateNameInput.value != ""){
+            var child = document.getElementById('bdateName');
+            child.style.display = "inline";
+            bdate.style.border = "1px solid red";
+        }
+        else{  
+            var child = document.getElementById('bdateName');
+            child.style.display = "none";
+            bdate.style.border = "1px solid green";
+        }
+    })
     
 
 
@@ -440,18 +454,19 @@ function checkEduc(){
 }
 
 function checkBdate(){
+    var bdateNameInput = document.getElementById('bdate');
+    bdateNameInput.addEventListener('input', function(e){
 
-    var bdateNameInput = document.getElementById("bdate");
-
-    if(!bdateNameInput.value && bdateNameInput.value.length > 0){
-        var child = document.getElementById('bdateName');
-        child.style.display = "inline";
-        bdate.style.border = "1px solid red";
-    }
-    else{  
-        var child = document.getElementById('bdateName');
-        child.style.display = "none";
-        bdate.style.border = "1px solid green";
-    }
+        if(e.target.value.length > 0){
+            var child = document.getElementById('bdateName');
+            child.style.display = "none";
+            bdate.style.border = "1px solid green";
+        }
+        else{  
+            var child = document.getElementById('bdateName');
+            child.style.display = "inline";
+            bdate.style.border = "1px solid red";
+        }
+    })
 }
 
