@@ -456,7 +456,7 @@ function checkEduc(){
 function checkBdate(){
     var bdateNameInput = document.getElementById('bdate');
     bdateNameInput.addEventListener('input', function(e){
-
+        //bla bla blacksheep  
         if(e.target.value.length > 0){
             var child = document.getElementById('bdateName');
             child.style.display = "none";
