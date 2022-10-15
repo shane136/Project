@@ -13,6 +13,8 @@ function validateForm(){
     var nationality = document.getElementById("nationality");
     var member = document.getElementById("member");
     var sex = document.getElementById("sex");
+    var education = document.getElementById("education");
+    var bdate = document.getElementById('bdate');
 
     if(fname.value == ""){
         var child = document.getElementById('firstName');
@@ -141,6 +143,26 @@ function validateForm(){
     }
     else{
         var child = document.getElementById('sexName');
+        child.style.display = "none";
+    }
+
+    if(education.value == ""){
+        var child = document.getElementById('educName');
+        child.style.display = "inline";
+        education.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('educName');
+        child.style.display = "none";
+    }
+
+    if(bdate.value == ""){
+        var child = document.getElementById('bdateName');
+        child.style.display = "inline";
+        bdate.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('bdateName');
         child.style.display = "none";
     }
 }
@@ -281,9 +303,7 @@ function checkValidation(){
             child.innerText = "Required*";
         }
     });
-   
-
-  
+    
         occptnNameInput.addEventListener('input', function(){
             if(occptnNameInput.value.length > 0){
                 if(occptnNameInput.value.match(alphaNumeric)){
@@ -338,18 +358,25 @@ function checkDrpdwn(){
 
     var csNameInput = document.getElementById("cstatus");
     var typeNameInput = document.getElementById("btype");
+    var memberNameInput = document.getElementById("member");
+    var sexNameInput = document.getElementById("sex");
+    var educNameInput = document.getElementById("education");
+    var bdateNameInput = document.getElementById("bdate");
 
+    
 
 //select_civil_status 
  if(csNameInput.value.length > 0){
     var child = document.getElementById('cStatus');
     child.style.display = "none";
     cstatus.style.border = "1px solid green";
+   
     }
 else{
     var child = document.getElementById('cStatus');
     child.style.display = "inline";
     cstatus.style.border = "1px solid red";  
+   
 } 
 
 //select_blood_type
@@ -361,8 +388,59 @@ if(typeNameInput.value.length > 0){
 else{
     var child = document.getElementById('btypeName');
     child.style.display = "inline";
-    btype.style.border = "1px solid red";  
+    btype.style.border = "1px solid red";   
+    
 } 
+
+//no_of_household
+if(memberNameInput.value.length > 0){
+    var child = document.getElementById('numberName');
+    child.style.display = "none";
+    member.style.border = "1px solid green";
+}
+else{
+    var child = document.getElementById('numberName');
+    child.style.display = "inline";
+    member.style.border = "1px solid red";
+}
+
+//sex
+if(sexNameInput.value.length > 0){
+    var child = document.getElementById('sexName');
+    child.style.display = "none";
+    sex.style.border = "1px solid green";
+}
+else{
+    var child = document.getElementById('sexName');
+    child.style.display = "inline";
+    sex.style.border = "1px solid red";
+}
+
+//educational_attainment
+if(educNameInput.value.length > 0){
+    var child = document.getElementById('educName');
+    child.style.display = "none";
+    education.style.border = "1px solid green";
+}
+else{
+    var child = document.getElementById('educName');
+    child.style.display = "inline";
+    education.style.border = "1px solid red";
+}
+
+//birthdate
+if(!bdateNameInput.value){
+    var child = document.getElementById('bdateName');
+    child.style.display = "inline";
+    bdate.style.border = "1px solid red";
+}
+else{  
+    var child = document.getElementById('bdateName');
+    child.style.display = "none";
+    bdate.style.border = "1px solid green";
+}
+
+
 
 
 }

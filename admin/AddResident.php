@@ -92,7 +92,9 @@
 							<option value="O+">O+</option>
 							<option value="O-">O-</option>
 						</select>
-						<p id="btypeName" class="text text-danger" style="display: none;">Please select an option</p>
+						<div>
+							<p id="btypeName" class="text text-danger" style="display: none;">Please select an option</p>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<label>Nationality</label>
@@ -103,35 +105,45 @@
 					</div>
 					<div class="col-md-4">
 						<label>No. of Household Member</label>
-						<input type="number" min="1" class="form-control" required>
+						<input type="number" min="1" class="form-control" id="member" name="member" onclick="checkDrpdwn()">
+						<div>
+							<p id="numberName" class="text text-danger" style="display: none;">Required*</p>
+						</div>
 					</div>
           			<div class="col-md-4">
 						<label>Sex</label>
-						<select name="" class="form-control"> 
-								<option disabled selected hidden></option>
-								<option>Female</option>
-                				<option>Male</option>
+						<select name="sex" id="sex" class="form-control" onclick="checkDrpdwn()"> 
+								<option disabled selected hidden value=""></option>
+								<option value="Female">Female</option>
+                				<option value="Male">Male</option>
 						</select>
+						<div>
+							<p id="sexName" class="text text-danger" style="display: none;">Please select an option</p>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<label>Educational Attainment</label>
-						<select name="" class="form-control">
-                                <option disabled selected hidden></option>								        
-								<option>Not Applicable</option>
-                                <option>Elementary Level</option>
-								<option>Elementary Graduate</option>
-                                <option>Completer</option>
-								<option>Senior High School</option>
-                                <option>College Level</option>
-                                <option>Vocational/TVET</option>
-                                <option>Undergraduate (Bachelor’s Degree)</option>
-                                <option>Postgraduate (Master’s Degree)</option>
-                                <option>Doctorate Degree (PhD)</option>
+						<select name="education" id="education" class="form-control" onclick="checkDrpdwn()">
+                                <option disabled selected hidden value=""></option>								        
+								<option value="Not Applicable">Not Applicable</option>
+                                <option value="Elementary Level">Elementary Level</option>
+								<option value="Elementary Graduate">Elementary Graduate</option>
+                                <option value="Completer">Completer</option>
+								<option value="Senior High School">Senior High School</option>
+                                <option value="College Level">College Level</option>
+                                <option value="Vocational/TVET">Vocational/TVET</option>
+                                <option value="Undergraduate (Bachelor's Degree)">Undergraduate (Bachelor’s Degree)</option>
+                                <option value="Posgraduate (Master's Degree)">Postgraduate (Master’s Degree)</option>
+                                <option value="Doctorate Degree (PhD)">Doctorate Degree (PhD)</option>
                             </select>
+							<div>
+								<p id="educName" class="text text-danger" style="display: none;">Please select an option</p>
+							</div>
 					</div>		
 					<div class="col-md-4">
 						<label>Date of Birth</label>
-						<input type="date" class="form-control">
+						<input type="date" value="" class="form-control" id="bdate" name="bdate" onclick="checkDrpdwn()">
+						<p id="bdateName" class="text text-danger" style="display: none;">Required*</p>
 					</div>	
 					<div class="col-md-8">
 						<label>Photo (.jpg, .jpeg & .png)</label>
