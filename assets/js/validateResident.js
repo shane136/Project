@@ -354,18 +354,10 @@ function checkValidation(){
 
 }
 
-function checkDrpdwn(){
+function checkStatus(){
 
     var csNameInput = document.getElementById("cstatus");
-    var typeNameInput = document.getElementById("btype");
-    var memberNameInput = document.getElementById("member");
-    var sexNameInput = document.getElementById("sex");
-    var educNameInput = document.getElementById("education");
-    var bdateNameInput = document.getElementById("bdate");
-
-    
-
-//select_civil_status 
+   
  if(csNameInput.value.length > 0){
     var child = document.getElementById('cStatus');
     child.style.display = "none";
@@ -377,70 +369,88 @@ else{
     child.style.display = "inline";
     cstatus.style.border = "1px solid red";  
    
-} 
+    } 
+}
 
-//select_blood_type
-if(typeNameInput.value.length > 0){
-    var child = document.getElementById('btypeName');
-    child.style.display = "none";
-    btype.style.border = "1px solid green";
+
+function checkBtype(){
+
+    var typeNameInput = document.getElementById("btype");
+
+    if(typeNameInput.value.length > 0){
+        var child = document.getElementById('btypeName');
+        child.style.display = "none";
+        btype.style.border = "1px solid green";
+        }
+    else{
+        var child = document.getElementById('btypeName');
+        child.style.display = "inline";
+        btype.style.border = "1px solid red";   
+        
+    } 
+
+}
+
+function checkMember(){
+
+    var memberNameInput = document.getElementById("member");
+
+    if(memberNameInput.value.length > 0){
+        var child = document.getElementById('numberName');
+        child.style.display = "none";
+        member.style.border = "1px solid green";
     }
-else{
-    var child = document.getElementById('btypeName');
-    child.style.display = "inline";
-    btype.style.border = "1px solid red";   
-    
-} 
-
-//no_of_household
-if(memberNameInput.value.length > 0){
-    var child = document.getElementById('numberName');
-    child.style.display = "none";
-    member.style.border = "1px solid green";
-}
-else{
-    var child = document.getElementById('numberName');
-    child.style.display = "inline";
-    member.style.border = "1px solid red";
+    else{
+        var child = document.getElementById('numberName');
+        child.style.display = "inline";
+        member.style.border = "1px solid red";
+    }
 }
 
-//sex
-if(sexNameInput.value.length > 0){
-    var child = document.getElementById('sexName');
-    child.style.display = "none";
-    sex.style.border = "1px solid green";
-}
-else{
-    var child = document.getElementById('sexName');
-    child.style.display = "inline";
-    sex.style.border = "1px solid red";
-}
+function checkSex(){
 
-//educational_attainment
-if(educNameInput.value.length > 0){
-    var child = document.getElementById('educName');
-    child.style.display = "none";
-    education.style.border = "1px solid green";
-}
-else{
-    var child = document.getElementById('educName');
-    child.style.display = "inline";
-    education.style.border = "1px solid red";
+    var sexNameInput = document.getElementById("sex");
+
+    if(sexNameInput.value.length > 0){
+        var child = document.getElementById('sexName');
+        child.style.display = "none";
+        sex.style.border = "1px solid green";
+    }
+    else{
+        var child = document.getElementById('sexName');
+        child.style.display = "inline";
+        sex.style.border = "1px solid red";
+    }
 }
 
-//birthdate
-if(!bdateNameInput.value){
-    var child = document.getElementById('bdateName');
-    child.style.display = "inline";
-    bdate.style.border = "1px solid red";
+function checkEduc(){
+
+    var educNameInput = document.getElementById("education");
+
+    if(educNameInput.value.length > 0){
+        var child = document.getElementById('educName');
+        child.style.display = "none";
+        education.style.border = "1px solid green";
+    }
+    else{
+        var child = document.getElementById('educName');
+        child.style.display = "inline";
+        education.style.border = "1px solid red";
+    }
 }
-else{  
-    var child = document.getElementById('bdateName');
-    child.style.display = "none";
-    bdate.style.border = "1px solid green";
-}
 
+function checkBdate(){
 
+    var bdateNameInput = document.getElementById("bdate");
 
-
+    if(!bdateNameInput.value){
+        var child = document.getElementById('bdateName');
+        child.style.display = "inline";
+        bdate.style.border = "1px solid red";
+    }
+    else{  
+        var child = document.getElementById('bdateName');
+        child.style.display = "none";
+        bdate.style.border = "1px solid green";
+    }
 }

@@ -53,7 +53,7 @@
 					</div>
 					<div class="col-md-4">
 						<label>Civil Status</label>
-						<select name="cstatus" id="cstatus" class="form-control" onclick="checkDrpdwn()"> 
+						<select name="cstatus" id="cstatus" class="form-control" onclick="checkStatus()"> 
 							<option disabled selected hidden value=""></option>
 							<option value="Single">Single</option>
                             <option value="Married">Married</option>
@@ -81,7 +81,7 @@
 					</div>
 					<div class="col-md-4">
 						<label>Blood Type</label>
-						<select name="btype" id="btype" class="form-control input-lg" onclick="checkDrpdwn()"> 
+						<select name="btype" id="btype" class="form-control input-lg" onclick="checkBtype()"> 
 							<option disabled selected hidden value=""></option>
 							<option value="AB+">AB+</option>
                             <option value="AB-">AB-</option>
@@ -105,14 +105,14 @@
 					</div>
 					<div class="col-md-4">
 						<label>No. of Household Member</label>
-						<input type="number" min="1" class="form-control" id="member" name="member" onclick="checkDrpdwn()">
+						<input type="number" min="1" class="form-control" id="member" name="member" onclick="checkMember()">
 						<div>
 							<p id="numberName" class="text text-danger" style="display: none;">Required*</p>
 						</div>
 					</div>
           			<div class="col-md-4">
 						<label>Sex</label>
-						<select name="sex" id="sex" class="form-control" onclick="checkDrpdwn()"> 
+						<select name="sex" id="sex" class="form-control" onclick="checkSex()"> 
 								<option disabled selected hidden value=""></option>
 								<option value="Female">Female</option>
                 				<option value="Male">Male</option>
@@ -123,7 +123,7 @@
 					</div>
 					<div class="col-md-4">
 						<label>Educational Attainment</label>
-						<select name="education" id="education" class="form-control" onclick="checkDrpdwn()">
+						<select name="education" id="education" class="form-control" onclick="checkEduc()">
                                 <option disabled selected hidden value=""></option>								        
 								<option value="Not Applicable">Not Applicable</option>
                                 <option value="Elementary Level">Elementary Level</option>
@@ -142,7 +142,7 @@
 					</div>		
 					<div class="col-md-4">
 						<label>Date of Birth</label>
-						<input type="date" value="" class="form-control" id="bdate" name="bdate" onclick="checkDrpdwn()">
+						<input type="date" value="" class="form-control" id="bdate" name="bdate" onclick="checkBdate()">
 						<p id="bdateName" class="text text-danger" style="display: none;">Required*</p>
 					</div>	
 					<div class="col-md-8">
