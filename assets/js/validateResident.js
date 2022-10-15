@@ -443,7 +443,7 @@ function checkBdate(){
 
     var bdateNameInput = document.getElementById("bdate");
 
-    if(!bdateNameInput.value){
+    if(!bdateNameInput.value && bdateNameInput.value.length > 0){
         var child = document.getElementById('bdateName');
         child.style.display = "inline";
         bdate.style.border = "1px solid red";
@@ -454,3 +454,4 @@ function checkBdate(){
         bdate.style.border = "1px solid green";
     }
 }
+
