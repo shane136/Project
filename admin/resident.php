@@ -13,8 +13,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
+  <link rel="stylesheet" href="../assets/css/password.css" type="text/css">
   <script type="text/javascript" src="../assets/js/table.js"></script>
-  <script type="text/javascript" src="../assets/js/validateResident.js"></script>
+  <script type="text/javascript" src="../assets/js/validationAddResident.js"></script>
   <script src="../assets/js/search.js"></script>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

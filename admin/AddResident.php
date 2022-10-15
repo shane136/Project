@@ -148,15 +148,27 @@
 
 					<div class="col-md-8">
 						<label>Photo (.jpg, .jpeg & .png)</label>
-						<input type="file" class="form-control" accept= ".png, .jpg, .jpeg" >
+						<input type="file" class="form-control" accept= ".png, .jpg, .jpeg" id="photo" name="photo" onclick="checkFile()">
+						<div>
+							<p id="photoName" class="text text-danger" style="display: none;">Please upload file</p>
+						</div>
 					</div>
 					<div class="col-md-6">
 						<label>Username</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="username" name="username" onkeyup="checkValidation()">
+						<div>
+							<p id="userName" class="text text-danger" style="display: none;">Input your Username.</p>
+						</div>
 					</div>
 					<div class="col-md-6">
 						<label>Password</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="password" name="password" onkeyup="checkValidation()">
+						<div>
+							<p id="passName" class="text text-danger" style="display: none;">Input your Password.</p>
+							<p id="upper" class="text text-danger" style="display: none;">*At least (1) Upper case</p>
+							<p id="lower" class="text text-danger" style="display: none;">*At least (1) Lower case</p>
+
+						</div>
 					</div>
 				</div>
 				</div>
@@ -165,7 +177,7 @@
 
 					<button type="" class="btn btn-success" onclick="validateForm()">Add</button>
 				</div>
-			<!-- </form> -->
+			
 		</div>
 	</div>
 </div>

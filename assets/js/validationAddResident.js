@@ -15,6 +15,9 @@ function validateForm(){
     var sex = document.getElementById("sex");
     var education = document.getElementById("education");
     var bdate = document.getElementById('bdate');
+    var photo = document.getElementById('photo');
+    var username = document.getElementById('username');
+    var password = document.getElementById('password');
 
     if(fname.value == ""){
         var child = document.getElementById('firstName');
@@ -165,6 +168,36 @@ function validateForm(){
         var child = document.getElementById('bdateName');
         child.style.display = "none";
     }
+
+    if(photo.value == ""){
+        var child = document.getElementById('photoName');
+        child.style.display = "inline";
+        photo.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('photoName');
+        child.style.display = "none";
+    }
+
+    if(username.value == ""){
+        var child = document.getElementById('userName');
+        child.style.display = "inline";
+        username.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('userName');
+        child.style.display = "none";
+    }
+
+    if(password.value == ""){
+        var child = document.getElementById('passName');
+        child.style.display = "inline";
+        password.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('passName');
+        child.style.display = "none";
+    }
 }
 
 function checkValidation(){
@@ -177,13 +210,20 @@ function checkValidation(){
     var occptnNameInput = document.getElementById("occupation");
     var ageNameInput = document.getElementById("age");
     var bdateNameInput = document.getElementById("bdate");
+    var fileNameInput = document.getElementById("photo");
+    var userNameInput = document.getElementById("username");
+    var passNameInput = document.getElementById("password");
     
+    //regex
     var specialChar = /^[ A-Za-z-]*$/;
     var alphaNumeric = /^[A-Za-z0-9 ]*$/;
     var checkAge = /^[1-9][0-9]?$|^100$/;
+    var checkUsername = /^[a-zA-Z0-9]{4,10}$/; //{min, max}
+    var checkPassword = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+    var checkUpper = /^(?=.*?[A-Z])/;
+    var checkLower = /^(?=.*?[a-z])/;
    
 
-    //addEventListener input, gina check nya if nagsulat ka or typing dra nga field or naka focus dra nga field
     nameInput.addEventListener('input', function(){
         if(nameInput.value.length > 0){
             if(nameInput.value.match(specialChar)){
@@ -362,10 +402,69 @@ function checkValidation(){
             child.style.display = "none";
             bdate.style.border = "1px solid green";
         }
-    })
+    });
+
+    fileNameInput.addEventListener('input', function(){
+        if(fileNameInput.files.length == 0){
+            var child = document.getElementById('photoName');
+            child.style.display = "inline";
+            photo.style.border = "1px solid red";
+        }
+        else{
+            var child = document.getElementById('photoName');
+            child.style.display = "none";
+            photo.style.border = "1px solid green";
+        }
+    });
+
+    userNameInput.addEventListener('input', function(){
+        if(userNameInput.value.length > 0){
+            if(userNameInput.value.match(checkUsername)){
+                var child = document.getElementById('userName');
+                child.style.display = "none";
+                username.style.border = "1px solid green";
+            }
+            else{
+                var child = document.getElementById('userName');
+                child.style.display = "inline";
+                username.style.border = "1px solid red";
+                child.innerText = "Minimum of 4 and Maximum of 10 characters.";
+            }
+        }
+        else{
+            var child = document.getElementById('userName');
+            child.style.display = "inline";
+            username.style.border = "1px solid red";
+            child.innerText = "Input your Username."
+        }
+    });
+
+    passNameInput.addEventListener('input', function(){
+        if(passNameInput.value.length > 0){
+            if(passNameInput.value.match(checkPassword)){
+                var child = document.getElementById('passName');
+                child.style.display = "none";
+                password.style.border = "1px solid green";
+            }
+            else{
+                var child = document.getElementById('passName');
+                child.style.display = "inline";
+                password.style.border = "1px solid red";
+                child.innerHTML = "*At least (1) Upper case" +"<br>"+ 
+                                  "*At least (1) Lower case" +"<br>"+
+                                  "*At least (1) Digit" + "<br>"+
+                                  "*At least (1) Special Character [#?!@$%^&*-]" +"<br>"+
+                                  "*Minimum of (8) in length";
+            }
+        }
+        else{
+            var child = document.getElementById('passName');
+            child.style.display = "inline";
+            password.style.border = "1px solid red";
+            child.innerText = "Input your Password."
+        }
+    });
     
-
-
 }
 
 function checkStatus(){
@@ -454,9 +553,10 @@ function checkEduc(){
 }
 
 function checkBdate(){
+
     var bdateNameInput = document.getElementById('bdate');
+
     bdateNameInput.addEventListener('input', function(e){
-        //bla bla blacksheep  
         if(e.target.value.length > 0){
             var child = document.getElementById('bdateName');
             child.style.display = "none";
@@ -468,5 +568,24 @@ function checkBdate(){
             bdate.style.border = "1px solid red";
         }
     })
+}
+
+function checkFile(){
+
+    var fileNameInput = document.getElementById("photo");
+
+    fileNameInput.addEventListener('input', function(e){
+        if(e.target.value.length > 0){
+            var child = document.getElementById('photoName');
+            child.style.display = "none";
+            photo.style.border = "1px solid green";
+    }
+        else{
+            var child = document.getElementById('photoName');
+            child.style.display = "inline";
+            photo.style.border = "1px solid red";
+    }
+})
+
 }
 
