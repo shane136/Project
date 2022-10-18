@@ -1,0 +1,23 @@
+.container1{
+    background:#ffffff;
+    padding-top: 30px;
+}
+
+#a{
+    margin-left: 20px;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.block{
+    display: inline-block;
+    position: relative;
+}
+
+#bar{
+    width: 500px;
+}
+
+#pie{
+    width: 300px;
+}

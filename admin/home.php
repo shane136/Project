@@ -13,8 +13,11 @@
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/card-stat.css" type="text/css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/graph.css" type="text/css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   <script src="../assets/js/barGraph.js"></script>
+  <script src="../assets/js/pieChart.js"></script>
   
 </head>
   
@@ -110,18 +113,20 @@
 	</div>
 </div>
 
+<hr>
   <!-- bar_graph -->
-<div class="container">
-  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+<div class="container1">
+  <div class="row" id="a">
+         <div class="block" id="bar">
+              <canvas id="myChart"></canvas>
+          </div>
+            
+          <div class="block" id="pie">
+              <canvas id="pieChart"></canvas>
+          </div>   
+      </div>                          
 </div>
     
-<script>
-
-
-
-
-
-</script>
 
 
 </main>
