@@ -9,8 +9,13 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
+  <link rel="stylesheet" href="../assets/css/card-stat.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="../assets/js/barGraph.js"></script>
+  
 </head>
   
 
@@ -54,36 +59,72 @@
 
 </aside>
 
- 	 <main class="main">
-    <section class="content-header">
-          <div class="col-md-12 p-1 text-center">
-            <h1><label id="lblGreetings"></label></h1> 
-          </div>
-    <h2>
-      <a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/1711084"> <span style="color:black;"></span><br/> <center> Suarez, Iligan City </center></a>
-    </h2>
-    <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=large&timezone=Asia%2FManila"  width="100%" height="140" frameborder="0"  seamless></iframe>
-                </section>
+<!-- main_content -->
+<main class="main">
+   
+<div class="container">
+    <div class="row" id="test">
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-blue order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Population</h6>
+                    <h2 class="text-right"><i class="fa fa-users f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Total Population<span class="f-right">351</span></p>      
+                    <a href=""><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-green order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Blotter</h6>
+                    <h2 class="text-right"><i class="fa fa-database f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Total Blotter<span class="f-right">351</span></p>
+                    <a href=""><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-yellow order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Certificate Received</h6>
+                    <h2 class="text-right"><i class="fa fa-file f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Requests<span class="f-right">351</span></p>
+                    <a href=""><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-pink order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Zone/Purok</h6>
+                    <h2 class="text-right"><i class="fa fa-list f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Total Purok<span class="f-right">351</span></p>
+                    <a href=""><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
 
+  <!-- bar_graph -->
+<div class="container">
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+</div>
+    
 <script>
-      var myDate = new Date();
-      var hrs = myDate.getHours();
 
-      var greet;
 
-      if (hrs < 12)
-          greet = 'Good Morning';
-      else if (hrs >= 12 && hrs <= 17)
-          greet = 'Good Afternoon';
-      else if (hrs >= 17 && hrs <= 24)
-          greet = 'Good Evening';
 
-      document.getElementById('lblGreetings').innerHTML =
-          '<b>' + greet + '</b> and Welcome to Admin Page!';
+
+
 </script>
 
-    
-   </main>
+
+</main>
 
 
 
