@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/card-stat.css" type="text/css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
   <script src="../assets/js/barGraph.js"></script>
   
 </head>

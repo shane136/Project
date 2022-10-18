@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function(){
     var color = ["blue", "orange", "yellow", "pink", "red"];
     
     
-    var myChart = new Chart(bar, {
-        type: "horizontalBar",
+    new Chart(bar, {
+        type: "bar",
         data: {
             labels: x,
             datasets: [{backgroundColor: color, data:y}]
@@ -20,11 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 display: true,
                 text: "Barangay Purok 2022"
             },
-            scales: {
-                y: [{
-                    ticks: {min: 5, max: 60}
-                }]
-            }
+            indexAxis: 'y'
         }
     });
     
