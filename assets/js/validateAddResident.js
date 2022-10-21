@@ -14,10 +14,11 @@ function validateForm(){
     var member = document.getElementById("member");
     var sex = document.getElementById("sex");
     var education = document.getElementById("education");
-    var bdate = document.getElementById('bdate');
-    var photo = document.getElementById('photo');
-    var username = document.getElementById('username');
-    var password = document.getElementById('password');
+    var bdate = document.getElementById("bdate");
+    var photo = document.getElementById("photo");
+    var username = document.getElementById("username");
+    var password = document.getElementById("password");
+    var voter = document.getElementById("voter");
 
     if(fname.value == ""){
         var child = document.getElementById('firstName');
@@ -196,6 +197,16 @@ function validateForm(){
     }
     else{
         var child = document.getElementById('passName');
+        child.style.display = "none";
+    }
+
+    if(voter.value == ""){
+        var child = document.getElementById('voterName');
+        child.style.display = "inline";
+        voter.style.border = "1px solid red";
+    }
+    else{
+        var child = document.getElementById('voterName');
         child.style.display = "none";
     }
 }
@@ -587,5 +598,21 @@ function checkFile(){
     }
 })
 
+}
+
+function checkVoter(){
+
+    var voterNameInput = document.getElementById("voter");
+
+    if(voterNameInput.value.length > 0){
+        var child = document.getElementById('voterName');
+        child.style.display = "none";
+        voter.style.border = "1px solid green";
+    }
+    else{
+        var child = document.getElementById('voterName');
+        child.style.display = "inline";
+        voter.style.border = "1px solid red";
+    }
 }
 

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/password.css" type="text/css">
   <script type="text/javascript" src="../assets/js/table.js"></script>
-  <script type="text/javascript" src="../assets/js/validationAddResident.js"></script>
+  <script type="text/javascript" src="../assets/js/validateAddResident.js"></script>
   <script src="../assets/js/search.js"></script>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -88,6 +88,7 @@
                                 <th><center>AGE</center></th>
                                 <th><center>SEX</center></th>
                                 <th><center>COMPLETE ADDRESS</center></th>
+                                <th><center>VOTER STATUS</center></th>
                                 <th style="width: 15% !important;"><center>Action</center></th>
 
                             </tr>
@@ -101,7 +102,8 @@
 							<td>zxcasdasd</td>
 							<td>asdasdsa</td>     
 							<td>asdasdasd</td>      
-							<td>asdsadsa</td>           
+							<td>asdsadsa</td>     
+              <td></td>        
 							<td>
 								<a href="#editResidentModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
 								<a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
@@ -114,7 +116,8 @@
 							<td>zxcasdasd</td>
 							<td>asdasdsa</td>     
 							<td>asdasdasd</td>      
-							<td>asdsadsa</td>           
+							<td>asdsadsa</td> 
+              <td></td>          
 							<td>
 								<a href="#editResidentModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
 								<a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>

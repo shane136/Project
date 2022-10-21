@@ -359,7 +359,10 @@
                                 <th><center>OR NUMBER</center></th>
                                 <th><center>DATE REQUESTED</center></th>
                                 <th><center>PICK UP DATE</center></th>
+                                <!-- cash on pick-up/not paid, paid -->
                                 <th><center>PAYMENT STATUS</center></th>
+                                <!-- pending, processing, completed -->
+                                <th><center>STATUS</center></th> 
                                 <th style="width: 15% !important;"><center>Action</center></th>
 
                             </tr>
@@ -375,6 +378,7 @@
                         <td></td>
                         <td></td>
                         <td></td>    
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td><button type="button" value="Print" onclick="PrintDoc()" class="btn btn-success btn-sm"><i class="fa fa-print"></i> Print</button> 

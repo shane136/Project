@@ -167,7 +167,18 @@
 							<p id="passName" class="text text-danger" style="display: none;">Input your Password.</p>
 							<p id="upper" class="text text-danger" style="display: none;">*At least (1) Upper case</p>
 							<p id="lower" class="text text-danger" style="display: none;">*At least (1) Lower case</p>
-
+						</div>
+					</div>
+					<div class="col-md-4">
+						<label>Voter Status</label>
+						<select name="voter" id="voter" class="form-control" onclick="checkVoter()"> 
+								<option disabled selected hidden></option>
+								<option>Active</option>
+                				<option>Inactive</option>
+								<option>Cancelled</option>
+						</select>
+						<div>
+							<p id="voterName" class="text text-danger" style="display: none;">Select an option</p>
 						</div>
 					</div>
 				</div>

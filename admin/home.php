@@ -73,7 +73,7 @@
                     <h6 class="m-b-20">Population</h6>
                     <h2 class="text-right"><i class="fa fa-users f-left"></i><span>486</span></h2>
                     <p class="m-b-0">Total Population<span class="f-right">351</span></p>      
-                    <a href=""><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
+                    <a href="../admin/resident.php"><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
                     <h6 class="m-b-20">Blotter</h6>
                     <h2 class="text-right"><i class="fa fa-database f-left"></i><span>486</span></h2>
                     <p class="m-b-0">Total Blotter<span class="f-right">351</span></p>
-                    <a href=""><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
+                    <a href="../admin/blotter.php"><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
                     <h6 class="m-b-20">Certificate Received</h6>
                     <h2 class="text-right"><i class="fa fa-file f-left"></i><span>486</span></h2>
                     <p class="m-b-0">Completed Requests<span class="f-right">351</span></p>
-                    <a href=""><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
+                    <a href="../admin/certificate.php"><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
                 </div>
             </div>
         </div>
@@ -103,10 +103,10 @@
         <div class="col-md-4 col-xl-3">
             <div class="card bg-c-pink order-card">
                 <div class="card-block">
-                    <h6 class="m-b-20">Zone/Purok</h6>
+                    <h6 class="m-b-20">Active Voters</h6>
                     <h2 class="text-right"><i class="fa fa-list f-left"></i><span>486</span></h2>
-                    <p class="m-b-0">Total Purok<span class="f-right">351</span></p>
-                    <a href=""><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
+                    <p class="m-b-0">Total Active Voters<span class="f-right">351</span></p>
+                    <a href="../admin/voter.php"><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
                 </div>
             </div>
         </div>

@@ -114,6 +114,15 @@
 						<label>Password</label>
 						<input type="text" class="form-control" required>
 					</div>
+					<div class="col-md-4">
+						<label>Voter Status</label>
+						<select name="" class="form-control" required> 
+								<option disabled selected hidden></option>
+								<option>Active</option>
+                				<option>Inactive</option>
+								<option>Cancelled</option>
+						</select>
+					</div>
 				</div>
 				</div>
 				<div class="modal-footer">
