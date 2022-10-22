@@ -1,72 +1,36 @@
-<!DOCTYPE html>
-<html class = "h-100"lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>ADMIN | VOTERS</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/voter.css">
+<script src="../assets/js/voter.js"></script>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
-  <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
-  
-  
-  
-</head>
-  
+<!-- Voter's List -->
+<div id="voterStatusModal" class="modal fade bd-example-modal-xl">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			
+				<div class="modal-header">						
+					<h4 class="modal-title">Voter's Status List</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+		<div class="modal-body">
 
-<div class="grid-container">
-  <header class="header">
-	
-	</header>
- 	
-<aside class="sidenav" id="side">
-
-<div class="d-flex justify-content-center align-items-center px-3 py-4">
-    <img
-         class="rounded-pill img-fluid"
-         width="65"
-		 src = "https://img.freepik.com/premium-vector/print-design-wolf-character-league-your-mascot_413831-70.jpg?w=2000" 
-         alt="profile">
-    <div class="ms-2">
-		<span class="name">Shane Pags</span> <br>
-        <span class="name">Admin</span>
+<div class="tabContainer">
+    <div class="buttonContainer">
+        <button onclick="showPanel(0,'#f44336')">Tab 1</button>
+        <button onclick="showPanel(1,'#4caf50')">Tab 2</button>
+        <button onclick="showPanel(2,'#2196f3')">Tab 3</button>
+        <button onclick="showPanel(3,'#ff5722')">Tab 4</button>
     </div>
+    <div class="tabPanel">Tab 1:Content</div>
+    <div class="tabPanel">Tab 2:Content</div>
+    <div class="tabPanel">Tab 3:Content</div>
+    <div class="tabPanel">Tab 4:Content</div>
 </div>
 
-<div class="ms-2"> <span class="name"> DASHBOARD</span></div>
-
-  <a href="..\admin\home.php"><i class="fa fa-home"></i> Home</a>
-
-  <a href="..\admin\BrgyProfile.php"><i class="fa fa-info-circle"></i> Barangay Profile</a>
-
-  <a href="..\admin\BrgyOfficial.php"><i class="fa fa-file"></i> Barangay Officials</a>
-
-  <a href="..\admin\resident.php"><i class="fa fa-user"></i> Resident Record</a>
-
-  <a href="..\admin\blotter.php"><i class="fa fa-database"></i> Blotter Record</a>
-
-<div class="ms-2"><span class="name"> FORMS</span></div>
-
-<a href="..\admin\certificate.php"><i class="fa fa-certificate"></i> Certificate</a>
-	
-<a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');">
-  <i class="fas fa-sign-out-alt"></i> Logout</a>
-
-</aside>
-
-<!-- main_content -->
-<main class="main">
-   
-
-</main>
-
-
-
- 	 <footer class="footer"></footer>
+				
+				<div class="modal-footer">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+				</div>
+			
+		</div>
+	</div>
 </div>
 
-</html>

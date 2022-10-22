@@ -121,6 +121,7 @@
 								<option>Active</option>
                 				<option>Inactive</option>
 								<option>Cancelled</option>
+								<option>Not Registered</option>
 						</select>
 					</div>
 				</div>

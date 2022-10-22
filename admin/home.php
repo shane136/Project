@@ -106,7 +106,7 @@
                     <h6 class="m-b-20">Active Voters</h6>
                     <h2 class="text-right"><i class="fa fa-list f-left"></i><span>486</span></h2>
                     <p class="m-b-0">Total Active Voters<span class="f-right">351</span></p>
-                    <a href="../admin/voter.php"><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
+                    <a href="#voterStatusModal" data-toggle="modal"><i class="fa fa-chevron-circle-right f-right" id="cursor"></i></a>
                 </div>
             </div>
         </div>
@@ -126,10 +126,10 @@
           </div>   
       </div>                          
 </div>
-    
 
-
+<?php include '../admin/voter.php';?>
 </main>
+
 
 
 
