@@ -185,11 +185,11 @@ session_start();
                                 <label class="small mb-1" for="inputNationality">Nationality</label>
                                 <input class="form-control" id="inputNationality" type="text" name="nationality" placeholder="" value="<?php echo $nationality?>">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label class="small mb-1" for="inputHmember">No. of Household Member</label>
                                 <input class="form-control" id="inputHmember" type="number" min="1" name="numHouseHold" placeholder="" value="<?php echo $numHouseHold?>">
                             </div>
-                            <div class="col-md-6"> 
+                            <div class="col-md-4"> 
                             <label class="small mb-1" for="inputEducation">Educational Attainment</label>
                             <select name="educationalAttainment" class="form-control" required>
                                 <option disabled selected hidden><?php echo $educationalAttainment?></option>								        
@@ -205,6 +205,16 @@ session_start();
                                 <option>Doctorate Degree (PhD)</option>
                             </select>
                             </div>
+                            <div class="col-md-4">
+						    <label class="small mb-1" for="inputVoter">Voter Status</label>
+						    <select name="" class="form-control"> 
+								<option disabled selected hidden></option>
+								<option>Active</option>
+                				<option>Inactive</option>
+								<option>Cancelled</option>
+                                <option>Not Registered</option>
+						    </select>				
+					        </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputUsername">Username</label>
                                 <input class="form-control" id="inputUsername" type="text" placeholder="" value="">
