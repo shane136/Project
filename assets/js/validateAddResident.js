@@ -221,9 +221,6 @@ function checkValidation(){
     var occptnNameInput = document.getElementById("occupation");
     var ageNameInput = document.getElementById("age");
     var bdateNameInput = document.getElementById("bdate");
-    var fileNameInput = document.getElementById("photo");
-    var userNameInput = document.getElementById("username");
-    var passNameInput = document.getElementById("password");
     
     //regex
     var specialChar = /^[ A-Za-z-]*$/;
@@ -356,28 +353,28 @@ function checkValidation(){
         }
     });
     
-    occptnNameInput.addEventListener('input', function(){
-        if(occptnNameInput.value.length > 0){
-            if(occptnNameInput.value.match(alphaNumeric)){
-                var child = document.getElementById('occupationName');
-                child.style.display = "none";
-                occupation.style.border = "1px solid green";
-                occptnNameInput.value = occptnNameInput.value.toUpperCase();
+        occptnNameInput.addEventListener('input', function(){
+            if(occptnNameInput.value.length > 0){
+                if(occptnNameInput.value.match(alphaNumeric)){
+                    var child = document.getElementById('occupationName');
+                    child.style.display = "none";
+                    occupation.style.border = "1px solid green";
+                    occptnNameInput.value = occptnNameInput.value.toUpperCase();
+                }
+                else{
+                    var child = document.getElementById('occupationName');
+                    child.style.display = "inline";
+                    occupation.style.border = "1px solid red";
+                    child.innerText = "Alphabet letters and numbers are only Allowed!";
+                }
             }
             else{
                 var child = document.getElementById('occupationName');
                 child.style.display = "inline";
                 occupation.style.border = "1px solid red";
-                child.innerText = "Alphabet letters and numbers are only Allowed!";
+                child.innerText = "Required*";
             }
-        }
-        else{
-            var child = document.getElementById('occupationName');
-            child.style.display = "inline";
-            occupation.style.border = "1px solid red";
-            child.innerText = "Required*";
-        }
-    });
+        });
 
     ageNameInput.addEventListener('input', function(){
         if(ageNameInput.value.length > 0){
@@ -413,42 +410,8 @@ function checkValidation(){
             child.style.display = "none";
             bdate.style.border = "1px solid green";
         }
-    });
-
-    fileNameInput.addEventListener('input', function(){
-        if(fileNameInput.files.length == 0){
-            var child = document.getElementById('photoName');
-            child.style.display = "inline";
-            photo.style.border = "1px solid red";
-        }
-        else{
-            var child = document.getElementById('photoName');
-            child.style.display = "none";
-            photo.style.border = "1px solid green";
-        }
-    });
-
-    userNameInput.addEventListener('input', function(){
-        if(userNameInput.value.length > 0){
-            if(userNameInput.value.match(checkUsername)){
-                var child = document.getElementById('userName');
-                child.style.display = "none";
-                username.style.border = "1px solid green";
-            }
-            else{
-                var child = document.getElementById('userName');
-                child.style.display = "inline";
-                username.style.border = "1px solid red";
-                child.innerText = "Minimum of 4 and Maximum of 10 characters.";
-            }
-        }
-        else{
-            var child = document.getElementById('userName');
-            child.style.display = "inline";
-            username.style.border = "1px solid red";
-            child.innerText = "Input your Username."
-        }
-    });
+    })
+    
 
     passNameInput.addEventListener('input', function(){
         if(passNameInput.value.length > 0){
@@ -564,10 +527,9 @@ function checkEduc(){
 }
 
 function checkBdate(){
-
     var bdateNameInput = document.getElementById('bdate');
-
     bdateNameInput.addEventListener('input', function(e){
+
         if(e.target.value.length > 0){
             var child = document.getElementById('bdateName');
             child.style.display = "none";
