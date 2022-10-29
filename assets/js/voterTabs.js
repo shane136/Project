@@ -25,10 +25,21 @@
 
 
 function showPanel(panelId){
-    //console.log(panelId);
+  
 
     var allPanels = document.querySelectorAll('.panel');
-    allPanels.forEach(panel => panel.classList.add('hide'));
-    document.getElementById(panelId).classList.remove('hide');
+    allPanels.forEach(panel => {
+        if(panelId == panel.id){
+            console.log(panelId);
+            var panelName = document.getElementById(panel.id);
+            panelName.style.display = 'inline';
+        }
+        else{
+            var panelName = document.getElementById(panel.id);
+            panelName.style.display = 'none';
+        }
+        
+    });
+    // document.getElementById(panelId).classList.remove('hide');
 
 }

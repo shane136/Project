@@ -20,9 +20,9 @@
         <button onclick="showPanel('panelD')">Tab 4</button>
     </div>
     <div class="panel" id="panelA">Tab 1....</div>
-    <div class="panel hide" id="panelB">Tab 2.....</div>
-    <div class="panel hide" id="panelC">Tab 3.....</div>
-    <div class="panel hide" id="panelD">Tab 4.....</div>
+    <div style="display: none;" class="panel" id="panelB">Tab 2.....</div>
+    <div style="display: none;" class="panel" id="panelC">Tab 3.....</div>
+    <div style="display: none;" class="panel" id="panelD">Tab 4.....</div>
 </div>
 			
 				<div class="modal-footer">
