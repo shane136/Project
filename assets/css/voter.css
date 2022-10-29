@@ -10,29 +10,7 @@
 .tabContainer .buttonContainer{
     height: 15%;
 }
-.tabContainer .buttonContainer button{
-    width: 25%;
-    height: 100%;
-    float: left;
-    border: none;
-    outline:none;
-    cursor: pointer;
-    padding: 10px;
-    font-family: sans-serif;
-    font-size: 18px;
-    background-color: #eee;
-}
-.tabContainer .buttonContainer button:hover{
-    background-color: #d7d4d4;
-}
-.tabContainer .tabPanel{
-    height: 85%;
-    background-color: gray;
-    color: white;
-    text-align: center;
-    padding-top: 105px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 22px;
+
+.hide{
     display: none;
 }

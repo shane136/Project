@@ -78,7 +78,7 @@
 <main class="main">
   <div class="card shadow mb-0">
     <div class="container-xl px-4 mt-4">
-        <h2> CERTIFICATE REQUESTS </h2>
+        <h2> RESIDENT CERTIFICATE (CEDULA) </h2>
     <hr class="mt-0 mb-4">
 
         <div>                                              

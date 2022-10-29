@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
   <script type="text/javascript" src="../assets/js/script.js"></script>
+  <link rel="stylesheet" href="../assets/css/dropdown.css" type="text/css">
+  <script src="../assets/js/dropdown.js"></script>
+ 
 </head>
   
 
@@ -48,7 +51,11 @@
 
 <div class="ms-2"><span class="name"> FORMS</span></div>
 
-<a href="..\admin\certificate.php"><i class="fa fa-certificate"></i> Certificate</a>
+<a role="button" class="dropdown-btn"><i class="fa fa-certificate"></i> Certificate</a>
+<div class="dropdown-container">
+    <a href="../admin/ResidentCertificate.php">Resident Certificate</a>
+    <a href="#">Indigency</a>
+</div>
 	
 <a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');">
   <i class="fas fa-sign-out-alt"></i> Logout</a>

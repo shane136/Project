@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/card-stat.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/graph.css" type="text/css">
+  <link rel="stylesheet" href="../assets/css/dropdown.css" type="text/css">
+  <script src="../assets/js/dropdown.js"></script>
+ 
   <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   <script src="../assets/js/barGraph.js"></script>
@@ -55,7 +58,11 @@
 
 <div class="ms-2"><span class="name"> FORMS</span></div>
 
-<a href="..\admin\certificate.php"><i class="fa fa-certificate"></i> Certificate</a>
+<a role="button" class="dropdown-btn"><i class="fa fa-certificate"></i> Certificate</a>
+<div class="dropdown-container">
+    <a href="../admin/ResidentCertificate.php">Resident Certificate</a>
+    <a href="../admin/indigency.php">Indigency</a>
+</div>
 	
 <a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');">
   <i class="fas fa-sign-out-alt"></i> Logout</a>
