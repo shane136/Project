@@ -22,7 +22,7 @@
 
 // });
 
-document.addEventListener("DOMContentLoaded", function(){
+
 
 function showPanel(panelId){
     //console.log(panelId);
@@ -32,4 +32,3 @@ function showPanel(panelId){
     document.getElementById(panelId).classList.remove('hide');
 
 }
-});
