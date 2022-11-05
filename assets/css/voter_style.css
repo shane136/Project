@@ -1,0 +1,40 @@
+.title{
+    font-family: sans-serif;
+    color: #dc2d5e;
+    text-align: center;
+}
+.tabContainer{
+    width: 100%;
+    height: 350px;
+}
+.tabContainer .buttonContainer{
+    height: 15%;
+}
+
+.tabContainer .buttonContainer button{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #dce4e4;
+}
+
+.tabContainer .buttonContainer button:hover{
+    background-color: #c7caca;
+}
+
+.table-responsive-sm {
+    overflow-y: auto;
+    height: 500px;
+  }
+  
+.table-responsive-sm th {
+    text-align: left;
+    top: 0;
+    position: sticky;
+    background-color: #cdfcff;
+  }
+

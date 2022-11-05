@@ -79,7 +79,7 @@
                                   <div>                                              
                                         <a href="#addResidentModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-user-plus"></i><span> Add Resident</span></a>                          
                                         <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>																
-										<input class="searchBar" type="search" placeholder="Search..." id="searchData" onkeyup="searchRow()" title="Type here">									
+										                    <input class="searchBar" type="search" placeholder="Search..." id="searchData" onkeyup="searchRow()" title="Type here">									
 								  </div>
 
               <div class="card-body">
