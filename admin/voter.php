@@ -47,7 +47,7 @@
 
 <!-- <input class="searchBar" type="search" placeholder="Search..." id="searchData" onkeyup="searchRow()" title="Type here"> -->
 
-<br><br>
+
 <div class="table-responsive-sm"> 
 <table class="table table-bordered" id="active">
     <thead>
@@ -86,7 +86,7 @@
 
 <input class="searchBar" type="search" placeholder="Search..." id="searchData" onkeyup="searchRow()" title="Type here"> -->
 
-<br><br>
+
 <div class="table-responsive-sm"> 
 <table class="table table-bordered" id="inactive">
     <thead>
@@ -125,7 +125,7 @@
 
 <input class="searchBar" type="search" placeholder="Search..." id="searchData" onkeyup="searchRow()" title="Type here"> -->
 
-<br><br>
+
 <div class="table-responsive-sm"> 
 <table class="table table-bordered" id="cancelled">
     <thead>
@@ -165,7 +165,7 @@
 
 <input class="searchBar" type="search" placeholder="Search..." id="searchData" onkeyup="searchRow()" title="Type here"> -->
 
-<br><br>
+
 <div class="table-responsive-sm"> 
 <table class="table table-bordered" id="notRegistered">
     <thead>
