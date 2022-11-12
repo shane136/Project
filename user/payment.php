@@ -106,7 +106,7 @@
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"></i>Amount</div>
                                         </div>
-                                        <input type="number" min="1" class="form-control" placeholder="" required>
+                                        <input type="input-group-text" value="30.00" class="form-control" disabled>
                                         
                                     </div>
                                 </div>
@@ -119,9 +119,7 @@
                         </div>
                     </form>
                    
-                    <div>
-                        <p><strong>NOTE:</strong> You must pay &#8369 30.00 for all type of clearance. THANK YOU!!</p>
-                    </div>
+                    
 
 
                 </div>

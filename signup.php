@@ -112,6 +112,17 @@
                                 <option>Doctorate Degree (PhD)</option>
                             </select>
                     </div>
+	
+					<div class="form-group"> 
+								<select name="voter" id="voter" class="form-control input-lg"> 
+									<option disabled selected hidden>Voter Status</option>
+									<option>Active</option>
+                					<option>Inactive</option>
+									<option>Cancelled</option>
+									<option>Not Registered</option>
+								</select>
+					</div>
+
                     <input type="text" name="username" value="" class="form-control input-lg" placeholder="Username"  />
 					<input type="password" name="password" value="" autocomplete="current-password" id="text" class="form-control input-lg" placeholder="Password"  />
 					

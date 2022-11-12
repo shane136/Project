@@ -444,7 +444,7 @@
 
 <?php 
 
-  include('CertContent.php');
+  include('IndigencyContent.php');
 
 ?>
            </div>

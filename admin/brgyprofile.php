@@ -54,7 +54,7 @@
 <a role="button" class="dropdown-btn"><i class="fa fa-certificate"></i> Certificate</a>
 <div class="dropdown-container">
     <a href="../admin/ResidentCertificate.php">Resident Certificate</a>
-    <a href="#">Indigency</a>
+    <a href="../admin/indigency.php">Indigency</a>
 </div>
 	
 <a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');">

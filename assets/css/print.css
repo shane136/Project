@@ -44,7 +44,7 @@ ul.a {
  
 .logo{
 
-    margin-left: 230;
+    margin-left: 200;
     width: 100;
     position: relative;
 }
@@ -80,16 +80,17 @@ p.b{
     line-height: 0.3;
 }
 
-.sign{
+/* .sign{
 
     width: 200; 
     position: absolute;
     left: 600;
     top: 625px;
   
-}
+} */
 
 br.bottom{
 
     line-height: 10;
 }
+
