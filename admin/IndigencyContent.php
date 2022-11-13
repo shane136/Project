@@ -48,7 +48,7 @@ Office of the Punong Barangay</span></p>
       of their daughter/son. </p> 
       
       <p class="body">
-        This certification is issued upon the request of the above-named person to avail Scholarship Program and or
+        This certification is issued upon the request of the above-named person to avail PURPOSE and or
       whatever legal purpose it may serve.
       </p> <br>    
 

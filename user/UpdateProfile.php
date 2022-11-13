@@ -96,8 +96,6 @@ session_start();
                     </div>
                 </div>
                     <input type="file"  accept=".png, .jpg, .jpeg" name="image" id="file"  onchange="loadFile(event)">
-                   
-                <script src="../assets/js/script.js"> </script>
               
         </div>
 

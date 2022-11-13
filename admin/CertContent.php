@@ -95,7 +95,7 @@ Office of the Punong Barangay</span></p>
   <p>Issued this <u> DATE </u> day of <u> MONTH </u> <u> YEAR </u>.</p> <br><br>
 
 <div class="name"> 
-  <img class="sign" src="">
+  <!-- <img class="sign" src=""> -->
   <p class="a"><u>ABCDEFGH I. JKLMNOP</u></p>
   <p class="b">Barangay Chairman</p>
 </div>

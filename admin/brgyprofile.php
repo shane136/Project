@@ -14,6 +14,7 @@
   <script type="text/javascript" src="../assets/js/script.js"></script>
   <link rel="stylesheet" href="../assets/css/dropdown.css" type="text/css">
   <script src="../assets/js/dropdown.js"></script>
+  <script src="../assets/js/script.js"> </script>
  
 </head>
   
