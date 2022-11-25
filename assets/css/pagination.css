@@ -1,0 +1,34 @@
+/* .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+
+.pagination-container{
+
+    padding-left: 80%;
+}
+
+.pagination a:hover{
+
+    background-color: #ddd;
+}
+
+.page-item.active .page-link{
+
+    background-color: blue;
+    border: none;
+}
+
+.pagination{
+
+    display: inline;
+} */
+
+#button{
+
+    width: 110px;
+    margin-top: 5px;
+}
