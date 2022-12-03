@@ -4,36 +4,26 @@
     <meta charset="utf-8">
     <title>ADMIN | BARANGAY OFFICIALS</title>
 
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
-  <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
-  <script type="text/javascript" src="../assets/js/table.js"></script>
-  <link rel="stylesheet" href="../assets/css/dropdown.css" type="text/css">
-  <script src="../assets/js/dropdown.js"></script>
-  <script type="text/javascript" src="../assets/js/pagination.js"></script>
-  <link rel="stylesheet" href="../assets/css/pagination.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css"> -->
-  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"> -->
-  <!-- <link href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"> -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <!-- <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <link href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"> -->
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+  <link href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
+  <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
+  <script type="text/javascript" src="../assets/js/page.js"></script>
+  <link rel="stylesheet" href="../assets/css/dropdown.css" type="text/css">
+  <link rel="stylesheet" href="../assets/css/page.css" type="text/css">
+  <script src="../assets/js/dropdown.js"></script>
+  <script type="text/javascript" src="../assets/js/modal.js"></script>
 
+  
 </head>
   
 
@@ -81,22 +71,23 @@
 
 </aside>
 
-  <main class="main">
-   <div class="card shadow mb-0">
+<main class="main">
+<div class="card shadow mb-0">
     <div class="container-xl px-4 mt-4">
-        <h2> LIST OF BARANGAY OFFICIALS </h2>
+        <h2> BARANGAY OFFICIALS </h2>
     <hr class="mt-0 mb-4">
                             <div class="box">
                                 <div class="box-header">
                                   <div style="padding:10px;">
-                                                    
-                                  <a href="#addOfficialModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus-circle"></i><span> Add New</span></a>
-                                  <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>
-                                </div>
-            
-                                  <div class="card-body">
+                                  
+                                    <a href="#addOfficialModal" class="btn btn-success" data-toggle="modal"><i class="fa fa-plus-circle"></i><span> Add New</span></a>                          
+                                    <a href="" class="btn btn-danger" data-toggle="modal"><i class="fa fa-ban"></i><span> Delete All</span></a>
+                                   
+                                  </div>
+
+              <div class="card-body">
                 <div class="table-responsive-sm">
-                    <table class="table table-bordered" id="dataTable" width="50%" cellspacing="0">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
 
@@ -106,16 +97,14 @@
                                 <th><center>POSITION</center></th>
                                 <th><center>TERM</center></th>
                                 <th><center>ADDRESS</center></th>
-                                <th style="width: 15% !important;"><center>Option</center></th>
-                                   
+                                <th style="width: 17% !important;"><center>Option</center></th>
                             </tr>
                         </thead>
                         <tbody>
                         	
-                      
-                      <tr>
+                        <tr>
 
-                        <td style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
+                        <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -124,17 +113,24 @@
                         <td><a href="#editOfficialModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
 							          <a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
                         </td>
-                       
-                      </tr>
-                                            
-                    
+						
+						
+                        </tr>
+
+					
+
                         </tbody>
                     </table>
-                    <div class="pagination-container"><ul class="pagination"></ul></div>
-                </div>
+				
+                  </div>
+              </div>
+          </div>
+       </div>
+    </div>
+            <div class="pagination-container">
+              <ul class="pagination"></ul>
             </div>
-
-        </div>
+</div>
 
 <!-- addOfficialModal -->
 
@@ -219,9 +215,9 @@
 </div>
 
 
-    </main>
 
-    <footer class="footer"></footer>
+</main>
+<footer class="footer"></footer>
 </div>
 
 </html>

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>ADMIN | BLOTTER RECORDS</title>
 
-<!-- //test -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -18,9 +17,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/admin_style.css" type="text/css">
   <link rel="stylesheet" href="../assets/css/table.css" type="text/css">
-  <script type="text/javascript" src="../assets/js/pagination.js"></script>
+  <script type="text/javascript" src="../assets/js/page.js"></script>
   <link rel="stylesheet" href="../assets/css/dropdown.css" type="text/css">
-  <link rel="stylesheet" href="../assets/css/pagination.css" type="text/css">
+  <link rel="stylesheet" href="../assets/css/page.css" type="text/css">
   <script src="../assets/js/dropdown.js"></script>
   <script type="text/javascript" src="../assets/js/modal.js"></script>
 
@@ -88,7 +87,7 @@
 
               <div class="card-body">
                 <div class="table-responsive-sm">
-                    <table class="table table-bordered" id="dataTable" width="50%" cellspacing="0">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
 
