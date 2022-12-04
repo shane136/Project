@@ -17,7 +17,8 @@
   <script type="text/javascript" src="../assets/js/modal.js"></script>
   <script src="../assets/js/dropdown.js"></script>
   <script type="text/javascript" src="../assets/js/page.js"></script>
- 
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/dt-1.10.11,r-2.0.2/datatables.min.css">
@@ -79,10 +80,10 @@
 
 <div class="ms-2"><span class="name"> FORMS</span></div>
 
-<a role="button" class="dropdown-btn"><i class="fa fa-certificate"></i> Certificate</a>
+<a role="button" class="dropdown-btn"><i class="fa fa-list-ul"></i> Certificates</a>
 <div class="dropdown-container">
-    <a href="../admin/ResidentCertificate.php">Resident Certificate</a>
-    <a href="../admin/indigency.php">Indigency</a>
+    <a href="../admin/ResidentCertificate.php"><iconify-icon icon="fa:check-square-o"></iconify-icon> Resident Certificate</a>
+    <a href="../admin/indigency.php"><iconify-icon icon="fa:check-square-o"></iconify-icon> Indigency</a>
 </div>
 	
 <a href="..\connection\login.php" onclick="return confirm('Are you sure you want to log out?');">
