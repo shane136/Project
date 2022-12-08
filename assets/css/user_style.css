@@ -39,6 +39,10 @@
 
 }
 
+.sidebar a:active{
+    background: #2f5a63;
+}
+
 .sidebar i{
     padding-right: 10px;
 }

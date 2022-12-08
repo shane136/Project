@@ -26,6 +26,11 @@
     background-color: #c7caca;
 }
 
+.tabContainer .buttonContainer button:focus{
+    background-color: #b9b9b9;
+    transition: 0.3s ease-out;
+}
+
 .table-responsive-sm {
     overflow-y: auto;
     height: 500px;

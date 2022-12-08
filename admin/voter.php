@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../assets/css/voter_style.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/voter_modal.css">
 <script src="../assets/js/voterTabs.js"></script>
 <script src="../assets/js/voter.js"></script>
 
