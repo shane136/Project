@@ -128,7 +128,13 @@ session_start();
                            
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputZone">Zone</label>
-                                <input class="form-control" id="inputZone" name="zone" type="text" placeholder="" value="<?php echo $zone;?>">
+                                    <select name="zone" class="form-control">
+                                        <option disabled selected hidden><?php echo $zone?></option>
+                                        <option>Zone 1</option>
+                                        <option>Zone 2</option>
+                                        <option>Zone 3</option>
+                                        <option>Zone 4</option>
+                                    </select>
                             </div>             
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBrgyName">Barangay</label>
