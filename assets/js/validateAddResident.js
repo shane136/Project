@@ -330,28 +330,28 @@ function checkValidation(){
         }
     });
 
-    zNameInput.addEventListener ('input', function(){
-        if(zNameInput.value.length > 0){
-            if(zNameInput.value.match(alphaNumeric)){
-                var child = document.getElementById('zoneName');
-                child.style.display = "none"
-                zone.style.border = "1px solid green";
-                zNameInput.value = zNameInput.value.toUpperCase();
-            }
-            else{
-                var child = document.getElementById('zoneName');
-                child.style.display = "inline";
-                zone.style.border = "1px solid red";
-                child.innerText = "Alphabet and Numbers are only Allowed!";
-            }
-        }
-        else{
-            var child = document.getElementById('zoneName');
-            child.style.display = "inline";
-            zone.style.border = "1px solid red";
-            child.innerText = "Required*";
-        }
-    });
+    // zNameInput.addEventListener ('input', function(){
+    //     if(zNameInput.value.length > 0){
+    //         if(zNameInput.value.match(alphaNumeric)){
+    //             var child = document.getElementById('zoneName');
+    //             child.style.display = "none"
+    //             zone.style.border = "1px solid green";
+    //             zNameInput.value = zNameInput.value.toUpperCase();
+    //         }
+    //         else{
+    //             var child = document.getElementById('zoneName');
+    //             child.style.display = "inline";
+    //             zone.style.border = "1px solid red";
+    //             child.innerText = "Alphabet and Numbers are only Allowed!";
+    //         }
+    //     }
+    //     else{
+    //         var child = document.getElementById('zoneName');
+    //         child.style.display = "inline";
+    //         zone.style.border = "1px solid red";
+    //         child.innerText = "Required*";
+    //     }
+    // });
     
         occptnNameInput.addEventListener('input', function(){
             if(occptnNameInput.value.length > 0){
@@ -416,6 +416,24 @@ function checkValidation(){
 
 }
 
+function checkZone(){
+
+    var zNameInput = document.getElementById("zone");
+   
+ if(zNameInput.value.length > 0){
+    var child = document.getElementById('zoneName');
+    child.style.display = "none";
+    zone.style.border = "1px solid green";
+   
+    }
+else{
+    var child = document.getElementById('zoneName');
+    child.style.display = "inline";
+    zone.style.border = "1px solid red";  
+   
+    } 
+}
+
 function checkStatus(){
 
     var csNameInput = document.getElementById("cstatus");
@@ -430,7 +448,7 @@ else{
     var child = document.getElementById('cStatus');
     child.style.display = "inline";
     cstatus.style.border = "1px solid red";  
-   
+
     } 
 }
 

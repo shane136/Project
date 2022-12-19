@@ -36,13 +36,20 @@
 					<input type="text" name="bplace" value="" class="form-control input-lg" placeholder="Birthplace"  />
 
 					<div class="row">
-                        <div class="col-xs-6 col-md-6">
+                        <div class="col-xs-7 col-md-7">
                             <input type="text" name="brgy" value="" class="form-control input-lg" placeholder="Barangay"  />         
 						</div>
-
-                        <div class="col-xs-6 col-md-6">
-                            <input type="text" name="zone" value="" class="form-control input-lg" placeholder="Zone"  />                      
+					
+                        <div class="col-xs-5">
+							<select name="zone" class="form-control input-lg"> 
+								<option disabled selected hidden>Zone</option>
+								<option>Zone 1</option>
+                                <option>Zone 2</option>
+								<option>Zone 3</option>
+								<option>Zone 4</option>
+							</select>                         
 						</div>
+					
 
 						<div class="col-xs-6 col-md-6">
 							<select name="cstatus" class="form-control input-lg"> 
@@ -75,7 +82,7 @@
 								<option>O+</option>
 								<option>O-</option>
 							</select>
-					</div>
+						</div>
 
 						<div class="col-xs-4">
                             <input type="text" name="nationality" value="" class="form-control input-lg" placeholder="Nationality"  />                      

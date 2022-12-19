@@ -44,13 +44,28 @@
 							<p id="barangay" class="text text-danger" style="display: none;">Required*</p>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<!-- <div class="col-md-4">
 						<label>Zone</label>
 						<input type="text" class="form-control" id="zone" name="zone" onkeyup="checkValidation()">
 						<div>
 							<p id="zoneName" class="text text-danger" style="display: none;">Required*</p>
 						</div>
+					</div> -->
+
+					<div class="col-md-4">
+						<label>Zone</label>
+						<select name="zone" id="zone" class="form-control" onclick="checkZone()"> 
+							<option disabled selected hidden value=""></option>
+							<option value="Zone 1">Zone 1</option>
+							<option value="Zone 2">Zone 2</option>
+							<option value="Zone 3">Zone 3</option>
+							<option value="Zone 4">Zone 4</option>
+						</select>
+						<div>
+							<p id="zoneName" class="text text-danger" style="display: none;">Please select an option</p>
+						</div>
 					</div>
+
 					<div class="col-md-4">
 						<label>Civil Status</label>
 						<select name="cstatus" id="cstatus" class="form-control" onclick="checkStatus()"> 
