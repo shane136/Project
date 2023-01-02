@@ -14,6 +14,8 @@ session_start();
     $religion = $_SESSION['residentData']['religion'];
     $bloodType = $_SESSION['residentData']['blood_type'];
     $nationality = $_SESSION['residentData']['nationality'];
+    $barangay = $_SESSION['residentData']['barangay'];
+    $voterStatus = $_SESSION['residentData']['status'];
 ?>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -135,19 +137,19 @@ session_start();
                             </div>             
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBrgyName">Barangay</label>
-                                <input class="form-control" id="inputBrgyName" disabled type="text" placeholder="" value="TAMBACAN">
+                                <input class="form-control" id="inputBrgyName" disabled type="text" placeholder="" value="<?php echo $barangay;?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputStatus">Civil Status</label>
-                                <input class="form-control" id="inputStatus" disabled type="text" placeholder="" value="<?php echo $civilStatus?>">
+                                <input class="form-control" id="inputStatus" disabled type="text" placeholder="" value="<?php echo $civilStatus;?>">
                             </div>                           
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputOccupation">Occupation</label>
-                                <input class="form-control" id="inputOccupation" disabled type="text" placeholder="" value="<?php echo $occupation?>">
+                                <input class="form-control" id="inputOccupation" disabled type="text" placeholder="" value="<?php echo $occupation;?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputAge">Age</label>
-                                <input class="form-control" id="inputAge" disabled type="text" placeholder="" value="<?php echo $age?>">
+                                <input class="form-control" id="inputAge" disabled type="text" placeholder="" value="<?php echo $age;?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputSex">Sex</label>
@@ -155,20 +157,20 @@ session_start();
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBtype">Blood Type</label>
-                                <input class="form-control" id="inputBtype" disabled type="text" placeholder="" value="<?php echo $bloodType?>">
+                                <input class="form-control" id="inputBtype" disabled type="text" placeholder="" value="<?php echo $bloodType;?>">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputNationality">Nationality</label>
-                                <input class="form-control" id="inputNationality" disabled type="text" placeholder="" value="<?php echo $nationality?>">
+                                <input class="form-control" id="inputNationality" disabled type="text" placeholder="" value="<?php echo $nationality;?>">
                             </div>
                             <div class="col-md-4">
                                 <label class="small mb-1" for="inputHmember">No. of Household Member</label>
-                                <input class="form-control" id="inputHmember" disabled type="text" placeholder="" value="<?php echo $numHouseHold?>">
+                                <input class="form-control" id="inputHmember" disabled type="text" placeholder="" value="<?php echo $numHouseHold;?>">
                             </div>
                             <div class="col-md-4"> 
                             <label class="small mb-1" for="inputEducation">Educational Attaintment</label>
                             <select name="" class="form-control" required>
-                                <option selected><?php echo $educationalAttainment?></option>								        
+                                <option selected><?php echo $educationalAttainment;?></option>								        
 								<option>Not Applicable</option>
                                 <option>Elementary Level</option>
 								<option>Elementary Graduate</option>
@@ -184,7 +186,7 @@ session_start();
                             <div class="col-md-4">
 						    <label class="small mb-1" for="inputVoter">Voter Status</label>
 						    <select name="" class="form-control"> 
-								<option disabled selected hidden></option>
+								<option disabled selected hidden><?php echo $voterStatus;?></option>
 								<option>Active</option>
                 				<option>Inactive</option>
 								<option>Cancelled</option>
