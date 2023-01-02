@@ -11,11 +11,12 @@ session_start();
     $occupation = $_SESSION['residentData']['occupation'];
     $civilStatus = $_SESSION['residentData']['civil_status'];
     $educationalAttainment = $_SESSION['residentData']['educational_attainment'];
-    $religion = $_SESSION['residentData']['religion'];
     $bloodType = $_SESSION['residentData']['blood_type'];
     $nationality = $_SESSION['residentData']['nationality'];
     $barangay = $_SESSION['residentData']['barangay'];
     $voterStatus = $_SESSION['residentData']['status'];
+
+    $sex = $_SESSION['residentData']['sex'];
 ?>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -131,11 +132,11 @@ session_start();
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputZone">Zone</label>
                                     <select name="zone" class="form-control">
-                                        <option disabled selected hidden><?php echo $zone;?></option>
-                                        <option>Zone 1</option>
-                                        <option>Zone 2</option>
-                                        <option>Zone 3</option>
-                                        <option>Zone 4</option>
+                                        <option selected value = "<?php echo $zone;?>"><?php echo $zone;?></option>
+                                        <option value = "Zone 1">Zone 1</option>
+                                        <option value = "Zone 2 ">Zone 2</option>
+                                        <option value = "Zone 3 ">Zone 3</option>
+                                        <option value = "Zone 4">Zone 4</option>
                                     </select>
                             </div>             
                             <div class="col-md-6">
@@ -145,12 +146,12 @@ session_start();
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputStatus">Civil Status</label>
                                     <select name="civilStatus" class="form-control input-lg"> 
-								        <option disabled selected hidden><?php echo $civilStatus;?></option>
-								        <option>Single</option>
-                                        <option>Married</option>
-								        <option>Widowed</option>
-								        <option>Separated</option>
-								        <option>Divorced</option>
+								        <option selected value = "<?php echo $civilStatus;?>"><?php echo $civilStatus;?></option>
+								        <option value="Single">Single</option>
+                                        <option value="Married">Married</option>
+								        <option value="Widowed">Widowed</option>
+								        <option value="Separated">Separated</option>
+								        <option value="Divorced">Divorced</option>
 							        </select>        
                             </div>                           
                             <div class="col-md-6">
@@ -159,7 +160,7 @@ session_start();
                             </div>
                             <div class="col-md-4">
                                 <label class="small mb-1" for="inputbdate">Date of Birth</label>
-                                <input type="date" class="form-control" id="inputbdate" name="bdate" placeholder="" value="<?php echo $bdate;?>">
+                                <input type="date" class="form-control" id="inputbdate" name="bdate" value ="<?php echo date('Y-m-d', strtotime($bdate));?>">
                             </div>
                             <div class="col-md-4">
                                 <label class="small mb-1" for="inputAge">Age</label>
@@ -167,24 +168,24 @@ session_start();
                             </div>
                             <div class="col-md-4">
                                 <label class="small mb-1" for="inputGender">Sex</label>                               
-                                    <select name="gender" class="form-control input-lg"> 
-								        <option disabled selected hidden><?php echo $gender;?></option>
-								        <option>Female</option>
-                                        <option>Male</option>
+                                    <select name="sex" class="form-control input-lg"> 
+								        <option selected hidden value = "<?php echo $sex;?>"><?php echo ($sex == 0) ? "Female" : "Male";?></option>
+								        <option value = "0">Female</option>
+                                        <option value = "1">Male</option>
 						            </select>
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBtype">Blood Type</label>
                                     <select name="bloodType" class="form-control input-lg"> 
-								        <option disabled selected hidden><?php echo $bloodType;?></option>
-								        <option>AB+</option>
-                                        <option>AB-</option>
-								        <option>A+</option>
-								        <option>A-</option>
-								        <option>B+</option>
-								        <option>B-</option>
-								        <option>O+</option>
-								        <option>O-</option>
+								        <option  selected value = "<?php echo $bloodType;?>"><?php echo $bloodType;?></option>
+								        <option value = "AB+">AB+</option>
+                                        <option value ="AB-">AB-</option>
+								        <option value = "A+">A+</option>
+								        <option value = "A-">A-</option>
+								        <option value = "B+">B+</option>
+								        <option value = "B-">B-</option>
+								        <option value = "O+">O+</option>
+								        <option value = "O-">O-</option>
 							        </select>
                             </div>
                             <div class="col-md-6">
@@ -198,36 +199,36 @@ session_start();
                             <div class="col-md-4"> 
                             <label class="small mb-1" for="inputEducation">Educational Attainment</label>
                             <select name="educationalAttainment" class="form-control" required>
-                                <option disabled selected hidden><?php echo $educationalAttainment;?></option>								        
-								<option>Not Applicable</option>
-                                <option>Elementary Level</option>
-								<option>Elementary Graduate</option>
-                                <option>Completer</option>
-								<option>Senior High School</option>
-                                <option>College Level</option>
-                                <option>Vocational/TVET</option>
-                                <option>Undergraduate (Bachelor’s Degree)</option>
-                                <option>Postgraduate (Master’s Degree)</option>
-                                <option>Doctorate Degree (PhD)</option>
+                                <option selected value ="<?php echo $educationalAttainment;?>"><?php echo $educationalAttainment;?></option>								        
+								<option value = "Not Applicable">Not Applicable</option>
+                                <option value = "Elementary Level">Elementary Level</option>
+								<option value = "Elementary Graduate">Elementary Graduate</option>
+                                <option value = "Completer">Completer</option>
+								<option value = "Senior High School">Senior High School</option>
+                                <option value = "College Level">College Level</option>
+                                <option value = "Vocational/TVET">Vocational/TVET</option>
+                                <option value = "Undergraduate (Bachelor’s Degree)">Undergraduate (Bachelor’s Degree)</option>
+                                <option value = "Postgraduate (Master’s Degree)">Postgraduate (Master’s Degree)</option>
+                                <option value = "Doctorate Degree (PhD)">Doctorate Degree (PhD)</option>
                             </select>
                             </div>
                             <div class="col-md-4">
 						    <label class="small mb-1" for="inputVoter">Voter Status</label>
-						    <select name="" class="form-control"> 
-								<option disabled selected hidden><?php echo $voterStatus;?></option>
-								<option>Active</option>
-                				<option>Inactive</option>
-								<option>Cancelled</option>
-                                <option>Not Registered</option>
+						    <select name="voterStatus" class="form-control"> 
+								<option selected value = "<?php echo $voterStatus;?>"><?php echo $voterStatus;?></option>
+								<option value = "Active">Active</option>
+                				<option value = "Inactive">Inactive</option>
+								<option value = "Cancelled">Cancelled</option>
+                                <option value = "Not Registered">Not Registered</option>
 						    </select>				
 					        </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputUsername">Username</label>
-                                <input class="form-control" id="inputUsername" type="text" placeholder="" value="">
+                                <input class="form-control" name = "username" id="inputUsername" type="text" placeholder="" value="">
                             </div>                            
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputPass">Password</label>
-                                <input class="form-control" id="inputPass" type="text" placeholder="" value="">
+                                <input class="form-control" name = "password" id="inputPass" type="password" placeholder="" value="">
                             </div>
                         </div>
                         

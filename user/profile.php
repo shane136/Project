@@ -11,11 +11,13 @@ session_start();
     $occupation = $_SESSION['residentData']['occupation'];
     $civilStatus = $_SESSION['residentData']['civil_status'];
     $educationalAttainment = $_SESSION['residentData']['educational_attainment'];
-    $religion = $_SESSION['residentData']['religion'];
     $bloodType = $_SESSION['residentData']['blood_type'];
     $nationality = $_SESSION['residentData']['nationality'];
     $barangay = $_SESSION['residentData']['barangay'];
     $voterStatus = $_SESSION['residentData']['status'];
+    $gender = $_SESSION['residentData']['sex'] ;
+
+    
 ?>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -147,13 +149,21 @@ session_start();
                                 <label class="small mb-1" for="inputOccupation">Occupation</label>
                                 <input class="form-control" id="inputOccupation" disabled type="text" placeholder="" value="<?php echo $occupation;?>">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
+                                <label class="small mb-1" for="inputbdate">Date of Birth</label>
+                                <input type="date" class="form-control" id="inputbdate" name="bdate" value ="<?php echo date('Y-m-d', strtotime($bdate));?>">
+                            </div>
+                            <div class="col-md-4">
                                 <label class="small mb-1" for="inputAge">Age</label>
                                 <input class="form-control" id="inputAge" disabled type="text" placeholder="" value="<?php echo $age;?>">
                             </div>
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputSex">Sex</label>
-                                <input class="form-control" id="inputSex" disabled type="text" placeholder="" value="<?php echo "Male";?>">
+                            <div class="col-md-4">
+                                <label class="small mb-1" for="inputGender">Sex</label>                               
+                                    <select name="sex" class="form-control input-lg"> 
+								        <option hidden selected disabled value = "<?php echo $gender;?>"><?php echo ($_SESSION['residentData']['sex'] == 0) ? "Female" : "Male";?></option>
+								        <option>Female</option>
+                                        <option>Male</option>
+						            </select>
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBtype">Blood Type</label>
@@ -186,11 +196,11 @@ session_start();
                             <div class="col-md-4">
 						    <label class="small mb-1" for="inputVoter">Voter Status</label>
 						    <select name="" class="form-control"> 
-								<option disabled selected hidden><?php echo $voterStatus;?></option>
-								<option>Active</option>
-                				<option>Inactive</option>
-								<option>Cancelled</option>
-                                <option>Not Registered</option>
+								<option disabled selected hidden value = "<?php echo $voterStatus;?>"><?php echo $voterStatus;?></option>
+								<option value = "Active">Active</option>
+                				<option value = "Inactive">Inactive</option>
+								<option value = "Cancelled">Cancelled</option>
+                                <option value = "Not Registered">Not Registered</option>
 						    </select>				
 					        </div>
                             <div class="col-md-6">

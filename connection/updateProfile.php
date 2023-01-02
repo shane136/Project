@@ -7,6 +7,7 @@
         $lName = $_POST['lName'];
         $mName = $_POST['mName'];
         $bPlace = $_POST['bPlace'];
+        $bdate = $_POST['bdate'];
         $zone = $_POST['zone'];
         $barangay = $_POST['barangay'];
         $civilStatus = $_POST['civilStatus'];
@@ -17,22 +18,32 @@
         $nationality = $_POST['nationality'];
         $numHouseHold = $_POST['numHouseHold'];
         $educationalAttainment = $_POST['educationalAttainment'];
+        $voterStat = $_POST['voterStatus'];
+        $username = $_POST['username'];
+        $password = $_POST['password'];
     }
     $updateData = " UPDATE resident SET 
                         fname = '$fName', 
                         lname = '$lName', 
                         mname = '$mName', 
                         bplace ='$bPlace', 
+                        barangay = '$barangay',
+                        age = '$age',
                         zone = '$zone',
+                        bdate = '$bdate',
+                        status = '$voterStat',
                         num_household = '$numHouseHold',
                         occupation = '$occupation',
                         civil_status = '$civilStatus',
                         educational_attainment = '$educationalAttainment',
                         blood_type = '$bloodType',
-                        nationality = '$nationality'                     
+                        nationality = '$nationality',
+                        sex = '$sex'                      
                     WHERE id = '$residentID'
                   ";
+    $updateUser =  "UPDATE user SET username  = '$username', password = '$password' where resident_id = '$residentID' && type = '0'";
     $result = mysqli_query($con,$updateData);
+    $resultUser = mysqli_query($con, $updateUser);
     
     if($result){
         $residentData = "SELECT * FROM resident WHERE id = '$residentID' limit 1";
