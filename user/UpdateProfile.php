@@ -23,7 +23,7 @@ session_start();
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -233,7 +233,7 @@ session_start();
                         </div>
                         
                         <!-- Save button-->
-                        <button type="submit" class="btn btn-primary"> Save Changes</button>
+                        <button type="submit" class="btn btn-primary"><iconify-icon icon="material-symbols:save-as-outline-rounded"></iconify-icon> Save Changes</button>
                     </form>
                 </div>
             </div>
