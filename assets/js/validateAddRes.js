@@ -217,10 +217,11 @@ function checkValidation(){
     var lNameInput = document.getElementById("lname");
     var pNameInput = document.getElementById("place");
     var bNameInput = document.getElementById("brgy");
-    var zNameInput = document.getElementById("zone");
     var occptnNameInput = document.getElementById("occupation");
     var ageNameInput = document.getElementById("age");
-    var bdateNameInput = document.getElementById("bdate");
+    var nationalityNameInput = document.getElementById("nationality");
+    var userNameInput = document.getElementById("username");
+    var passNameInput = document.getElementById("password");
     
     //regex
     var specialChar = /^[ A-Za-z-]*$/;
@@ -232,7 +233,7 @@ function checkValidation(){
     var checkLower = /^(?=.*?[a-z])/;
    
 
-    nameInput.addEventListener('input', function(){
+   
         if(nameInput.value.length > 0){
             if(nameInput.value.match(specialChar)){
                 var child = document.getElementById('firstName');
@@ -254,8 +255,8 @@ function checkValidation(){
             fname.style.border = "1px solid red";
             child.innerText = "First Name Is Required";
         }
-    });
-    mNameInput.addEventListener('input', function(){
+  
+    
         if(mNameInput.value.length > 0){
             if(mNameInput.value.match(specialChar)){
                 var child = document.getElementById('midName');
@@ -276,9 +277,9 @@ function checkValidation(){
             mname.style.border = "1px solid red";
             child.innerText = "Middle Name Is Required"
         }
-    });
+  
 
-    lNameInput.addEventListener('input', function(){
+    
         if(lNameInput.value.length > 0){
             if(lNameInput.value.match(specialChar)){
                 var child = document.getElementById('lastName');
@@ -299,9 +300,9 @@ function checkValidation(){
             lname.style.border = "1px solid red";
             child.innerText = "Last Name Is Required";
         }
-    });
+  
 
-    pNameInput.addEventListener('input', function(){
+   
         if(pNameInput.value.length > 0){
             var child = document.getElementById('placeOfBirth');
             child.style.display = "none";
@@ -314,9 +315,7 @@ function checkValidation(){
             place.style.border = "1px solid red";
         }
 
-    });
-
-    bNameInput.addEventListener('input', function(){
+   
         if(bNameInput.value.length > 0){
             var child = document.getElementById('barangay');
             child.style.display = "none";
@@ -328,44 +327,21 @@ function checkValidation(){
             child.style.display = "inline";
             brgy.style.border = "1px solid red";
         }
-    });
-
-    // zNameInput.addEventListener ('input', function(){
-    //     if(zNameInput.value.length > 0){
-    //         if(zNameInput.value.match(alphaNumeric)){
-    //             var child = document.getElementById('zoneName');
-    //             child.style.display = "none"
-    //             zone.style.border = "1px solid green";
-    //             zNameInput.value = zNameInput.value.toUpperCase();
-    //         }
-    //         else{
-    //             var child = document.getElementById('zoneName');
-    //             child.style.display = "inline";
-    //             zone.style.border = "1px solid red";
-    //             child.innerText = "Alphabet and Numbers are only Allowed!";
-    //         }
-    //     }
-    //     else{
-    //         var child = document.getElementById('zoneName');
-    //         child.style.display = "inline";
-    //         zone.style.border = "1px solid red";
-    //         child.innerText = "Required*";
-    //     }
-    // });
+   
     
-        occptnNameInput.addEventListener('input', function(){
-            if(occptnNameInput.value.length > 0){
-                if(occptnNameInput.value.match(alphaNumeric)){
-                    var child = document.getElementById('occupationName');
-                    child.style.display = "none";
-                    occupation.style.border = "1px solid green";
-                    occptnNameInput.value = occptnNameInput.value.toUpperCase();
-                }
-                else{
-                    var child = document.getElementById('occupationName');
-                    child.style.display = "inline";
-                    occupation.style.border = "1px solid red";
-                    child.innerText = "Alphabet letters and numbers are only Allowed!";
+    
+        if(occptnNameInput.value.length > 0){
+            if(occptnNameInput.value.match(alphaNumeric)){
+                var child = document.getElementById('occupationName');
+                child.style.display = "none";
+                occupation.style.border = "1px solid green";
+                occptnNameInput.value = occptnNameInput.value.toUpperCase();
+            }
+            else{
+                var child = document.getElementById('occupationName');
+                child.style.display = "inline";
+                occupation.style.border = "1px solid red";
+                child.innerText = "Alphabet letters and numbers are only Allowed!";
                 }
             }
             else{
@@ -374,9 +350,29 @@ function checkValidation(){
                 occupation.style.border = "1px solid red";
                 child.innerText = "Required*";
             }
-        });
 
-    ageNameInput.addEventListener('input', function(){
+    
+        if(nationalityNameInput.value.length > 0){
+            if(nationalityNameInput.value.match(alphaNumeric)){
+                var child = document.getElementById('nationalityName');
+                child.style.display = "none";
+                nationality.style.border = "1px solid green";
+                nationalityNameInput.value = nationalityNameInput.value.toUpperCase();
+                }
+            else{
+                var child = document.getElementById('nationalityName');
+                child.style.display = "inline";
+                nationality.style.border = "1px solid red";
+                child.innerText = "Alphabet letters and numbers are only Allowed!";
+                }
+            }
+            else{
+                var child = document.getElementById('nationalityName');
+                child.style.display = "inline";
+                nationality.style.border = "1px solid red";
+                child.innerText = "Required*";
+            }
+
         if(ageNameInput.value.length > 0){
             if(ageNameInput.value.match(checkAge)){
                 var child = document.getElementById('ageName');
@@ -397,41 +393,69 @@ function checkValidation(){
             age.style.border = "1px solid red";
             child.innerText = "Required*";
         }
-    });
 
-    bdateNameInput.addEventListener('input', function(){
-        if(bdateNameInput.value != ""){
-            var child = document.getElementById('bdateName');
+        if(userNameInput.value.length > 0){
+            if(userNameInput.value.match(checkUsername)){
+                var child = document.getElementById('userName');
+                child.style.display = "none";
+                username.style.border = "1px solid green";
+            }
+            else{
+                var child = document.getElementById('userName');
+                child.style.display = "inline";
+                username.style.border = "1px solid red";
+                child.innerText = "Invalid Username! \n *Must be at least 4 characters";
+            }
+        }
+        else{
+            var child = document.getElementById('userName');
             child.style.display = "inline";
-            bdate.style.border = "1px solid red";
+            username.style.border = "1px solid red";
+            child.innerText = "Required*";
         }
-        else{  
-            var child = document.getElementById('bdateName');
-            child.style.display = "none";
-            bdate.style.border = "1px solid green";
-        }
-    })
-    
 
+        if(passNameInput.value.length > 0){
+            if(passNameInput.value.match(checkPassword)){
+                var child = document.getElementById('passName');
+                child.style.display = "none";
+                password.style.border = "1px solid green";
+            }
+            else{
+                var child = document.getElementById('passName');
+                child.style.display = "inline";
+                password.style.border = "1px solid red";
+                child.innerText = "Invalid Password! \n *At least (1) Upper case \n *At least (1) Lower case \n *At least (1) Special Character (@#!&) \n *At least (1) Number \n *Must be at least 8 characters";
+            }
+        }
+        else{
+            var child = document.getElementById('passName');
+            child.style.display = "inline";
+            password.style.border = "1px solid red";
+            child.innerText = "Required*";
+        }
 
 }
 
 function checkZone(){
 
-    var zNameInput = document.getElementById("zone");
-   
- if(zNameInput.value.length > 0){
-    var child = document.getElementById('zoneName');
-    child.style.display = "none";
-    zone.style.border = "1px solid green";
+    var zNameInput = document.getElementById('zone');
+    zNameInput.addEventListener('input', function(e){
+
+
+    if(e.target.value.length > 0){
+        var child = document.getElementById('zoneName');
+        child.style.display = "none";
+        zone.style.border = "1px solid green";
    
     }
-else{
-    var child = document.getElementById('zoneName');
-    child.style.display = "inline";
-    zone.style.border = "1px solid red";  
+    else{
+        var child = document.getElementById('zoneName');
+        child.style.display = "inline";
+        zone.style.border = "1px solid red";  
    
-    } 
+        } 
+
+    })
 }
 
 function checkStatus(){
@@ -490,6 +514,7 @@ function checkMember(){
 function checkSex(){
 
     var sexNameInput = document.getElementById("sex");
+    
 
     if(sexNameInput.value.length > 0){
         var child = document.getElementById('sexName');
@@ -501,6 +526,7 @@ function checkSex(){
         child.style.display = "inline";
         sex.style.border = "1px solid red";
     }
+
 }
 
 function checkEduc(){
@@ -535,4 +561,44 @@ function checkBdate(){
         }
     })
 }
+
+function checkVoter(){
+
+    var voterNameInput = document.getElementById("voter");
+
+
+    if(voterNameInput.value.length > 0){
+        var child = document.getElementById('voterName');
+        child.style.display = "none";
+        voter.style.border = "1px solid green";
+   
+    }
+    else{
+        var child = document.getElementById('voterName');
+        child.style.display = "inline";
+        voter.style.border = "1px solid red";  
+        } 
+
+    }
+
+function checkFile(){
+
+    var photoNameInput = document.getElementById('photo');
+    photoNameInput.addEventListener('input', function(e){
+
+    if(e.target.value.length > 0){
+        var child = document.getElementById('photoName');
+        child.style.display = "none";
+        photo.style.border = "1px solid green";
+   
+    }
+    else{
+        var child = document.getElementById('photoName');
+        child.style.display = "inline";
+        photo.style.border = "1px solid red";  
+        } 
+
+    })
+}
+
 

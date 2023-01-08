@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../assets/css/page.css" type="text/css">
   <script src="../assets/js/dropdown.js"></script>
   <script type="text/javascript" src="../assets/js/modal.js"></script>
-  <script type="text/javascript" src="../assets/js/validateAddResident.js"></script>
+  <script type="text/javascript" src="../assets/js/validateAddRes.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
   

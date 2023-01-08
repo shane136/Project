@@ -56,14 +56,14 @@
     padding: 10%;
     margin-top: 10%;
 }
-.btnRegister{
+#btnRegister{
     float: right;
     margin-top: 10%;
     border: none;
-    border-radius: 1.5rem;
+    border-radius: 20px;
     padding: 2%;
-    background: #0062cc;
-    color: #fff;
+    background: green;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     width: 50%;
     cursor: pointer;
