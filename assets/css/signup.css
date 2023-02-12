@@ -1,8 +1,6 @@
-.register{
+.body{
     background: -webkit-linear-gradient(left, #ffffff, #00b3b3);
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding: 5%;
+  
 }
 .register-left{ 
     text-align: center;
@@ -31,6 +29,8 @@
     background: #ffffff;
     border-top-left-radius: 10% 50%;
     border-bottom-left-radius: 10% 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .register-left img{
     margin-top: 15%;
@@ -68,32 +68,7 @@
     width: 50%;
     cursor: pointer;
 }
-.register .nav-tabs{
-    margin-top: 3%;
-    border: none;
-    background: #0062cc;
-    border-radius: 1.5rem;
-    width: 28%;
-    float: right;
-}
-.register .nav-tabs .nav-link{
-    padding: 2%;
-    height: 34px;
-    font-weight: 600;
-    color: #fff;
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-}
-.register .nav-tabs .nav-link:hover{
-    border: none;
-}
-.register .nav-tabs .nav-link.active{
-    width: 100px;
-    color: #0062cc;
-    border: 2px solid #0062cc;
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-}
+
 .register-heading{
     text-align: center;
     margin-top: 8%;

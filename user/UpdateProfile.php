@@ -15,7 +15,6 @@ session_start();
     $nationality = $_SESSION['residentData']['nationality'];
     $barangay = $_SESSION['residentData']['barangay'];
     $voterStatus = $_SESSION['residentData']['status'];
-
     $sex = $_SESSION['residentData']['sex'];
 ?>
 

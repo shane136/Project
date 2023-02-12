@@ -5,28 +5,34 @@ session_start();
 	include("../functions.php");
 	include("../signup.php");
 
-
-	if($_SERVER['REQUEST_METHOD'] == "POST")
-	{
+	
+	if($_SERVER['REQUEST_METHOD'] == "POST"){
 		//something was posted
-		$user_name = $_POST['user_name'];
-		$password = $_POST['password'];
+		// $user_name = $_POST['user_name'];
+		// $password = $_POST['password'];
 
-		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
-		{
+		$firstNaame = $_POST['fname'];
+		$middleName = $_POST['mname'];
+		$lastName = $_POST['lname'];
+		$place = $_POST['place'];
+		$zone = $_POST['zone'];
 
-			//save to database
-			$user_id = random_num(20);
-			$query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
+		
+		// if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+		// {
 
-			mysqli_query($con, $query);
+		// 	//save to database
+		// 	$user_id = random_num(20);
+		// 	$query = "insert into users (user_id, user_name, password) values ('$user_id','$user_name','$password')";
+ 
+		// 	mysqli_query($con, $query);
 
-			header("Location: login.php");
-			die;
-		}else
-		{
-			echo "Please enter some valid information!";
-		}
+		// 	header("Location: login.php");
+		// 	die;
+		// }else
+		// {
+		// 	echo "Please enter some valid information!";
+		// }
 	}
 ?>
 

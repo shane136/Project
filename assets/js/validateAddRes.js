@@ -201,6 +201,7 @@ function validateForm(){
     }
 
     if(voter.value == ""){
+        console.log("HERE");
         var child = document.getElementById('voterName');
         child.style.display = "inline";
         voter.style.border = "1px solid red";
@@ -568,12 +569,14 @@ function checkVoter(){
 
 
     if(voterNameInput.value.length > 0){
+        console.log("HERE");
         var child = document.getElementById('voterName');
         child.style.display = "none";
         voter.style.border = "1px solid green";
    
     }
     else{
+        console.log("HERE2");
         var child = document.getElementById('voterName');
         child.style.display = "inline";
         voter.style.border = "1px solid red";  

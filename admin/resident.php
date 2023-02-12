@@ -1,3 +1,17 @@
+<?php
+session_start();
+  $firstName = $_SESSION['residentData']['fname'];
+  $lastName = $_SESSION['residentData']['lname'];
+  $middleName = $_SESSION['residentData']['mname'];
+  $age = $_SESSION['residentData']['age'];
+  $zone = $_SESSION['residentData']['zone'];
+  $barangay = $_SESSION['residentData']['barangay'];
+  $voterStatus = $_SESSION['residentData']['status'];
+?>
+
+
+
+
 <!DOCTYPE html>
 <html class = "h-100"lang="en" dir="ltr">
   <head>
@@ -94,7 +108,7 @@
                             <tr>
 
                                 <th></th>
-                                <th><center>ZONE</center></th>
+                                <th><center>ID</center></th>
                                 <th><center>PHOTO</center></th>
                                 <th><center>NAME</center></th>
                                 <th><center>AGE</center></th>
@@ -111,13 +125,13 @@
                         <tr>
 
                         <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
-							          <td>Nash</td>
-							          <td>Ganda</td>
-							          <td>zxcasdasd</td>
-							          <td>asdasdsa</td>     
-							          <td>asdasdasd</td>      
-							          <td>asdsadsa</td>     
-                        <td></td>        
+							          <td></td>
+							          <td></td>
+							          <td><?php echo $firstName. " ". $middleName." ". $lastName?></td>
+							          <td><?php echo $age;?></td>     
+							          <td><?php echo ($_SESSION['residentData']['sex'] == 0) ? "Female" : "Male";?></td>      
+							          <td><?php echo $zone. ", ". $barangay?></td>     
+                        <td><?php echo $voterStatus;?></td>        
 							          <td>
 								          <a href="#editResidentModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
 								          <a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
@@ -125,22 +139,7 @@
 
                         </tr>
 
-                        <tr>
 
-                        <td><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></td>
-							          <td>Shane</td>
-							          <td>Pags</td>
-							          <td>zxcasdasd</td>
-							          <td>asdasdsa</td>     
-							          <td>asdasdasd</td>      
-							          <td>asdsadsa</td>     
-                        <td></td>        
-							          <td>
-								          <a href="#editResidentModal" class="btn btn-warning btn-sm" data-toggle="modal"><i class="fa fa-pencil"></i><span> Edit</span></a>
-								          <a href="#deleteOfficialModal" class="btn btn-danger btn-sm" data-toggle="modal" onclick="return confirm('Are you sure you want to delete?');"><i class="fa fa-minus-circle"></i><span> Delete</span></a>
-							          </td>
-
-                        </tr>
 
                     
                         </tbody>

@@ -1,12 +1,13 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <link rel="stylesheet" href="../assets/css/SignUp.css" type="text/css">
-<script type="text/javascript" src="../assets/js/validateAddRes.js"></script>
+<!-- <script type="text/javascript" src="../assets/js/validateAddRes.js"></script> -->
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="container register">
-                <div class="row">
+<div class="body"> 
+	<div class="container register">
+                <div class="row ">
                     <div class="col-md-3 register-left">
 						<img src="../assets/image/wolfie.png" class="image">
                         <h3>Welcome</h3>
@@ -16,6 +17,9 @@
                     <div class="col-md-9 register-right">
                        
                         <div class="tab-content" id="myTabContent">
+							<form action="registerResident.php" method="post">
+
+						
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <h3 class="register-heading">Please fill out the required fields *</h3>
                                 <div class="row register-form">
@@ -46,7 +50,7 @@
 										</div>
 										<div class="form-group">
                                     		<select name="zone" id="zone" class="form-control" onclick="checkZone()">
-												<option disabled selected hidden value="">Zone</option>
+												<option selected hidden value="">Zone</option>
                                         		<option value = "Zone 1">Zone 1</option>
                                         		<option value = "Zone 2">Zone 2</option>
                                         		<option value = "Zone 3">Zone 3</option>
@@ -82,13 +86,19 @@
 											</div>
 										</div>
                                         <div class="form-group">
-										<input type="date" class="form-control" id="bdate" name="bdate" onclick="checkBdate()" value ="">
-										<p id="bdateName" class="text text-danger" style="display: none;">Required*</p>
+											<input type="date" class="form-control" id="bdate" name="bdate" onclick="checkBdate()" value ="">
+											<p id="bdateName" class="text text-danger" style="display: none;">Required*</p>
                                         </div>
+										<div class="form-group">
+										<input type="file" class="form-control" accept= ".png, .jpg, .jpeg" id="photo" name="photo" onclick="checkFile()">
+										<div>
+											<p id="photoName" class="text text-danger" style="display: none;">Please upload file</p>
+										</div>
+										</div> 
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Age *" id="age" name="age" onkeyup="checkValidation()" value="" />
+                                            <input type="number" class="form-control" placeholder="Age *" id="age" name="age" onkeyup="checkValidation()" value="" />
 											<div>
 												<p id="ageName" class="text text-danger" style="display: none;">Required*</p>
 											</div>
@@ -171,19 +181,19 @@
                                             <input type="password" class="form-control" id="password" name="password" onkeyup="checkValidation()" placeholder="Password *" value="" />
 											<div>
 												<p id="passName" class="text text-danger" style="display: none;">Input your Password.</p>
-												<!-- <p id="passName" class="text text-danger" style="display: none;">*At least (1) Upper case</p>
-												<p id="passName" class="text text-danger" style="display: none;">*At least (1) Lower case</p> -->
 											</div>
 										</div>
                                         <!-- <input type="submit" class="btnRegister" value="Register"/> -->
-										<button type="" id="btnRegister" class="btn btn-success" onclick="validateForm()">Register</button>
+										<button type="submit" id="btnRegister" class="btn btn-success" onclick="validateForm()">Register</button>
 							
                                     </div>
                                 </div>
                             </div>
+							</form>
                             
                         </div>
                     </div>
                 </div>
 
             </div>
+		</div>

@@ -160,7 +160,6 @@
 						<input type="date" value="" class="form-control" id="bdate" name="bdate" onclick="checkBdate()" >
 						<p id="bdateName" class="text text-danger" style="display: none;">Required*</p>
 					</div>
-
 					<div class="col-md-4">
 						<label>Photo (.jpg, .jpeg & .png)</label>
 						<input type="file" class="form-control" accept= ".png, .jpg, .jpeg" id="photo" name="photo" onclick="checkFile()">
